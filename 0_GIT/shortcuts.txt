@@ -1,0 +1,8 @@
+
+Tipke:
+
+
+Ctrl+ ---> povecava font na ekranu (zoom in)
+
+AltGr+B ---> vitičasta zagrada 
+Alt+Z --> word wrap (vidimo cijeli red)
