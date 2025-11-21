@@ -1,14 +1,49 @@
 body{
-    background-color: azure;
-    font-family: sans-serif; 
-}
-h1{
+background-color: antiquewhite;
+margin-left: 20px;
+margin-right: 20px;
 
 }
+
+h1{
+    font-family: sans-serif;
+}
 h2{
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    color: #ff0066;
+}
+#sadrzaj{
+    background-color: aliceblue;
+    font-family: sans-serif;
+    border: 1px solid;
+    border-radius: 10px;
+    padding: 10px;
+}
+#tekst{
+    font-family: Courier, monospace;
+    word-spacing: unset;
+}
+span.dio1{
+    color: #ff0066;
+}
+ul{list-style: none;}
+ul li::before {content: "✅";}
+ul {padding-left: 0;}
+ul {line-height: 2;}
+
+span.dio2{
+    text-decoration: underline;
+    text-decoration-color: #ff0066;
+}
+
+span.dio3{
+    font-size: xx-large;
+}
+
+span.dio4{
+    text-emphasis: underline;
     color: #ff6600;
-    font-family: serif;
 }
-h5{
-    
-}
+
+
