@@ -1,5 +1,5 @@
 body{
-background-color: antiquewhite;
+background-color: aliceblue;
 margin-left: 20px;
 margin-right: 20px;
 
@@ -9,12 +9,12 @@ h1{
     font-family: sans-serif;
 }
 h2{
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Times New Roman', serif;
     font-style: italic;
     color: #ff0066;
 }
 #sadrzaj{
-    background-color: aliceblue;
+    background-color: white;
     font-family: sans-serif;
     border: 1px;
     border-radius: 10px;
@@ -46,12 +46,13 @@ span.dio4{
     text-emphasis: underline;
     color: #ff6600;
     background-color: aliceblue;
-    font-size: large;
+    font-size: larger;
+    font-family: sans-serif;
 }
 li span{
-    background-color: antiquewhite;
+    background-color: aliceblue;
     font-family: Courier, monospace;
     padding: 4px 4px;
-    border-radius: 10px;
+    border-radius: 6px;
 }
 
