@@ -55,4 +55,8 @@ li span{
     padding: 4px 4px;
     border-radius: 6px;
 }
-
+h5{
+    color: rgba(128, 128, 128, 0.63);
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
