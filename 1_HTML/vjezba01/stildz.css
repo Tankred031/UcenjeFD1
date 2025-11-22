@@ -45,6 +45,13 @@ span.dio3{
 span.dio4{
     text-emphasis: underline;
     color: #ff6600;
+    background-color: aliceblue;
+    font-size: large;
 }
-
+li span{
+    background-color: antiquewhite;
+    font-family: Courier, monospace;
+    padding: 4px 4px;
+    border-radius: 10px;
+}
 
