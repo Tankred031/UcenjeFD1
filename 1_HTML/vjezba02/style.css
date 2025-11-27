@@ -1,0 +1,11 @@
+:root{
+    /* Ovo je varijabla koja sadrži vrijednost boje*/
+    --primarna-boja: #2c3e50;
+    --naglašena-boja: #e67e22;
+    --pozadina-svijetlo: #ecf0f1;
+}
+
+body{
+    /*var je funkcija*/
+    background-color: var(--pozadina-svijetlo);
+}
