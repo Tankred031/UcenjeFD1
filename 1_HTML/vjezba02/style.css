@@ -8,4 +8,29 @@
 body{
     /*var je funkcija*/
     background-color: var(--pozadina-svijetlo);
+    background-image: radial-gradient(circle,#acc6d8,1px,transparent 1px);
+    background-size: 20px 20px;
+    background-repeat: repeat;
+    background-attachment: fixed;
+}
+    /*ovo je prostor koji će se moći očitati na većini ekrana*/
+.container{
+    width: 90%;
+    max-width: 1000px;
+    min-width: 300px;
+    inline-size: 90%;
+    max-inline-size: 1000px;
+
+    min-height: 100vh;
+    min-block-size: 100vh;
+
+    margin: 0 auto;
+    background-color: white;
+
+    box-sizing: border-box;
+    
+    outline-style: solid;
+    outline-width: 2px;
+    outline-color: var(--naglašena-boja);
+    outline-offset: 10px;
 }
