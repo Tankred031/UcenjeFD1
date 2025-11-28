@@ -24,8 +24,8 @@ body{
 .section{
     border: 1px solid;
     border-radius: 4dvh;
-    margin: auto;
-    padding: auto;
+    margin: 10px;
+    padding: 8px 8px;
 
 }
 h1{
@@ -49,4 +49,9 @@ span.dio2{
     background-color: bisque;
     padding: 2px 2px;
     border-radius: 4px;
+}
+p{
+    text-align: justify;
+    padding-left: 5px;
+    padding-right: 5px;
 }
