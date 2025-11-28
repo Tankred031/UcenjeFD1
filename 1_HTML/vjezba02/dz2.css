@@ -32,7 +32,7 @@ body{
 }
 ul{list-style: none}
 ul{padding: 0;}
-ul li::before {content: "✔️"; color: blue;}
+ul li::before {content: "✔️";}
 
 
 .dio1{
@@ -45,7 +45,12 @@ section{
     border-radius: 1rem;
     margin: 10px;
 }
-linija{
-    color: grey;
-    height: 2px;
-    border: 0;
+
+hr.linija {
+  height: 1px;            
+  background: rgba(128, 128, 128, 0.123)
+  border: none;              
+  border-radius: 2px;
+  margin: 18px 0;          
+  width: 95%;
+}
