@@ -2,11 +2,11 @@ body{
     background-color: aliceblue;    
 }
 .container{
-    width: 80%;
-    max-width: 450px;
+    width: 90%;
+    max-width: 900px;
     min-width: 300px;
-    inline-size: 80%;
-    max-inline-size: 450px;
+    inline-size: 90%;
+    max-inline-size: 900px;
 
     min-height: 155vh ;
     min-block-size: 155vh;
@@ -79,11 +79,10 @@ span.word2{
     color: #3483b8;}
 
 .citat{
-    background-color: #be65659f;
-    border-left: 5px color #e40c0cb7;
+    background-color: #be65655b;
+    border-left: 5px solid #e73c3cd2;
     margin: 0;
     padding: 0;
     padding-top: 5px;
     padding-bottom: 5px;
-
 }
