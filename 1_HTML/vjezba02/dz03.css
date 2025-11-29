@@ -145,7 +145,18 @@ li .oznaka {
     padding: 5px;
     padding-bottom: 15px;
     border: solid, aliceblue;
-    border-radius: 2px;
+    border-radius: 5px;
     text-align: center;
     font-style: italic;
+    margin: 10px auto;
+}
+
+.okvir img {
+    display: block;    
+    max-width: 100%;
+}
+
+.okvir p {
+    text-align: center;
+    margin-bottom: 5px;
 }
