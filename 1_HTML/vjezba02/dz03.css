@@ -36,15 +36,32 @@ h1{
     font-weight: bold;
 }
 h4{
-    text-decoration: underline;
+    text-decoration: underline orange;
+    text-decoration-thickness: 3px;
+    text-underline-offset: 6px;
     font-style: italic;
     text-align: center;
+    font-family: Georgia, serif;
+    text-transform: uppercase;
 }
-.linija{
-    border-left: 5px solid orange;
+
+span.veliko {
+    font-size: 140%;
+
+}
+
+.linija {
+    border-left: 10px solid orange;
     padding: 0;
     margin: 0;
+    background: black;
+    width: 100%;
+    box-sizing: border-box;
 
+}
+
+.linija img{
+    display: block;
 }
 
 span.dio1{
@@ -85,4 +102,50 @@ span.word2{
     padding: 0;
     padding-top: 5px;
     padding-bottom: 5px;
+}
+
+.box1{
+    background-color: rgba(128, 128, 128, 0.356);
+    padding: 10px;
+}
+
+.box1 > p > span {
+    font-weight: bold;
+    font-style: italic;
+    color: rgba(0, 115, 209, 0.788);
+    font-size: large;
+}
+
+.box2{
+    background-color: none;
+    padding: 10px;
+    line-height: 1.5;
+    font-family: Arial, sans-serif;
+    border-left: 5px solid darkblue;
+
+
+}
+
+li{
+    list-style: none;
+    padding: 15px;
+    margin: 0;
+}
+
+li .oznaka {
+    font-size: large;
+    font-weight: bold;
+    color: orange;
+    padding: 5px;
+    font-family: Arial, sans-serif;
+   
+}
+
+.okvir {
+    padding: 5px;
+    padding-bottom: 15px;
+    border: solid, aliceblue;
+    border-radius: 2px;
+    text-align: center;
+    font-style: italic;
 }
