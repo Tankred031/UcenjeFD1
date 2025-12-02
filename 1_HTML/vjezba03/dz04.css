@@ -1,0 +1,56 @@
+body{
+    background-color:none;
+}
+
+section{
+    display: grid;
+    grid-template-areas: 
+    "a a a a a a a a a a"
+    "b c c c c c c c c d"
+    "b c c c c c c c c d"
+    "b c c c c c c c c d"
+    "b c c c c c c c c d"
+    "b c c c c c c c c d"
+    "b c c c c c c c c d"
+    "b c c c c c c c c d"
+    "b c c c c c c c c d"
+    "e e e e e e e e e e";
+    row-gap: 2rem;
+    column-gap: 2rem;
+}
+.a{grid-area: a; background-color: red;}
+.b{grid-area: b; background-color: lightskyblue;}
+.c{grid-area: c; background-color: white;}
+.d{grid-area: d; background-color: violet;}
+.e{grid-area: e; background-color: greenyellow;}
+
+div{
+    background-color: none;
+    border: 2px solid black;
+    border-radius: 0%;
+    padding: 2rem;
+    font-size: 2rem;
+    text-align: center;
+    display: grid;
+    place-items: center;
+}
+.c{
+    grid-area: c;
+    display: grid;
+    background-color: none;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center; 
+    align-items: center;
+    border: 2px solid black;
+    border-radius: 0%;
+    padding: 1rem;
+    font-size: 1rem;
+    text-align: center;
+    display: grid;
+    place-items: center;
+}
+.c1{grid-area: c1; background-color: gold;}
+.c2{grid-area: c2; background-color: orange;}
+.c3{grid-area: c3; background-color: green;}
+
+
