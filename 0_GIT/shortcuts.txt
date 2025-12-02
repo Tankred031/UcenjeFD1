@@ -6,3 +6,6 @@ Ctrl+ ---> povecava font na ekranu (zoom in)
 
 AltGr+B ---> vitičasta zagrada 
 Alt+Z --> word wrap (vidimo cijeli red)
+
+Ctrl+ F5 ---> očitava stranicu sa servera
+F5 ----> očitava stranicu iz cache-a 
