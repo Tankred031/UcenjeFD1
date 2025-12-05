@@ -10,5 +10,6 @@ Alt+Z --> word wrap (vidimo cijeli red)
 Ctrl+ F5 ---> očitava stranicu sa servera
 F5 ----> očitava stranicu iz cache-a 
 
-AltGr+F je uglata zagrada
-AltGr+B je vitičasta
+AltGr+F ---> je uglata zagrada
+
+
