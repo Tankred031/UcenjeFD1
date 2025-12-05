@@ -1,0 +1,11 @@
+body{
+    background-color: rgba(58, 58, 107, 0.836);
+}
+
+h1, h2, h5{
+    text-align: center;
+    font-family: sans-serif;
+}
+
+h1, h2{color: white;}
+h5{color: orange;}
