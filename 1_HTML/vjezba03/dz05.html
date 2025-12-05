@@ -8,37 +8,41 @@
 </head>
 <body>
     <div class="container">
-    <section><pre>
+        <section><pre>
 
-        <h1>Osnove CSS rasporeda</h1>
-        <h2>Tri ključne tehnike: Flexbox, Grid i Float</h2>
+            <h1>Osnove CSS rasporeda</h1>
+            <h2>Tri ključne tehnike: Flexbox, Grid i Float</h2>
 
-        <h4><pre> Flexbox  Grid  i Float </pre></h4>
-        </pre>
-    </section>
+            <h4><pre> Flexbox  Grid  i Float </pre></h4>
+            </pre>
+        </section>
    
-    <div class="box">
-    1.Fleksibilni model kutija (Flexbox)
+    <div class="okvir">
 
-        Flexbox je jednodimenzionalni model rasporeda, dizajniran za distribuciju prostora između stavki u
+        <hr>
+    <h3>1.Fleksibilni model kutija (Flexbox)</h3>
+
+        <p><b>Flexbox</b> je jednodimenzionalni model rasporeda, dizajniran za distribuciju prostora između stavki u
         spremniku i moćnu mogućnost poravnavanje. Idealan je za navigaciju, male komponente i
-        centriranje elemenata.
+        centriranje elemenata.</p>
 
-
-        stavka 1
-        stavka 2
-        stavka 3
-
-        Ovdje je prikazano poravnavanje i automatska prilagodba veličine stavki unutar reda.
-
+        <div class="flexbox">
+            <div class="box">stavka 1</div>
+            <div class="box">stavka 2</div>
+            <div class="box">stavka 3</div>
     </div>
+        
+
+        <p>Ovdje je prikazano poravnavanje i automatska prilagodba veličine stavki unutar reda.</p>
+
     
-</div>
+    <div class="okvir">
 
-    2.Dvodimenzionalni model mreže (CSS Grid)
+        <hr>
+    <h3>2.Dvodimenzionalni model mreže (CSS Grid)</h3>
 
-    CSS Grid je dvodimenzinalni sustav rasporeda (redovi i stupci). Savršen je za dizajniranje
-    cjelokupnog rasporeda stranice (main layout) gdje želite precizno pozicioniranje elemenata.
+    <p><b>CSS Grid</b> je dvodimenzinalni sustav rasporeda (redovi i stupci). Savršen je za dizajniranje
+    cjelokupnog rasporeda stranice (main layout) gdje želite precizno pozicioniranje elemenata.</p>
 
 
     Zaglavlje
@@ -46,12 +50,18 @@
     Sadržaj
     Podnožje
 
-    Elemnti su smješteni pomoću svojstva grid-template-areas.
+    </div>
 
-    3.Klasični raspored (Float & Columns)
+    <p>Elemnti su smješteni pomoću svojstva grid-template-areas.</p>
+    
 
-    Prije Flexboxa i Grida, koristio se Float za bočno pozicioniranje elemenata. **Multi-column**
-    omogućuje pakiranje sadžaja u stupce.
+    <div class="okvir">
+
+        <hr>
+    <h3>3.Klasični raspored (Float & Columns)</h3>
+
+    <p>Prije Flexboxa i Grida, koristio se <b>Float</b> za bočno pozicioniranje elemenata. **Multi-column**
+    omogućuje pakiranje sadžaja u stupce.</p>
 
     Float lijevo
 
@@ -60,17 +70,18 @@
     ulijevo ili udesno dok dopušta da se okolni tekst omota oko njega. Također, ovaj odlomak je podijeljen
     u tri
     stupca pomoću svojstva **columns**, što je korisno za novinske ili tiskane rasporede.
+    
+    </div>
 
+    <h3>Dodatne informacije</h3>
 
-    Dodatne informacije
+    <p>Sva tri modela su i dalje relevantna. Flexbox za komponente. Grid za cjelokupni raspored stranice,
+    a Columns za tekstualni blokove.</p>
 
-    Sva tri modela su i dalje relevantna. Flexbox za komponente. Grid za cjelokupni raspored stranice,
-    a Columns za tekstualni blokove.
-
-    Primjer kreiran za demonstraciju CSS layout svojstava.
+    
 
     </div>
-    
+    <footer>Primjer kreiran za demonstraciju CSS layout svojstava.</footer>
 
     
 

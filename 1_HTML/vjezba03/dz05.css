@@ -13,7 +13,7 @@ body{
     min-block-size: 155vh;
 
     margin: 0 auto;
-    background-color: aliceblue;
+    background-color: #EBF4FA;
 
     box-sizing: border-box;
 
@@ -31,11 +31,44 @@ h1, h2, h4{
 }
 
 h1, h2{color: white;}
-h4 {color: orange;}
+h4 {
+    color: orange;
+    font-size: smaller;
+}
 
-.box{
+hr{
+    color: #6D7B8D;
+    list-style: 2px;
+
+}
+
+p{
+    font-family: sans-serif;
+}
+.okvir{
+    padding: 2rem;
+    margin: 2rem 4px 4px 2rem;
+    border: none;
+    background-color: white;
+       
+
+}
+
+.flexbox{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 4px;
+    gap: 4rem;
+    border: solid #1589FF;
+    background-color: #DADBDD;
 }
+.box{
+    background-color: #1589FF;
+    color: white;
+    font-family: sans-serif;
+    margin: 20px;
+    box-sizing: content-box;
+    width: 100%;
+    text-align: center;
+}
+
