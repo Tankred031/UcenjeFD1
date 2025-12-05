@@ -45,11 +45,11 @@ hr{
 p{
     font-family: sans-serif;
 }
-.okvir{
-    padding: 2rem;
-    margin: 2rem 4px 4px 2rem;
-    border: none;
-    background-color: white;
+.okvir1{
+        padding: 2rem;
+        margin: 2rem 4px 4px 2rem;
+        border: none;
+        background-color: white;
        
 
 }
@@ -65,10 +65,60 @@ p{
 .box{
     background-color: #1589FF;
     color: white;
-    font-family: sans-serif;
+    font-family: Arial, sans-serif;
     margin: 20px;
     box-sizing: content-box;
     width: 100%;
     text-align: center;
+    padding: 1rem;
 }
 
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows:1fr 2fr 1fr ;
+    grid-template-areas: 
+    "a a"
+    "b c"
+    "d d";
+    gap: 4rem;
+    color: white;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    row-gap: 2px;
+    column-gap: 2mm;
+    margin: 2px;
+    box-sizing: border-box;
+    border: solid #728C00;
+    border-radius: 1px;
+    background-color: #DADBDD;
+}
+.a{grid-area: a; background-color: #728C00;}
+.b{grid-area: b; background-color: #1AA260;}
+.c{grid-area: c; background-color: #045D5D;}
+.d{grid-area: d; background-color: #728C00;}
+
+.a, .b, .c, .d {
+    padding: 1rem;
+    margin: 1rem;
+}
+
+.float{
+    float: left;
+    background-color: red;
+    color: white;
+    font-family: Arial, sans-serif;
+    width: 6rem;
+    height: 5rem;
+    margin: none;
+    padding: 10px;
+    padding-bottom: 25px;
+    text-align: center;
+    margin-right: 1rem;
+}
+.stupci{
+    column-count: 3;
+    column-gap: 20px;
+    text-align: justify;
+    
+}

@@ -17,7 +17,7 @@
             </pre>
         </section>
    
-    <div class="okvir">
+    <div class="okvir1">
 
         <hr>
     <h3>1.Fleksibilni model kutija (Flexbox)</h3>
@@ -36,26 +36,27 @@
         <p>Ovdje je prikazano poravnavanje i automatska prilagodba veličine stavki unutar reda.</p>
 
     
-    <div class="okvir">
+    <div class="okvir2">
 
         <hr>
     <h3>2.Dvodimenzionalni model mreže (CSS Grid)</h3>
 
-    <p><b>CSS Grid</b> je dvodimenzinalni sustav rasporeda (redovi i stupci). Savršen je za dizajniranje
-    cjelokupnog rasporeda stranice (main layout) gdje želite precizno pozicioniranje elemenata.</p>
+        <p><b>CSS Grid</b> je dvodimenzinalni sustav rasporeda (redovi i stupci). Savršen je za dizajniranje cjelokupnog rasporeda stranice (main layout) gdje želite precizno pozicioniranje elemenata.</p>
 
-
-    Zaglavlje
-    Nav.
-    Sadržaj
-    Podnožje
+        <div class="grid">
+            <div class="a">Zaglavlje</div>
+            <div class="b">Nav.</div>
+            <div class="c">Sadržaj</div>
+            <div class="d">Podnožje</div>
+        </div>
+    
 
     </div>
 
-    <p>Elemnti su smješteni pomoću svojstva grid-template-areas.</p>
+    <p>Elementi su smješteni pomoću svojstva grid-template-areas.</p>
     
 
-    <div class="okvir">
+    <div class="okvir3">
 
         <hr>
     <h3>3.Klasični raspored (Float & Columns)</h3>
@@ -63,16 +64,19 @@
     <p>Prije Flexboxa i Grida, koristio se <b>Float</b> za bočno pozicioniranje elemenata. **Multi-column**
     omogućuje pakiranje sadžaja u stupce.</p>
 
-    Float lijevo
+    <div class="float">Float lijevo</div>
 
-    Ovaj tekst okružuje float element s lijeve strane. Klasično pozicioniranje pomoću float-a 
-    pomiče elemente
-    ulijevo ili udesno dok dopušta da se okolni tekst omota oko njega. Također, ovaj odlomak je podijeljen
-    u tri
-    stupca pomoću svojstva **columns**, što je korisno za novinske ili tiskane rasporede.
+    <div class="stupci">
+
+        <p>Ovaj tekst okružuje float element s lijeve strane. Klasično pozicioniranje pomoću float-a pomiče elemente</p>
     
+        <p>ulijevo ili udesno dok dopušta da se okolni tekst omota oko njega. Također, ovaj odlomak je podijeljen u tri</p>
+    
+    <p>stupca pomoću svojstva **columns**, što je korisno za novinske ili tiskane rasporede.</p>
+    </div>
     </div>
 
+    <br>
     <h3>Dodatne informacije</h3>
 
     <p>Sva tri modela su i dalje relevantna. Flexbox za komponente. Grid za cjelokupni raspored stranice,
