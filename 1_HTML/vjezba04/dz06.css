@@ -1,0 +1,56 @@
+body{
+    background-color: #888B90;
+}
+
+.container{
+    
+    width: 90%;
+    max-width: 500px;
+    min-width: 200px;
+    inline-size: 90%;
+    max-inline-size: 500px;
+
+    min-height: 50vh;
+    min-block-size: 50vh;
+
+    margin: 0 auto;
+    background-color: #F0F1F0;
+        
+    outline-style: none;
+    outline-width: 2px;
+    outline-offset: 10px;
+
+    box-sizing: content-box;
+    border-radius: 5px;
+}
+
+h1{text-align: center;}
+
+.okvir{
+    background-color: white;
+    text-align: left;
+    content: left;
+    padding: 2rem;
+    border: none;
+    margin: 2rem;
+    font-family: sans-serif;
+    
+}
+
+form button{
+    text-align: center;
+    color: white;
+    background-color: #1F45FC;
+    box-sizing: content-box;
+    width: 95%;
+
+}
+form label{
+    text-align: left;
+    display: block;
+}
+h3{text-align: left;}
+table{
+    width: 100vh;
+    text-align: left;
+}
