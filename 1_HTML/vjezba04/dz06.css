@@ -32,8 +32,9 @@ h1{text-align: center;}
     content: left;
     padding: 2rem;
     border: none;
+    border-radius: 5px;
     margin: 2rem;
-    font-family: sans-serif;
+    font-family: Arial, sans-serif;
     
 }
 
@@ -49,8 +50,44 @@ form label{
     text-align: left;
     display: block;
 }
-h3{text-align: left;}
-table{
-    width: 100vh;
+caption{
     text-align: left;
+    font-weight: bold;
+    
 }
+
+table {
+    width: 90%;
+    text-align: left;
+    font-family: Arial, sans-serif;
+    align-items: center;
+    margin-left: 20px
+    
+}
+ 
+
+table, th, td{
+    border-collapse: collapse;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid #f1f1f1;
+    border-top: 1px solid #f1f1f1 ;
+}
+
+
+
+th{background-color: #f1f1f1; padding: 10px;}
+td{background-color: white; padding: 10px;}
+
+tfoot{
+    text-align: center;
+    font-family: sans-serif;
+    font-size: small;
+}
+.word1{
+    color: green;
+}
+.word2{
+    color: red;
+}
+
