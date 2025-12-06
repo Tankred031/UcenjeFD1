@@ -84,4 +84,56 @@ button{
      
 }
 
+caption{font-weight: bolder; text-align: left;}
+
+table {
+    width: 100%;
+    text-align: left;
+    font-family: Arial, sans-serif;
+    align-items: center;
+    margin-left: 10px
+    
+}
+
+thead th{
+    background-color: black;
+    color: white;
+}
+table, th, td{
+    border-collapse: collapse;
+    border: 1px solid #f1f1f1;
+    
+}
+
+.okvir tbody tr:nth-child(2) > td, 
+.okvir tbody tr:nth-child(4) > td{
+    background-color: #C0C0C0;
+}
+
+
+th{background-color: #f1f1f1; padding: 10px;}
+td{background-color: white; padding: 10px;}
+
+tfoot{
+    text-align: center;
+    font-family: sans-serif;
+    font-size: small;
+}
+form button{
+    text-align: center;
+    color: white;
+    box-sizing: border-box;
+    width: 95%;
+
+}
+form label{
+    text-align: left;
+    display: inline-flex;
+    width: 95%;
+}
+caption{
+    text-align: left;
+    font-weight: bold;
+    
+}
 
