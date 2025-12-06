@@ -1,5 +1,30 @@
 body{background-color: black;}
 
+.container{
+    width: 90%;
+    max-width: 1000px;
+    min-width: none;
+    inline-size: 90%;
+    max-inline-size: 1000px;
+
+    min-height: 100vh;
+    min-block-size: 100vh;
+
+    margin: 0 auto;
+    background-color: #EBF4FA;
+
+    box-sizing: border-box;
+
+    outline-width: 2px;
+    outline-style: none;
+    outline-offset: 10px;
+}
+
+.naslov{
+    background-color: black;
+    height: 30vh;
+}
+
 h1, h4{
     color: white; 
     font-family: Arial, sans-serif;
@@ -34,10 +59,9 @@ button{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 2rem;
-    
-    padding: ;
-    
+    gap: 1rem;
+    padding: 10px;
+
 }
 .podokvir{
     background-color: #EEEEEE;
@@ -46,4 +70,18 @@ button{
     font-family: Arial, sans-serif;
     min-width: 250px;
     max-width: 350px;
+    padding: 10px;
+    border-radius: 5px;
+    border-left: 5px solid orange;
 }
+.stupci{
+    column-count: 2;
+    column-gap: 2rem;
+    text-align: justify;
+    column-rule: 2px solid #C0C0C0;
+    padding: 10px;
+    margin: 4px;
+     
+}
+
+
