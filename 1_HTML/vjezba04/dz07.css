@@ -128,8 +128,17 @@ form button{
 }
 form label{
     text-align: left;
-    display: inline-flex;
-    width: 95%;
+    display: inline-block;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.text, .mymenu {width: 300px;
+
+}
+    width: 300px;
+    
+    
+
 }
 caption{
     text-align: left;
