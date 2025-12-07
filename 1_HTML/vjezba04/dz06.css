@@ -26,6 +26,14 @@ body{
 
 h1{text-align: center;}
 
+.image{
+    display: block;
+    border-color: white;
+    padding: none;
+    padding-top: 20px;
+    
+}
+
 .okvir{
     background-color: white;
     text-align: left;
