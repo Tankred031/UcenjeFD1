@@ -12,4 +12,5 @@ F5 ----> očitava stranicu iz cache-a
 
 AltGr+F ---> je uglata zagrada
 
+Win+Shift+S ---> screenshot
 

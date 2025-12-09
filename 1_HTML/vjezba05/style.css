@@ -1,0 +1,13 @@
+body{
+    background-color: antiquewhite;
+}
+audio{
+    outline: none;
+    width: 100%;
+    background-color: brown;
+   
+}
+
+video{
+    max-width: 400px;
+}
