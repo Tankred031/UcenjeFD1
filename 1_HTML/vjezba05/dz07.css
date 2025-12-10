@@ -19,8 +19,8 @@ h5{
 }
 
 .okvir{
-    padding: 2rem;
-    margin: 2rem 4px 4px 2rem;
+    padding: 10px;
+    margin: 2rem;
     border: none;
     background-color: white;
     box-shadow: 2px 2px 2px 1px #EEEEEE;
@@ -28,28 +28,63 @@ h5{
 
 .flexbox{
     display: flex;
-    justify-content: left;
-    align-items: center;
+    flex: 1 ;
+    flex-wrap: wrap;
+    
     gap: 2rem;
     border: none;
     background-color: white;
     
 }
 
+.box1 {
+    margin: 10px;
+    box-sizing: content-box;
+    width: 6%;
+    text-align: left;
+    padding: 12px;
+    font-family: 'Times New Roman';
+    line-height: 1rem;
+    flex: 0;
+}   
 
+video{
+    
+}
 
+.box2{
+    height: 200%;
+    width: 200%;
+}
+
+.box3{
+    flex-basis: 100%;
+    box-sizing: content-box;
+    background-color: white;
+    font-weight: 200;
+    margin: 10px;
+    width: 20%;
+    padding: 10px;
+    border: 0;
+    border-left: 4px solid silver;
+}
 
 .naslov{
     box-sizing: content-box;
     background-color: white;
-    margin: 2rem 4px 4px 2rem;
+    margin: 2rem;
     width: 20%;
-    padding: 0;
+    padding-left: 10px;
     border: 0;
     border-left: 4px solid brown;
 }
 p{
     font-family: sans-serif;
+    padding: 20px;
+    
+}
+
+
 }
 
 .box{
@@ -60,11 +95,6 @@ p{
     text-align: left;
     padding: 1rem;
 }
-.stupac{
-    column-count: 1;
-    column-gap: 20px;
-    text-align: left;
-}
 
 
 
@@ -72,14 +102,17 @@ table{
     width: 90%;
     text-align: left;
     align-items: center;
-    border-style: 1px solid #F1F1F1;
+    border-style: 1px solid silver;
     margin-left: 30px
     
     
 }
 
-th{background-color: brown ; color: white; padding: 20px;}
-tr{background-color: white; padding: 20px;}
+th{background-color: brown ; color: white; padding: 12px;}
+tr{background-color: white;}
 tbody tr:nth-child(2) td {background-color: silver}
-
+td{padding: 12px;}
 table, th, tr, td{min-height: 20px;}
+
+
+footer{text-align: center; font-size: small; font-family: sans-serif;}
