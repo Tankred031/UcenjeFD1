@@ -18,11 +18,19 @@ h5{
     background-color: brown;
 }
 
+.okvir{
+    padding: 2rem;
+    margin: 2rem 4px 4px 2rem;
+    border: none;
+    background-color: white;
+    box-shadow: 2px 2px 2px 1px #EEEEEE;
+}
+
 .flexbox{
     display: flex;
     justify-content: left;
     align-items: center;
-    gap: 4rem;
+    gap: 2rem;
     border: none;
     background-color: white;
     
@@ -56,3 +64,22 @@ p{
     column-count: 1;
     column-gap: 20px;
     text-align: left;
+}
+
+
+
+table{
+    width: 90%;
+    text-align: left;
+    align-items: center;
+    border-style: 1px solid #F1F1F1;
+    margin-left: 30px
+    
+    
+}
+
+th{background-color: brown ; color: white; padding: 20px;}
+tr{background-color: white; padding: 20px;}
+tbody tr:nth-child(2) td {background-color: silver}
+
+table, th, tr, td{min-height: 20px;}
