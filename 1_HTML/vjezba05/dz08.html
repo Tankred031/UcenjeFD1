@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="dzcont.css">
-    <link rel="stylesheet" href="dz07.css">
+    <link rel="stylesheet" href="dz08.css">
     <title>Zadaća 7</title>
 </head>
 <body>
@@ -14,8 +14,18 @@
 
     <hr class="linija">
 
+    <h3 class="h3">Radnja Likovi Piši nam</h3>
+    
+    <nav class="izbornik">
+        <a href="#radnja">Radnja</a>
+        <a href="#likovi">Likovi</a>
+        <a href="#pisi">Piši nam</a>
+
+    </nav>
+
 <div class="okvir"> 
         <h2 class="naslov">O čemu se radi?</h2>
+        
 
 
     <div class="flexbox">
@@ -36,7 +46,7 @@
 
 
 <div class="okvir">
-    <h2 class="naslov">Glavni likovi</h2>
+    <h2 class="naslov" id="likovi">Glavni likovi</h2>
     <table>
         <colgroup>
             <col style="width: 20%;">
@@ -70,18 +80,21 @@
 </div>
 
 <div class="okvir">
-    <h2 class="naslov">Pošalji pismo u Gornji Grad</h2>
+    <h2 class="naslov" id="pisi">Pošalji pismo u Gornji Grad</h2>
 
     <form action=""></form>
         <fieldset>
-                <label for="user name">Tvoje ime:</label>
-                <input type="text" name="" placeholder="Npr. Mina"><br>
+                <label for="user name">Tvoje ime:</label><br>
+                <input type="text" id="unos" placeholder="Npr. Mina"><br>
 
-                <label for="text">Poruka</label>
-                <input type="text" name="" id=""><br>
+                
+
+                <label for="text">Poruka:</label><br>
+                <input type="text" name="" id="prostor"><br>
 
         </fieldset>
 
+        <button class="golub">Pošalji golubom</button>
 
 
 </div>
