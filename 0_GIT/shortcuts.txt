@@ -14,3 +14,10 @@ AltGr+F ---> je uglata zagrada
 
 Win+Shift+S ---> screenshot
 &copy; ----> copyright znak
+
+
+lorem text -- razni tekst
+lorem image -- razna slika
+
+Ctrl+K+C stavlja u comment
+Ctrl+K+U miče
