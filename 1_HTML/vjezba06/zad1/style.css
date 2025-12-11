@@ -1,27 +1,27 @@
-body{background-color: silver;}
+body{
+    background-color: silver;
+}
 
 h1{
     color: blue;
-
-    
-    
 }
 
 h3{
     color: silver;
 }
 
-.okvir{
+
+.okvir{                         /*može bez class, hvata samo div*/
     background-color: white;
     text-align: center;
     font-family: sans-serif;
-    box-sizing: content-box;
-    padding: 15px 20px;
-    margin: 100px auto;
+    box-sizing: content-box;   /*nije potrebno*/
+    padding: 15px 20px;        /*L-D, gore-dolje*/
+    margin: 100px auto;        /*pomakli smo desno*/
     border: none;
-    max-width: 300px;
-    width: 80%;
-    border-radius: 5px;
+    max-width: 300px;          /*širina tog boxa*/
+    width: 80%;                /*nema utjecaja na sliku*/
+    border-radius: 5px;        /*zaobljeni rubovi*/
 
-    
+  
 }
