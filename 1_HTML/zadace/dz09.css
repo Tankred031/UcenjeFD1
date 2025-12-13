@@ -152,16 +152,6 @@ p{
     
 }
 
-
-
-
-
-
-
-
-
-
-
 caption{
     text-align: center;
     color: white;
@@ -234,9 +224,6 @@ iframe{
 }
 
 
-
-
-
 .duga{
     background-color: rgba(159, 231, 24, 0.856);
     height: 1px;
@@ -262,3 +249,101 @@ iframe{
     background-color: black;
 
 }
+
+.flex2{
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    width: 100%;
+}
+
+.boks{
+    width: 45%;
+    text-align: left;
+    color: white;
+    padding-bottom: 50px;
+
+}
+
+.naziv {
+    font-size: 18px;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+}
+
+
+.boks > p{
+    font-style: italic;
+    font-size: x-small;
+    /* font-size: 13px; */
+    margin-bottom: 8px;
+}
+
+.radno {
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+.email {
+    color: rgba(159, 231, 24, 0.856);
+    text-decoration: none;
+}
+
+
+form {
+    width: 100%;
+}
+
+fieldset {
+    border: none;
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-size: 12px;
+    margin-top: 10px;
+    margin-bottom: 3px;
+}
+
+input, select, textarea {
+        padding: 8px;
+        font-size: 13px;
+        border-radius: 4px;
+        border: none;
+        margin-bottom: 10px;
+}
+
+textarea {
+    min-height: 80px;
+    resize: vertical;
+}
+
+button {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: rgba(159, 231, 24, 0.856);
+    color: black;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
