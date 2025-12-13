@@ -48,7 +48,7 @@ section{
 
 hr.linija {
   height: 1px;            
-  background: rgba(128, 128, 128, 0.123)
+  background: rgba(128, 128, 128, 0.123);
   border: none;              
   border-radius: 2px;
   margin: 18px 0;          
