@@ -91,7 +91,7 @@ h5{
     
 }
 
-button{
+.button{
     background-color:rgba(159, 231, 24, 0.856);
     display: block;
     border-radius: 28px;
@@ -101,6 +101,8 @@ button{
     font-size: small;
     font-weight: bolder;
     margin-bottom: 40px;
+    text-decoration: none;
+    color: black;
 
 }
 
