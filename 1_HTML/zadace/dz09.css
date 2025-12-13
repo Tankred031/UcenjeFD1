@@ -154,6 +154,22 @@ td > .tekst{
     font-weight: bold;
 }
 
+.video{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    
+}
+
+iframe{
+    width: 90%;
+    align-items: center;
+    height: 50vh;
+    padding-left: 45px;
+    margin-top: 2rem;
+
+}
 
 
 
