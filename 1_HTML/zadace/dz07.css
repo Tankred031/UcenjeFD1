@@ -20,13 +20,14 @@ body{background-color: black;}
     outline-offset: 10px;
 }
 
-.header{
+.header nav{
     display: flex;
     font-family: Arial, sans-serif;
     text-transform: uppercase;
     font-weight: bold;
     justify-content: space-between;
     background-color: #1e1e1e;
+    
 
 }
 
@@ -43,11 +44,17 @@ body{background-color: black;}
 }
 
 .desno{
-    color: white;
-    font-size: x-small;
+    
     text-align: right;
     gap: 20px;
-}
+}    
+    
+.desno a{
+    color: white;
+    font-size: x-small;
+    text-decoration: none;}    
+
+
 .naslov{
     background-color: black;
     height: 30vh;
