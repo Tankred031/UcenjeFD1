@@ -3,7 +3,25 @@ body{
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.container{background-color: black;}
+.container{
+    width: 90%;
+    max-width: 1000px;
+    min-width: 300px;
+    inline-size: 90%;
+    max-inline-size: 1000px;
+
+    min-height: 155vh ;
+    min-block-size: 155vh;
+
+    margin: 0 auto;
+    background-color: black;
+
+    box-sizing: border-box;
+
+    outline-width: 2px;
+    outline-style: none;
+    outline-offset: 10px;
+}
 
 .bgimage{
     background-image: url('img/pumping.jpg');
@@ -36,7 +54,7 @@ body{
     }
 
 .lijevo{
-    color: chartreuse;
+    color: rgba(159, 231, 24, 0.856);
     font-size: large;
     font-weight: bold;
     text-align: left;
@@ -74,7 +92,7 @@ h5{
 }
 
 button{
-    background-color: chartreuse;
+    background-color:rgba(159, 231, 24, 0.856);
     display: block;
     border-radius: 28px;
     padding: 20px;
@@ -87,7 +105,7 @@ button{
 }
 
 h2{
-    color: chartreuse;
+    color: rgba(159, 231, 24, 0.856);
     text-align: center;
     font-size: x-large;
 
@@ -100,6 +118,49 @@ h2{
     height: 2px;
 
 }
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    
+}
+
+.box{
+    width: 200px;
+    box-sizing: content-box;
+    color: white;
+    background-color: rgb(77, 77, 77);
+    align-items: center;
+    text-align: center;
+    font-size: small;
+    padding: 10px 20px;
+    margin: auto;
+    gap: 20px;
+    border: none;
+    border-radius: 10px;
+}
+
+h4{
+    color: white;
+    font-size: larger;
+}
+
+p{
+    font-size: small;
+    color: white;
+    
+}
+
+
+
+
+
+
+
+
+
+
 
 caption{
     text-align: center;
@@ -113,14 +174,15 @@ caption{
 table{
     color: white;
     background-color: rgb(64, 65, 65);
-    width: 100%;
+    width: 80%;
     padding: 20px;
+    margin: 0 auto;;
     border: 1px solid grey;
     border-collapse: collapse;
 }
 
 thead{
-    background-color: chartreuse;
+    background-color:rgba(159, 231, 24, 0.856);
     color: black;
     text-transform: uppercase;
     
@@ -176,7 +238,27 @@ iframe{
 
 
 .duga{
-    background-color: lime;
+    background-color: rgba(159, 231, 24, 0.856);
     height: 1px;
     width: 95%;
+}
+
+.end{
+    text-align: center;
+    color: silver;
+    font-size: x-small;
+}
+
+.section{
+    min-height: auto;
+    padding: 30px;
+}
+
+.grey{
+    background-color: rgb(77, 77, 77);
+}
+
+.black{
+    background-color: black;
+
 }
