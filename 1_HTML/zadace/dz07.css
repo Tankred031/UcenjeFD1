@@ -180,11 +180,7 @@ form input{
 
 }
 
-.velki okvir{
-    display: flex;
-    width: 90px;
-    height: 20px;
-}
+
 .text, .mymenu {width: 300px;
 
 }
@@ -218,4 +214,11 @@ caption{
 }
 .btn-secondary {
     width: 90%;
+}
+
+.velki okvir{
+    field-sizing: content;
+    resize: vertical;
+    min-height: 60px;
+    min-width: 90%;
 }
