@@ -1,0 +1,117 @@
+body{
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container{background-color: black;}
+
+.bgimage{
+    background-image: url('img/pumping.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 90vh;
+    display: flex;                  /*ovo četvoro stavlja tekst preko slike*/
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    clip-path: polygon(             /*podiže desni kut malo gore*/
+        0 0,
+        100% 0,
+        100% 95%,
+        0 100%);
+}
+
+.traka{
+    display: flex;
+    width: 100%;
+    background-color: black;
+    justify-content: space-between;
+
+}
+
+.podatak{
+    box-sizing: content-box;
+    word-spacing: unset;
+    }
+
+.lijevo{
+    color: chartreuse;
+    font-size: large;
+    font-weight: bold;
+    text-align: left;
+    text-transform: uppercase;
+    padding-left: 40px;
+    }
+
+.desno {
+    text-align: right;
+    gap: 35px;
+    padding-right: 40px;
+}
+
+.desno a{
+    text-decoration: none;
+    color: white;
+    font-size: x-small;
+    text-transform: capitalize;
+    gap: 40px;
+
+    
+}
+h1{
+    color: white;
+    font-size: xxx-large;
+    text-align: center;
+    padding: 40px 0;
+
+}
+h5{
+    color: white;
+    text-align: center;
+    padding: 40px 0;
+    
+}
+
+button{
+    background-color: chartreuse;
+    display: block;
+    border-radius: 28px;
+    padding: 20px;
+    margin: 0 auto;
+    text-transform: uppercase;
+    font-size: small;
+    font-weight: bolder;
+    margin-bottom: 40px;
+
+}
+
+h2{
+    color: chartreuse;
+    text-align: center;
+    font-size: x-large;
+
+}
+
+.kratka{
+    background-color: whitesmoke;
+    align-items: center;
+    width: 5%;
+    height: 2px;
+
+}
+
+table{
+    color: white;
+}
+
+
+
+
+
+
+.duga{
+    background-color: lime;
+    height: 1px;
+    width: 95%;
+}
