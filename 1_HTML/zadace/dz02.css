@@ -3,7 +3,7 @@ body{
     font-size: large;
     margin-left: 20px;
     margin-right: 20px;
-    background-color: aliceblue;
+    background-color: silver;
     text-align: left;
    
 }
@@ -28,8 +28,11 @@ body{
 
     box-sizing: border-box;
     border-radius: 20px;
+    overflow: hidden;       /* reže i rubove slike */
     
 }
+ 
+
 ul{list-style: none}
 ul{padding: 0;}
 ul li::before {content: "✔️";}
@@ -49,8 +52,7 @@ section{
 hr.linija {
   height: 1px;            
   background: rgba(128, 128, 128, 0.123);
-  border: none;              
-  border-radius: 2px;
+  
   margin: 18px 0;          
   width: 95%;
 }
