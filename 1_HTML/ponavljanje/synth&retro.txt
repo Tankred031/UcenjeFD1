@@ -1,15 +1,18 @@
+
 synth
 #f887ff
 #de004e
 #860029
 #321450
 #29132e
+
 retro
 #2de2d6
 #035ee8
 #f6019d
 #d40078
 #9700cc
+
 forest green
 #62d75f
 #34c230
@@ -17,5 +20,18 @@ forest green
 #175616
 #0a260a
 
+vaporwave neon
+#ff00c1
+#9600ff
+#4900ff
+#00b8ff
+#00fff9
+
+cyberpunk neon
+#711c91
+#ea00d9
+#0abdc6
+#133e7c
+#091833
 
 

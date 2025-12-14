@@ -1,3 +1,5 @@
+SYNTHWAVE
+
 neon magenta
 #ff00c8
 electric purple
@@ -18,3 +20,26 @@ deepgrid blue
 #08184d
 neon teal
 #18f3c8
+
+CYBERNEON
+
+neon cyan
+#00f5ff
+laser magenta
+#ff2eb8
+plasma purple
+#7b3fe4
+acid green
+#39ff14
+soft neon white
+#eafbff
+neon yellow
+#fff200
+hyper blue
+#1f7cff
+neon orange
+#ff6a00
+cyber pink
+#ff5edf
+electric teal
+#00ffc6
