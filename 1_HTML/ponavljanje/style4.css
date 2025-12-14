@@ -1,0 +1,31 @@
+body {
+    background-color: #eafbff;
+}
+table{
+    width: 100vh;
+}
+
+
+table, td, th{
+    border: 2px solid #7b3fe4;
+    border-collapse: collapse;
+}
+
+thead, th{
+    background-color: #00f5ff;
+    text-transform: uppercase;
+}
+
+tbody tr:hover{
+    background-color: #39ff14;
+}
+
+tbody tr :first-child{
+    text-align: right;
+}
+caption{
+    caption-side: bottom;
+}
+input[type="checkbox"], input[type="range"] {
+    accent-color: #ff6a00;
+}
