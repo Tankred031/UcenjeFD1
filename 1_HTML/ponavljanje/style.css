@@ -10,13 +10,13 @@ h1{                               /*selektor elementa*/
 .linija{                          /*selektor klase, točka(najčešći element)*/
     border: 0;
     height: 5px;
-    background-color: orange;
+    background-color: #ee3e1e;
     border-radius: 2px;
 }
 
 #sadrzaj p{                          /*selektor identifikacije*/
     font-family: sans-serif;
-    color: rebeccapurple;
+    color: #175616;
 
 }
 

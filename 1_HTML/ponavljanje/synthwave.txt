@@ -1,0 +1,20 @@
+neon magenta
+#ff00c8
+electric purple
+#7a00ff
+vapor pink
+#ff6bd6
+cyber blue
+#00e5ff
+laser cyan
+#29ffd8
+sunset orange
+#ff6c11
+retro yellow
+#ffe500
+dark midnight
+#0a0136
+deepgrid blue
+#08184d
+neon teal
+#18f3c8

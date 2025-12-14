@@ -1,0 +1,42 @@
+Patriots Navy
+#002244
+Revolution Red
+#c60c30
+Silver Dynasty
+#b0b7bc
+Liberty White
+#ffffff
+Colonial Grey
+#5a6770
+End Zone Blue
+#1c3d5a
+Iron Faceguard
+#8a8d8f
+Patriot Scarlet
+#c60c30
+
+
+#a80e1c
+#050507
+#e25822
+#c9a24d
+#6e6a65
+
+#2f4f3e
+#0e1a14
+#243a4a
+#8a948c
+#d6d9d2
+
+#00182a
+#3b65a8
+#bfc6cc
+#6e7986
+#ffffff
+#4a90e2
+#1f3c6b
+
+#0b3d91
+#e21b24
+#ffd700
+#5a5a5a
