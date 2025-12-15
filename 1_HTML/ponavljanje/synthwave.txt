@@ -43,3 +43,5 @@ cyber pink
 #ff5edf
 electric teal
 #00ffc6
+ambient red
+#E1062C
