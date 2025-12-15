@@ -1,7 +1,7 @@
 SYNTHWAVE
 
 neon magenta
-#ff00c8
+#ff00c8 
 electric purple
 #7a00ff
 vapor pink
@@ -45,3 +45,10 @@ electric teal
 #00ffc6
 ambient red
 #E1062C
+
+
+#ff2975 , #ff901f
+#04c4ca , #00bfec
+#f222ff , #8c1eff
+#ffd319 , #f3ce75
+#1b2853
