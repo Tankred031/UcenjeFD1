@@ -71,9 +71,11 @@ select{
 input[type="submit"]{
     background-color: green;
     color: white;
-    border-radius: 10px;
+    border-radius: 6px;
     border: none;
     padding: 8px;
+    width: 20%;
+    /* align-self: left; */
 }
 
 
