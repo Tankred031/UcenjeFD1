@@ -1,6 +1,6 @@
 body{
     font-family: sans-serif;
-    background-color: #29ffd8;
+    background-color: #00e5ff;
 }
 
 .container{
@@ -26,7 +26,7 @@ body{
 
 .forma {
     background-color: white;
-    border: 1px solid #ff6c11;
+    border: 1px solid #00e5ff;
     border-radius: 7px;
     padding: 15px;
     margin: 10px;
@@ -39,7 +39,8 @@ form {
     
 }
 
-.unos {
+            /*ovaj segment sljepljuje label i input (nema razmaka)*/
+.unos {                              
     display: flex;
     flex-direction: column;
 
@@ -47,9 +48,9 @@ form {
 
 h1 {
     text-decoration: underline;
-    text-decoration-color: #ca0b0b;
+    text-decoration-color: #7a00ff;
     text-underline-offset: 10px;
-    
+    font-size: 1.6rem;
     
     
 }
@@ -69,7 +70,7 @@ select{
 }
 
 input[type="submit"]{
-    background-color: green;
+    background-color: #7a00ff;
     color: white;
     border-radius: 6px;
     border: none;
@@ -82,7 +83,7 @@ input[type="submit"]{
 
 table{
     width: 90%;
-    border: 1px solid #18668c;
+    border: 1px solid #7a00ff;
     border-collapse: collapse;
     padding: 20px;
     margin-left: 40px;
@@ -93,14 +94,14 @@ table{
 }
 
 table, th, tr, td {
-    border: 1px solid #f9e5da;
+    border: 1px solid #00e5ff;
     
 
 
 }
 
 thead {
-    background-color: #18668c;
+    background-color: #7a00ff;
     color: white;
     text-transform: uppercase;
     border-collapse: collapse;
@@ -111,11 +112,11 @@ thead {
 
 
 tbody  tr:nth-child(2), tr:nth-child(4){
-    background-color: silver;
+    background-color: #ffe500;
 }
 
 .crveno {
-    color: #ca0b0b;
+    color: #ff00c8;
 }
 
 td, th{
