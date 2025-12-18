@@ -1,10 +1,10 @@
 body{
     font-family: sans-serif;
-    background-color: #71a6ae;
+    background-color: #29ffd8;
 }
 
 .container{
-    border: 1px solid #ca0b0b;
+    border: 1px solid #ff6bd6;
     width: 90%;
     max-width: 960px;
     min-width: 300px;
@@ -15,7 +15,7 @@ body{
     min-block-size: 155vh;
 
     margin: 0 auto;
-    background-color: white;
+    background-color: #ffffff;
 
     box-sizing: border-box;
 
@@ -26,7 +26,7 @@ body{
 
 .forma {
     background-color: white;
-    border: 1px solid #71a6ae;
+    border: 1px solid #ff6c11;
     border-radius: 7px;
     padding: 15px;
     margin: 10px;
