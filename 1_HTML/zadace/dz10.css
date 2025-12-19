@@ -99,3 +99,11 @@ audio{
 audio::-webkit-media-controls-panel {
     background-color: #00bfff;
 }
+
+.t1 {
+    color: #ff1a1a;
+}
+
+.rc {
+    color: #00ff33;
+}

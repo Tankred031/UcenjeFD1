@@ -1,7 +1,7 @@
 body {
     background-color: #4a6fa5;
     color: #d0d3d4;
-    font-family: sans-serif;
+    font-family: cursive;
 }
 
 h1 {
@@ -42,8 +42,8 @@ span {
 }
 
 img {
-    border: 5px solid #d0d3d4;
-    box-shadow: 0 0 15px 5px #00ff33;
+    border: 5px solid #00ff33;
+    box-shadow: 0 0 15px 5px #d0d3d4;
    
 }
 
@@ -54,6 +54,10 @@ img {
 
 }
 
-.BR {
+.br {
     color: #ff6f3c;
+}
+
+.t1 {
+    color: #0a0a0a;
 }
