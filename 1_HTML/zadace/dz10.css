@@ -1,6 +1,7 @@
 body {
     background-color: #1c1c1c;
     color: #00bfff;
+    font-family: cursive;
 }
 
 h1 {
@@ -47,7 +48,7 @@ li::marker { content: "▸ "; }
 
 .box img {
     border: 5px solid #ff6f3c;
-    box-shadow: 0 0 15px 5px rgba(255, 111, 60, 0.3);
+    box-shadow: 0 0 15px 5px #00bfff;
 }
 
 caption {
@@ -63,7 +64,7 @@ table {
 }
 
 caption {
-    text-align: left;
+    text-align: center;
     padding-bottom: 10px;
 }
 
@@ -86,6 +87,7 @@ blockquote {
     background-color: #00bfff;
     color: #1c1c1c;
     padding: 20px;
+    padding-left: 30px;
     border-left: 6px solid #ff6f3c;
     width: 20%;
     font-weight: bold;
