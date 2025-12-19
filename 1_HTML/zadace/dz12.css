@@ -1,0 +1,47 @@
+body {
+    background-color: #4a6fa5;
+    color: #d0d3d4;
+    font-family: sans-serif;
+}
+
+h1 {
+    font-style: italic;
+    text-decoration: underline;
+    text-decoration-color: #d0d3d4;
+    text-underline-offset: 12px;
+}
+
+h2 {
+    font-style: oblique;
+    color: #66ff66;
+}
+
+h3 {
+    font-style: italic;
+    color: #d0d3d4;
+}
+
+
+p {
+    text-align: justify;
+    line-height: 1.5;
+}
+
+
+a {
+    text-decoration: none;
+    color: #d0d3d4;
+}
+
+span {
+    font-weight: bold;
+    color: #00ff33;
+    
+}
+
+img {
+    border: 5px solid #d0d3d4;
+    box-shadow: 0 0 15px 5px #00ff33;
+   
+}
+

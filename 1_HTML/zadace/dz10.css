@@ -17,9 +17,8 @@ hr {
 span {
     font-weight: bold;
     color: #ff6f3c;
-    text-decoration: underline;
+ 
 }
-
 
 li::marker { content: "▸ "; }
 
@@ -56,7 +55,7 @@ caption {
 }
 
 table {
-    width: 80%;
+    width: 65%;
     border: 1px solid #00bfff;
     text-align: center;
     border-collapse: collapse;
