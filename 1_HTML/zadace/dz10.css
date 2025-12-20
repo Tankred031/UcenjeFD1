@@ -2,6 +2,7 @@ body {
     background-color: #1c1c1c;
     color: #00bfff;
     font-family: cursive;
+    padding: 2rem;
 }
 
 h1 {
@@ -20,7 +21,13 @@ span {
  
 }
 
+.boja {
+    color: #ff6f3c;
+}
+
 li::marker { content: "▸ "; }
+
+li:first-child::marker { content: "";}
 
 .flex {
     display: flex;
@@ -35,6 +42,7 @@ li::marker { content: "▸ "; }
     margin-bottom: 15px; 
     font-size: 1rem; 
     line-height: 1.6; 
+    text-align: justify;
 }
 
 .box {
@@ -49,6 +57,7 @@ li::marker { content: "▸ "; }
     border: 5px solid #ff6f3c;
     box-shadow: 0 0 15px 5px #00bfff;
 }
+
 
 caption {
     color: #ff6f3c;
@@ -106,4 +115,34 @@ audio::-webkit-media-controls-panel {
 
 .rc {
     color: #00ff33;
+}
+
+.okvir {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    margin: 20px;
+    padding: 100px;
+
+    min-height: 100vh;
+}
+
+.podokvir {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.podokvir img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.podokvir blockquote {
+    margin-top: 2rem;
+    width: 70%;
+    
 }

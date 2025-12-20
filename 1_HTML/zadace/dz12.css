@@ -2,6 +2,7 @@ body {
     background-color: #4a6fa5;
     color: #d0d3d4;
     font-family: cursive;
+    padding: 2rem;
 }
 
 h1 {
@@ -26,7 +27,43 @@ p {
     text-align: justify;
     line-height: 1.5;
     border: none;
-    padding: 3rem;
+    
+}
+
+.r2 { 
+    overflow: hidden;
+    margin: 20px;
+}
+
+.cain {
+    float: right;
+    width: 40%;
+    padding: 20px;
+    padding-bottom: 20px;
+    display: block;
+    margin-top: -40px;
+}
+
+.columns {
+    column-count: 2;
+    column-gap: 2rem;
+    background-color: #d0d3d4;
+    color: #4a6fa5;
+    padding: 15px;
+    font-family: sans-serif;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 8px;
+    column-rule: 2px solid #4a6fa5;
+
+}
+
+video {
+    max-width: 60%;
+}
+
+ol {
+    list-style: upper-alpha;
 }
 
 
@@ -41,7 +78,7 @@ span {
     
 }
 
-img {
+.poster {
     border: 5px solid #00ff33;
     box-shadow: 0 0 15px 5px #d0d3d4;
    
@@ -53,6 +90,15 @@ img {
     padding: 2rem;
 
 }
+
+.slika {
+    display: block;
+    width: 50%;
+    margin: 20px auto;
+
+    
+}
+
 
 .br {
     color: #ff6f3c;
