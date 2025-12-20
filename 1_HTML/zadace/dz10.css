@@ -84,6 +84,7 @@ thead {
 
 tbody tr td {
     border: 1px solid #00bfff;
+    padding: 10px;
 }
 
 a {
@@ -145,4 +146,28 @@ audio::-webkit-media-controls-panel {
     margin-top: 2rem;
     width: 70%;
     
+}
+
+.dio p {
+    margin-bottom: 15px; 
+    font-size: 1rem; 
+    line-height: 1.6; 
+    text-align: justify;
+}
+
+.dio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    width: 35%;
+}
+
+.dio img {
+    border: 5px solid #ff6f3c;
+    box-shadow: 0 0 15px 5px #00bfff;
+}
+
+section {
+    padding-bottom: 15px;
 }
