@@ -1,0 +1,119 @@
+body {
+    margin: 0;
+    background-color: black;
+    font-family: sans-serif;
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    min-width: 450px;
+    inline-size: 90%;
+    max-inline-size: 1000px;
+
+    min-height: 100vh ;
+    min-block-size: 155vh;
+
+    margin: 0 auto;
+    background-color: antiquewhite;
+
+    box-sizing: border-box;
+
+    outline-width: 2px;
+    outline-style: none;
+    outline-offset: 10px;
+}
+
+.header {
+    background-color: orange;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 60px 0 60px;
+}
+
+.lijevo {
+    display: flex;
+    box-sizing: content-box;
+    padding: 20px;
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+
+.desno {
+    display: flex;
+    box-sizing: content-box;
+    padding: 20px;
+
+
+}
+
+.lijevo::before {
+    content: '🍽';
+}
+
+h1, h5 {
+    text-align: center;
+}
+
+h1 {
+    font-size: ;
+    color: orange;
+}
+
+h5 {
+    color: grey;
+}
+
+.linija {
+    padding: 10px;
+    color: black;
+    border-left: 4px solid orange;
+    margin-left: 50px;
+    font-weight: bold;
+}
+
+.okvir {
+    padding: 0 8rem;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    padding: 0 8px;
+
+}
+
+.flexbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background-color: white;
+}
+
+.box {
+    box-sizing: content-box;
+    border: 10px;
+    margin: 10px;
+    padding: 0 auto;
+    color: black;
+    
+}
+
+.cijena {
+    font-weight: bold;
+    color: orange;
+}
+
+.ime {
+    font-weight: bold;
+    
+}
+
+.tanjur {
+    font-size: small;
+}
+
