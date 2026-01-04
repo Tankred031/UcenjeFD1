@@ -216,7 +216,7 @@ caption{
     width: 90%;
 }
 
-.velki okvir{
+.velki okvir {
     field-sizing: content;
     resize: vertical;
     min-height: 60px;

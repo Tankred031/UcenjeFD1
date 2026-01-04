@@ -9,6 +9,7 @@ body {
     min-height: 100vh ;
     margin: 0 auto;
     background-color: antiquewhite;
+    padding-bottom: 80px;
 }
 
 .header {
@@ -57,6 +58,8 @@ h5 {
     margin-bottom: 30px;
     font-weight: bold;
 }
+
+    
 
 .okvir {
     padding: 0 8rem;
@@ -113,16 +116,21 @@ a {
     margin: 65px;
     padding: 20px;
     margin-bottom: 80px;
+    border-radius: 8px;
 }
 
 .linija2 {
-    padding-left: 15px;
     color: #333;
     border-left: 4px solid #d65a00;
+}
+
+.linija2, .linija3 {
+    padding-left: 15px;
     margin-top: 30px;
-    margin-left: 20px;
+    margin-left: 0;
     font-weight: bold;
 }
+
 
 caption {
     text-align: left;
@@ -158,3 +166,50 @@ th, td {
     padding: 20px;
 }
 
+.tamni {
+    background-color: #2c3e50;
+    color: white;
+    margin: 65px;
+    padding: 20px;
+    margin-bottom: 80px;
+    border-radius: 8px;
+    
+}
+
+.linija3 {
+    color: white;
+    border-left: 4px solid;
+}
+
+.unos {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.frame, .tamni {
+    padding: 40px;
+}
+
+
+label {
+    display: block;
+    margin-bottom: 4px;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+.tipka {
+    background-color: #d65a00;
+    color: white;
+    width: 100%;
+    padding: 15px;
+    margin-left: 10px;
+    margin-top: 20px;
+    font-weight: bolder;
+    border-radius: 8px;
+}
