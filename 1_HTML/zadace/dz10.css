@@ -49,7 +49,7 @@ h5 {
     margin-bottom: 60px;
 }
 
-.linija {
+.linija1 {
     padding-left: 15px;
     color: #333;
     border-left: 4px solid #d65a00;
@@ -72,31 +72,85 @@ a {
 .flexbox {
     display: flex;
     justify-content: center;
-    align-items: center;
-    gap: 20px;
-    background-color: white;
-}
-
-.box {
-    box-sizing: content-box;
-    border: 10px;
-    margin: 10px;
-    padding: 0 auto;
-    color: black;
+    gap: 30px;
+    padding-bottom: 60px;
     
 }
 
-.cijena {
+.box {
+    background-color: white;
+    width: 300px;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.box img {
+    width: 100%;
+    display: block;
+}
+
+.box p  {
+    margin: 10px 15px;
+    color: #333;
+}
+.box .cijena {
+    text-align: right;
     font-weight: bold;
-    color: orange;
+    color: #d65a00;
 }
 
 .ime {
     font-weight: bold;
-    
 }
 
 .tanjur {
-    font-size: small;
+    font-size: 15px;
+    color: #666;
+}
+
+.frame {
+    background-color: white;
+    margin: 65px;
+    padding: 20px;
+}
+.linija2 {
+    padding-left: 15px;
+    color: #333;
+    border-left: 4px solid #d65a00;
+    margin-top: 30px;
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+caption {
+    text-align: left;
+    font-family: sans-serif;
+    padding-bottom: 10px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+table {
+    width: 96%;
+    margin: 10px 15px;
+    padding: 50px auto;
+    border: 1px solid black;
+    border-collapse: collapse ;
+}
+
+th {
+    color: white;
+    background-color: darkblue;
+    text-align: left;
+}
+
+td {
+    text-align: left;
+    border-left: none;
+    border-right: none;
+}
+
+th, td {
+    padding: 20px;
 }
 
