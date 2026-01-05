@@ -23,13 +23,15 @@ body {
     "d d";
     gap: 2rem;
     background-color: rgba(192, 192, 192, 0.404);
-    padding: 20px;
+    padding: 15px;
     border-radius: 8px;
 }
 
 .a {grid-area: a; 
     display: block;
     padding: 10px;
+    margin-top: 40px;
+    
 }
 
 .b {grid-area: b;
@@ -44,9 +46,14 @@ body {
     padding: 15px;
 }
 
+.d > h5 {
+    font-size: medium;
+}
+
 .a, .b, .c, .d {
     border-radius: 8px;
     background-color: white;
+    padding: 10px;
 }
 
 .b p::before {
@@ -54,9 +61,17 @@ body {
     margin-right: 10px;
 }
 
+.b > p {
+    padding-left: 10px;
+}
+
 .c p::before {
     content: '👨🏼‍🍳';
     margin-right: 10px;
+}
+
+.c > p {
+    padding-left: 10px;
 }
 
 h1 {
@@ -71,6 +86,7 @@ h4 {
     border-radius: 14px;
     width: 25%;
     margin: 0 auto;
+    margin-top: 30px;
 }
 
 h5 {
@@ -89,7 +105,44 @@ span {
     color: red;
 }
 
+li {
+    line-height: 1.6 ;
+    font-weight: bold;
+    font-size: small;
+}
+
+
+
 .stars {
-    text-align: center;
-    padding-top: 10px;
+    direction: rtl; 
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10px;
+}
+
+input[type="radio"] {
+  display: none; 
+}
+
+label.stars {
+  color: gray; 
+  cursor: pointer;
+}
+
+input[type="radio"]:checked ~ label.stars {
+  color: gold; 
+}
+
+input[type="radio"]:checked ~ label.stars ~ label.stars {
+  color: gold; 
+}
+
+input[type="radio"]:not(:checked) ~ label.stars {
+  color: gray; 
+}
+
+label.stars:hover,
+label.stars:hover ~ label.stars {
+  color: gold; 
 }
