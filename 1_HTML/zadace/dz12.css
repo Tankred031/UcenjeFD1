@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    background-color: black;
+    background-color: rgba(192, 192, 192, 0.404);
     font-family: sans-serif;
 }
 
@@ -8,6 +8,88 @@ body {
     max-width: 1100px;
     min-height: 100vh ;
     margin: 0 auto;
-    background-color: antiquewhite;
     padding-bottom: 80px;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: auto auto auto ;
+    grid-template-areas: 
+    "a a"
+    "b c"
+    "d d";
+    gap: 2rem;
+    background-color: rgba(192, 192, 192, 0.404);
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.a {grid-area: a; 
+    display: block;
+    padding: 10px;
+}
+
+.b {grid-area: b;
+    padding: 15px;
+}
+
+.c {grid-area: c;
+    padding: 10px;
+}
+
+.d {grid-area: d;
+    padding: 15px;
+}
+
+.a, .b, .c, .d {
+    border-radius: 8px;
+    background-color: white;
+}
+
+.b p::before {
+    content: '🛒';
+    margin-right: 10px;
+}
+
+.c p::before {
+    content: '👨🏼‍🍳';
+    margin-right: 10px;
+}
+
+h1 {
+    text-align: center;
+}
+
+h4 {
+    text-align: center;
+    background-color: red;
+    color: white;
+    padding: 4px;
+    border-radius: 14px;
+    width: 25%;
+    margin: 0 auto;
+}
+
+h5 {
+    text-align: center;
+}
+
+
+img {
+    width: 100%;
+    border-radius: 8px;
+    display: block;
+
+}
+
+span {
+    color: red;
+}
+
+.stars {
+    text-align: center;
+    padding-top: 10px;
 }
