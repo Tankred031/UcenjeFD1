@@ -1,0 +1,40 @@
+body {
+    margin: 0;
+    background-color: rgb(14, 0, 90);
+    font-family: sans-serif;
+    color: white;
+}
+
+.container {
+    max-width: 1100px;
+    min-height: 100vh ;
+    margin: 0 auto;
+    padding-bottom: 80px;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
+    text-decoration: underline cyan;
+    text-underline-offset: 10px;
+    
+}
+
+.blau {
+    color: cyan;
+}
+
+.grau {
+    color: silver;
+    text-align: center;
+    font-size: smaller;
+}
+
+.malo {
+    font-size: smaller;
+}
