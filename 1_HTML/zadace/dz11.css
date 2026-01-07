@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    background-color: rgb(14, 0, 90);
+    background-color: rgb(47, 40, 87);
     font-family: sans-serif;
     color: white;
 }
@@ -37,4 +37,36 @@ h3 {
 
 .malo {
     font-size: smaller;
+}
+
+.naslov {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 32px;
+}
+
+.linkovi a {
+    text-decoration: none;
+    color: white;
+    font-size: small;
+    padding: 10px;
+}
+
+.karte {
+    display: flex;
+    gap: 40px;
+    padding: 20px;
+}
+
+.karta {
+    flex: 1;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    background-color: rgb(146, 146, 170);
+}
+
+button {
+    text-align: center;
 }
