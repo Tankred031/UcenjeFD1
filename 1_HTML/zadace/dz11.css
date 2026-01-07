@@ -20,13 +20,13 @@ h1 {
 
 h3 {
     text-align: center;
-    text-decoration: underline cyan;
+    text-decoration: underline #00e0ff;
     text-underline-offset: 10px;
     margin-top: 65px;
 }
 
 .blau {
-    color: cyan;
+    color: #00e0ff;
 }
 
 .grau {
@@ -79,7 +79,7 @@ button {
 .dugme {
    display: block;
    margin: 0 auto;
-   background-color: cyan;
+   background-color: #00e0ff;
    color: black;
    padding: 15px;
    border-radius: 6px;
@@ -150,6 +150,7 @@ textarea {
 .oblik input,
 .oblik textarea {
   background: transparent;
+  background-color: rgba(255,255,255,0.15);
   border: 1px solid rgba(255,255,255,0.15);
   border-radius: 8px;
   padding: 12px;
@@ -165,6 +166,7 @@ textarea {
   border-radius: 8px;
   font-weight: bold;
   cursor: pointer;
+  
 }
 
 
