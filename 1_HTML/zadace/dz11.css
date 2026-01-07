@@ -43,7 +43,7 @@ h3 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 16px 32px;
+    padding: 10px;
 }
 
 .linkovi a {
@@ -69,4 +69,23 @@ h3 {
 
 button {
     text-align: center;
+}
+
+.weiss {
+    color: white;
+    text-align: center;
+}
+
+.dugme {
+   display: block;
+   margin: 0 auto;
+   background-color: cyan;
+   color: black;
+   padding: 15px;
+   border-radius: 6px;
+}
+
+.footer {
+    text-align: center;
+    font-size: small;
 }
