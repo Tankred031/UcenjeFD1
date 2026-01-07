@@ -89,3 +89,88 @@ button {
     text-align: center;
     font-size: small;
 }
+
+.video {
+    display: block;
+
+}
+
+
+input {
+    background-color: rgb(47, 40, 87);
+    width: 100%;
+    padding: 10px;
+}
+
+textarea {
+    background-color: rgb(47, 40, 87);
+    width: 100%;
+}
+
+
+
+
+
+
+
+.kontakt {
+  padding: 80px 20px;
+}
+
+
+.tekst {
+  text-align: center;
+  color: white;
+  margin-bottom: 50px;
+}
+
+
+.okviri {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  gap: 40px;
+}
+
+
+.oblik {
+  flex: 1;
+  /* background: rgba(255,255,255,0.04); */
+  padding: 30px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+}
+
+.poruka {
+  color: #bfc9d9;
+  margin-bottom: 15px;
+}
+
+.oblik input,
+.oblik textarea {
+  background: transparent;
+  border: 1px solid rgba(255,255,255,0.15);
+  border-radius: 8px;
+  padding: 12px;
+  color: white;
+  margin-bottom: 15px;
+}
+
+.oblik button {
+  margin-top: 10px;
+  padding: 12px;
+  background: #00e0ff;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+
+.prazno {
+  flex: 1;
+  border: 1px solid silver;
+  border-radius: 12px;
+}
+
