@@ -1,0 +1,37 @@
+body {
+    background-color: indigo;
+    color: whitesmoke;
+    padding-top: 100px;
+    padding-left: 40px;
+}
+
+a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+ul li {
+    position: relative;
+    padding-left: 2em;
+    text-align: left;
+}
+
+ul li::before {
+    content: " \2192";
+    line-height: 1.6;
+    position: absolute;
+    left: 0;
+
+}
+
+p {
+    text-decoration: underline;
+    text-decoration-color: yellow;
+    text-underline-offset: 10px; 
+    text-decoration-thickness: 3px;
+}
