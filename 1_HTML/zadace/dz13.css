@@ -1,0 +1,113 @@
+body {
+    margin: 0;
+    background-color: rgb(31, 51, 82);
+    font-family: sans-serif;
+    color: white;
+}
+
+.container {
+    max-width: 1100px;
+    min-height: 100vh ;
+    margin: 0 auto;
+    padding-bottom: 80px;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+------------------------------------
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: auto auto auto ;
+    grid-template-areas: 
+    "a a"
+    "b c"
+    "d d";
+    gap: 2rem;
+    background-color: rgba(192, 192, 192, 0.404);
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.a {grid-area: a; 
+    display: block;
+    padding: 10px;
+    margin-top: 40px;
+    
+}
+
+.b {grid-area: b;
+    padding: 15px;
+}
+
+.c {grid-area: c;
+    padding: 10px;
+}
+
+.d {grid-area: d;
+    padding: 15px;
+}
+
+.d > h5 {
+    font-size: medium;
+}
+
+.a, .b, .c, .d {
+    border-radius: 8px;
+    background-color: white;
+    padding: 10px;
+}
+
+
+------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.stars {
+    direction: rtl;
+    unicode-bidi: bidi-override;
+    font-size: 2rem;
+}
+
+.stars input {
+    display: none;
+}
+
+.stars label {
+    color: #ccc;
+    cursor: pointer;
+}
+
+/* checked star + all before it */
+.stars input:checked ~ label {
+    color: gold;
+}
+
+/* hover effect */
+.stars label:hover,
+.stars label:hover ~ label {
+    color: gold;
+}
+
+.veza {
+    text-decoration: none;
+    color: greenyellow;
+}

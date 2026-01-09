@@ -146,3 +146,8 @@ label.stars:hover,
 label.stars:hover ~ label.stars {
   color: gold; 
 }
+
+.veza {
+    text-decoration: none;
+    color: indigo;
+}

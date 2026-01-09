@@ -213,3 +213,8 @@ input, select, textarea {
     font-weight: bolder;
     border-radius: 8px;
 }
+
+.veza {
+    text-decoration: none;
+    color: yellow;
+}
