@@ -41,6 +41,7 @@ body {
 
 .b {
     grid-area: b;
+    /* text-align: justify; */
 }
 
 .c {
@@ -122,18 +123,9 @@ h1 {
     font-family: Georgia, serif;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.veza {
+    text-decoration: none;
+    color: red;
+    margin-left: 17px;
+}
 

@@ -150,4 +150,5 @@ label.stars:hover ~ label.stars {
 .veza {
     text-decoration: none;
     color: indigo;
+    margin-left: 10px;
 }
