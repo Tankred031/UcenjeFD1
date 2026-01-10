@@ -1,9 +1,139 @@
 :root {
-    --primarna-boja: #4900ff;
-    --naglasena-boja: #c0c0c0;
-    --pozadinska-boja: #2802aa;
+    --primarna-boja: #2245dd;
+    --naglasena-boja: #f0f0f0;
+    --pozadinska-boja: #c0c0c0;
 }
 
 body {
+    background-color: var(--pozadinska-boja);
+    color: #0a0a0a;
+    font-family: sans-serif;
+}
+
+.container {
+    max-width: 900px;
+    min-height: 100vh ;
+    margin: 0 auto;
+    padding-bottom: 80px;
+    border-radius: 8px;
+    margin-top: 20px;
+    background-color: var(--pozadinska-boja) ;
+}
+
+.okvir {
+    display: grid;
+    grid-template-rows: 3fr 4fr 1fr ;
+    grid-template-columns:2fr 1fr ;
+    grid-template-areas: 
+    "a a"
+    "b c"
+    "d d";
+    gap: 20px;
+    background-color: var(--pozadinska-boja);
+    padding: 15px;
+    border-radius: 14px;
+}
+
+.a { 
+    grid-area: a;
 
 }
+
+.b {
+    grid-area: b;
+}
+
+.c {
+    grid-area: c;
+    background-color: var(--naglasena-boja);
+}
+
+.d {
+    grid-area: d;
+    display: grid;
+    place-items: center;
+}
+
+.d p {
+    text-align: center;
+    color: var(--pozadinska-boja);
+    font-size: smaller;
+}
+
+.a, .b, .c, .d {
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.a, .b, .d {
+    background-color: white;
+}
+
+.bulb::before {
+    content: "💡";
+}
+
+.bulb {
+    font-weight: bold;
+}
+
+.flex {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--naglasena-boja);
+    gap: 12px;
+}
+
+.box {
+    flex: 1;
+    background-color: white;
+    gap: 4px;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+h5 {
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    font-size: small;
+    color: var(--primarna-boja);
+}
+
+h1 {
+    font-family: Georgia, serif;
+    font-size: 52px;
+    font-weight: bold;
+}
+
+.blue {
+    color: var(--primarna-boja);
+    font-family: Georgia, serif;
+    
+}
+
+.grey {
+    color: var(--pozadinska-boja);
+}
+
+.crta {
+    border-left: 4px solid var(--primarna-boja);
+    padding: 10px;
+    padding-left: 20px;
+    font-family: Georgia, serif;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
