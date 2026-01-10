@@ -74,7 +74,10 @@ h3 {
 button {
     text-align: center;
     font-weight: bold;
-    
+}
+
+a {
+    text-decoration: none;
 }
 
 .weiss {
