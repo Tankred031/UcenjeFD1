@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vježbanje povratak na nastavu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <h1>Vježbanje povratak na nastavu</h1>
+
+    <div class="grid-kontejner">
+        <div class="a">
+            <form action="stranica.html" method="get">
+
+                <fieldset>
+                    <legend>Podaci</legend>
+                    <label for="datum">Datum</label>
+                    <input type="datetime-local" name="datum" id="datum">
+                    <hr>
+                    Status polaznika<br>
+                    <input type="radio" name="redovito" id="redovito" value="true">
+                    <label for="redovito">Redoviti</label><br>
+
+                    <input type="radio" name="redovito" id="neredovito" value="false">
+                    <label for="neredovito">Ne redoviti</label>
+                    <hr>
+                    
+                    Domaće zadaće<br>
+                    <input type="checkbox" name="dz[]" id="d1" value="1">
+                    <label for="d1">1 - 3</label><br>
+
+                    <input type="checkbox" name="dz[]" id="d2" value="2">
+                    <label for="d2">4 - 9</label>
+                    <hr>
+
+                    Ocjena
+                    <select name="" id="">
+
+                        
+                    </select> <br>
+
+
+                    <button>Potvrdi</button>
+
+
+
+                   
+
+
+                </fieldset>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </form>
+
+
+        </div>
+        <div class="b">B</div>
+        <div class="c">C</div>
+
+    </div>
+
+
+
+</body>
+</html>
