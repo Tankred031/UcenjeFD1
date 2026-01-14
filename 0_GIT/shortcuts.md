@@ -32,4 +32,3 @@ Ctrl+Space --- ponovo upali emmet, ako smo ga izgubili
 
 u dos - tree /f
 
-Ctrl+Space -- meni
