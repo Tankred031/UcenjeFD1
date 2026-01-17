@@ -22,11 +22,28 @@ h5 {
     background-color: var(--bangladesh-green);
 }
 
+.grid {
+    display: grid;
+    grid-template-columns: ;
+    grid-template-rows: ;
+    grid-template-areas: 
+    "";
+    background-color: var(--dark-green);
+}
 
+label {
+    color: var(--caribbean-green);
+}
 
+input {
+    background-color: var(--rich-black);
+    
+}
 
-
-
+option, select {
+    background-color: var(--rich-black);
+    color: var(--caribbean-green);
+}
 
 
 
