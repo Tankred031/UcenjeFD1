@@ -1,5 +1,17 @@
-.span {
-    font-size: smaller;
+@import url(../main.css);
+
+.pozadina {
+    background-color: var(--sekundarna-boja);
+}
+
+header {
+    text-align: center;
+    padding: 15px;
+}
+
+footer {
+    text-align: center;
+    padding: 8px;
 }
 
 

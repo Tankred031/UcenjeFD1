@@ -21,6 +21,10 @@ h5 {
     color: silver;
 }
 
+.pozadina {
+    background-color: var(--sekundarna-boja);
+}
+
 .okvir {
     display: block;
     border-left: 4px solid var(--naglasena-boja);
