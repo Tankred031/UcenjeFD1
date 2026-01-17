@@ -7,6 +7,7 @@ header {
 
 h4 {
     font-size: smaller;
+    color: silver;
 }
 
 span {
@@ -14,7 +15,7 @@ span {
 }
 
 h2 {
-    color: var(--naglasena-boja);
+    color: var(--caribbean-green);
 }
 
 h5 {
@@ -22,17 +23,17 @@ h5 {
 }
 
 .pozadina {
-    background-color: var(--sekundarna-boja);
+    background-color: var(--bangladesh-green);
 }
 
 .okvir {
     display: block;
-    border-left: 4px solid var(--naglasena-boja);
+    border-left: 4px solid var(--caribbean-green);
     padding: 20px;
     border-radius: 8px;
     margin: 50px;
     margin-bottom: 60px;
-    background-color: var(--sekundarna-boja);
+    background-color: var(--bangladesh-green);
 }
 
 hr {
