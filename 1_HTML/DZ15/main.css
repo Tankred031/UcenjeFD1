@@ -1,5 +1,5 @@
 :root {
-    --primarna-boja: #267c7c;
+    --primarna-boja: #7084c9;
     --sekundarna-boja: #121d83;
     --naglasena-boja: #6ce3e7;
     --pozadinska-boja: #082044;
@@ -30,10 +30,12 @@ body {
 .header {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: stretch;
+    flex-wrap: nowrap; 
     background-color: var(--sekundarna-boja);
-    gap: 2rem;
-    padding: 30px 40px;
+    gap: 1rem;
+    padding: 0 40px;
+    height: 70px;
 }
 
 a {
@@ -46,7 +48,16 @@ a {
     list-style-type: none;
 }
 
-.header li.active a {
-    background-color: var(--naglasena-boja);
+.header li.active {
+    background-color: var(--primarna-boja);
 }
+
+.header li a {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding: 0 2rem;
+    white-space: nowrap;
+}
+
 
