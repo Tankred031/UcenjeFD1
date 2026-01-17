@@ -1,54 +1,6 @@
-:root {
-    --primarna-boja: #0f1f1a;
-    --naglasena-boja: #2f6f5f;
-    --pozadinska-boja: #1e3a32;
+.span {
+    font-size: smaller;
 }
-
-@font-face {
-    font-family: 'Prompt';
-    src: url ('../fonts/Prompt-Regular.ttf') format ('truetype');
-}
-
-body {
-    font-size: large;
-    color: white;
-    font-family: 'Prompt', 'Arial', sans-serif;
-    background-color: black;
-}
-
-.container {
-    max-width: 1100px;
-    min-height: 100vh ;
-    margin: 0 auto;
-    background-color: var(--pozadinska-boja);
-    padding-bottom: 80px;
-}
-
-
-.header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: var(--naglasena-boja);
-    gap: 2rem;
-    padding: 30px 40px;
-    font-family: Prompt, ;
-}
-
-a {
-    text-decoration: none;
-    color: white;
-
-}
-
-.header li {
-    list-style-type: none;
-}
-
-.header li.active a {
-    background-color: var(--naglasena-boja);
-}
-
 
 
 

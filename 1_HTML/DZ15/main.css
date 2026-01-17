@@ -1,8 +1,10 @@
 :root {
-    --primarna-boja: #0f1f1a;
-    --naglasena-boja: #2f6f5f;
-    --pozadinska-boja: #1e3a32;
+    --primarna-boja: #267c7c;
+    --sekundarna-boja: #121d83;
+    --naglasena-boja: #6ce3e7;
+    --pozadinska-boja: #082044;
 }
+
 
 @font-face {
     font-family: 'Prompt';
@@ -11,7 +13,7 @@
 
 body {
     font-size: large;
-    color: white;
+    color: whitesmoke;
     font-family: 'Prompt', 'Arial', sans-serif;
     background-color: black;
 }
@@ -29,10 +31,9 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: var(--naglasena-boja);
+    background-color: var(--sekundarna-boja);
     gap: 2rem;
     padding: 30px 40px;
-    font-family: Prompt, ;
 }
 
 a {

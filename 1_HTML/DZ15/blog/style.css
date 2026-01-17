@@ -1,3 +1,38 @@
-body {
-    
+@import url(../main.css);
+
+header {
+    text-align: center;
+    padding: 15px;
+}
+
+h4 {
+    font-size: smaller;
+}
+
+span {
+    font-size: smaller;
+}
+
+h2 {
+    color: var(--naglasena-boja);
+}
+
+h5 {
+    color: silver;
+}
+
+.okvir {
+    display: block;
+    border-left: 4px solid var(--naglasena-boja);
+    padding: 20px;
+    border-radius: 8px;
+    margin: 50px;
+    margin-bottom: 60px;
+    background-color: var(--sekundarna-boja);
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background-color: silver;        
 }
