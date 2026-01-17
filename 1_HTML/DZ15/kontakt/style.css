@@ -29,15 +29,23 @@ h5 {
     grid-template-areas: 
     "";
     background-color: var(--dark-green);
+    padding: 10px;
+    margin: 100px;
+    border-radius: 15px;
+
 }
+
 
 label {
     color: var(--caribbean-green);
+    padding: 10px;
+    font-weight: bold;
 }
 
 input {
     background-color: var(--rich-black);
-    
+    padding: 10px;
+    color: var(--anti-flash-white); 
 }
 
 option, select {
@@ -46,7 +54,14 @@ option, select {
 }
 
 
-
+input[type="submit"] {
+    width: 100%;
+    font-weight: bold;
+    color: var(--rich-black);
+    background-color: var(--caribbean-green);
+    border-radius: 8px;
+    padding: 10px;
+}
 
 
 

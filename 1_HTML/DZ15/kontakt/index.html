@@ -45,26 +45,26 @@
     <form action="stranica.html" method="get">
         
             <fieldset class="grid">
-                <label for="">Ime i prezime</label><br>
+                <label for="ime i prezime">Ime i prezime</label><br>
                 <input type="text" placeholder="Vaše ime...">
 
-                <label for="">Email adresa</label><br>
-                <input type="text" placeholder="email@primjer.com">
+                <label for="email">Email adresa</label><br>
+                <input type="email" placeholder="email@primjer.com">
 
-                <label for="">Zanima me usluga:</label><br>
+                <label for="usluga">Zanima me usluga:</label><br>
                     <select name="usluga" id="usluga">
                     <option value="1">Frontend Razvoj</option>
                     <option value="2">Backend Razvoj</option>
                 </select>
-                
-                <label for="">Željeni rok završetka:</label><br>
-                <input type="text">
+
+                <label for="rok">Željeni rok završetka:</label><br>
+                <input type="datetime-local">
 
 
                 <label for="">Opis projekta</label>
-                <input type="text">
+                <input type="text" width="auto">
 
-                <input type="text">Pošalji upit
+                <input type="submit" value="Pošalji upit">
 
 
             </fieldset>
