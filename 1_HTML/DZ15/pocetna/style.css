@@ -1,3 +1,72 @@
+@import url(../main.css);
+
+header {
+    text-align: center;
+    padding: 15px;
+}
+
+h4 {
+    font-size: smaller;
+    color: silver;
+}
+
+span {
+    font-size: smaller;
+}
+
+h2 {
+    color: var(--caribbean-green);
+}
+
+h5 {
+    color: silver;
+}
+
+.pozadina {
+    background-color: var(--bangladesh-green);
+}
+
 body {
+  background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+  overflow-x: hidden;
+  min-height: 100vh;
+  /* If you want to change the site height you can remove overflow-y */
+  /* pureSnow will automatically detect height of body tag */
+  overflow-y: hidden;
+  color: white;
+}
+
+.snowflake {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: linear-gradient(white, white);
+  /* Workaround for Chromium's selective color inversion */
+  border-radius: 50%;
+  filter: drop-shadow(0 0 10px white);
+}
+
+#snow {
+    position: absolute;
+    inset: 0;             /* top:0 right:0 bottom:0 left:0 */
+    pointer-events: none; /* da ne blokira klikove */
+    overflow: hidden;
+}
+
+.slike {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 2rem;
+    margin-top: 60px;
+}
+
+.karta {
+    padding: 10px;
+    background-color: var(--anti-flash-white);
+    padding: 10px 20px 40px 10px;
+    width: 250px;
+    display: block;
     
 }
+
