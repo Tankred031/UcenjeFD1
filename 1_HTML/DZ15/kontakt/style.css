@@ -24,51 +24,59 @@ h5 {
 
 .grid {
     display: grid;
-    grid-template-columns: ;
-    grid-template-rows: ;
-    grid-template-areas: 
-    "";
-    background-color: var(--dark-green);
-    padding: 10px;
-    margin: 100px;
-    border-radius: 15px;
+    grid-template-columns: 1fr 1fr ;
+    gap: 20px 30px;
 
+    background-color: var(--dark-green);
+    padding: 30px;
+    margin: 100px auto;
+    
+    max-width: 600px;
 }
 
 
 label {
     color: var(--caribbean-green);
-    padding: 10px;
     font-weight: bold;
+    margin-bottom: 8px;
 }
 
-input {
-    background-color: var(--rich-black);
-    padding: 10px;
-    color: var(--anti-flash-white); 
+.field {
+    display: flex;
+    flex-direction: column;
 }
 
-option, select {
-    background-color: var(--rich-black);
-    color: var(--caribbean-green);
+.field.full {
+    grid-column: 1 / -1;
 }
-
 
 input[type="submit"] {
-    width: 100%;
+    grid-column: 1 / -1;
+    margin-top: 20px;
+
     font-weight: bold;
     color: var(--rich-black);
     background-color: var(--caribbean-green);
     border-radius: 8px;
-    padding: 10px;
+    padding: 12px;
+    cursor: pointer;
 }
 
+input,
+select,
+textarea {
+    background-color: var(--rich-black);
+    padding: 12px;
+    color: var(--anti-flash-white);
+    border: 1px solid var(--dark-green);
+    border-radius: 6px;
+    width: 100%;
+}
 
-
-
-
-
-
+textarea {
+    min-height: 120px;
+    resize: none;
+}
 
 
 footer {

@@ -1,0 +1,166 @@
+input::placeholder,
+textarea::placeholder {
+    color: #6c7a82;
+}
+
+.budget {
+    grid-column: 1 / -1;
+}
+
+.budget label {
+    display: flex;
+    justify-content: space-between;
+}
+
+input[type="range"] {
+    margin-top: 10px;
+}
+
+input[type="submit"] {
+    grid-column: 1 / -1;
+    margin-top: 15px;
+
+    background-color: var(--caribbean-green);
+    color: #032c25;
+    font-weight: bold;
+    text-transform: uppercase;
+
+    border: none;
+    border-radius: 8px;
+    padding: 14px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    filter: brightness(1.1);
+}
+
+
+
+<fieldset class="grid">
+
+  <div class="field">
+    <label>Ime i prezime</label>
+    <input type="text" placeholder="Vaše ime...">
+  </div>
+
+  <div class="field">
+    <label>Email adresa</label>
+    <input type="email" placeholder="email@primjer.com">
+  </div>
+
+  <div class="field">
+    <label>Zanima me usluga:</label>
+    <select>
+      <option>Frontend Razvoj</option>
+      <option>Backend Razvoj</option>
+    </select>
+  </div>
+
+  <div class="field">
+    <label>Željeni rok završetka:</label>
+    <input type="date">
+  </div>
+
+  <div class="budget">
+    <label>Planirani budžet: <span>1500 €</span></label>
+    <input type="range" min="500" max="5000" value="1500">
+  </div>
+
+  <div class="field full">
+    <label>Opis projekta</label>
+    <textarea placeholder="Recite nam nešto više o vašim idejama..."></textarea>
+  </div>
+
+  <input type="submit" value="POŠALJI UPIT">
+
+</fieldset>
+
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px 30px;
+
+    max-width: 620px;
+    margin: 100px auto;
+    padding: 35px;
+
+    background: linear-gradient(
+      180deg,
+      #1b2a34 0%,
+      #141f27 100%
+    );
+
+    border-radius: 18px;
+    box-shadow: 0 30px 60px rgba(0,0,0,0.4);
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+}
+
+.field.full {
+    grid-column: 1 / -1;
+}
+
+label {
+    color: var(--caribbean-green);
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+input,
+select,
+textarea {
+    background-color: #0d141a;
+    border: 1px solid #26343d;
+    border-radius: 6px;
+    padding: 12px;
+    color: var(--anti-flash-white);
+}
+
+textarea {
+    min-height: 120px;
+    resize: none;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: #6c7a82;
+}
+
+.budget {
+    grid-column: 1 / -1;
+}
+
+.budget label {
+    display: flex;
+    justify-content: space-between;
+}
+
+input[type="range"] {
+    margin-top: 10px;
+}
+
+input[type="submit"] {
+    grid-column: 1 / -1;
+    margin-top: 15px;
+
+    background-color: var(--caribbean-green);
+    color: #032c25;
+    font-weight: bold;
+    text-transform: uppercase;
+
+    border: none;
+    border-radius: 8px;
+    padding: 14px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    filter: brightness(1.1);
+}
+
+
