@@ -1,3 +1,45 @@
-body {
+@import url(../main.css);
+
+.pozadina {
+    background-color: var(--bangladesh-green);
+}
+
+header {
+    text-align: center;
+    padding: 15px;
+}
+
+h1 {
+    color: var(--anti-flash-white);
+}
+
+h3 {
+    text-align: center;
+    color: var(--caribbean-green);
+    margin-top: 40px;
+}
+
+h4 {
+    color: silver;
+}
+
+
+.okvir {
+    margin: 0 auto ;
+    padding: 30px 60px;
+    max-width: 900px;
+    background-color: var(--bangladesh-green);
+    border-radius: 12px;
     
+}
+
+
+footer {
+    text-align: center;
+    padding: 8px;
+    font-size: small;
+    
+    max-width: 1100px;
+    margin: 0 auto;
+    box-sizing: border-box;
 }
