@@ -31,14 +31,9 @@ h5 {
     margin: 100px auto;
     padding: 35px;
 
-    background: linear-gradient(
-      180deg,
-      #1b2a34 0%,
-      #141f27 100%
-    );
-
     border-radius: 18px;
-    box-shadow: 0 30px 60px rgba(0,0,0,0.4);
+    background-color: var(--bangladesh-green);
+    border: none;    
 }
 
 .field {
@@ -59,8 +54,7 @@ label {
 input,
 select,
 textarea {
-    background-color: #0d141a;
-    border: 1px solid #26343d;
+    background-color: var(--rich-black);
     border-radius: 6px;
     padding: 12px;
     color: var(--anti-flash-white);
