@@ -13,15 +13,49 @@ h2 {
     color: var(--caribbean-green);
 }
 
-h4 {
-    font-size: smaller;
-    color: silver;
+h3 {
+    text-align: center;
+    color: var(--anti-flash-white);
 }
 
 h5 {
     color: silver;
 }
 
+
+
 table {
+    margin: 0 auto;
+
+}
+
+th, td {
+    padding: 10px 20px;
+}
+
+th {
+    background-color: var(--caribbean-green);
+    color: var(--dark-green);
+}
+
+td:nth-last-child(1) span.prozor {
+    background-color: var(--caribbean-green);
+    display: inline-block;
+    padding: 6px 10px;
+    border-radius: 4px;
+}
+
+.zeleno {
+    color: var(--caribbean-green);
+    font-weight: bold;
+}
+
+footer {
+    text-align: center;
+    padding: 8px;
+    font-size: small;
     
+    max-width: 1100px;
+    margin: 0 auto;
+    box-sizing: border-box;
 }
