@@ -24,21 +24,21 @@ h5 {
 
 .grid {
     display: grid;
-    grid-template-columns: 1fr 1fr ;
-    gap: 20px 30px;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px 30px;
 
-    background-color: var(--dark-green);
-    padding: 30px;
+    max-width: 620px;
     margin: 100px auto;
-    
-    max-width: 600px;
-}
+    padding: 35px;
 
+    background: linear-gradient(
+      180deg,
+      #1b2a34 0%,
+      #141f27 100%
+    );
 
-label {
-    color: var(--caribbean-green);
-    font-weight: bold;
-    margin-bottom: 8px;
+    border-radius: 18px;
+    box-shadow: 0 30px 60px rgba(0,0,0,0.4);
 }
 
 .field {
@@ -50,27 +50,20 @@ label {
     grid-column: 1 / -1;
 }
 
-input[type="submit"] {
-    grid-column: 1 / -1;
-    margin-top: 20px;
-
+label {
+    color: var(--caribbean-green);
     font-weight: bold;
-    color: var(--rich-black);
-    background-color: var(--caribbean-green);
-    border-radius: 8px;
-    padding: 12px;
-    cursor: pointer;
+    margin-bottom: 8px;
 }
 
 input,
 select,
 textarea {
-    background-color: var(--rich-black);
+    background-color: #0d141a;
+    border: 1px solid #26343d;
+    border-radius: 6px;
     padding: 12px;
     color: var(--anti-flash-white);
-    border: 1px solid var(--dark-green);
-    border-radius: 6px;
-    width: 100%;
 }
 
 textarea {
@@ -78,13 +71,42 @@ textarea {
     resize: none;
 }
 
+input::placeholder,
+textarea::placeholder {
+    color: #6c7a82;
+}
 
-footer {
-    text-align: center;
-    padding: 8px;
-    font-size: small;
-    
-    max-width: 1100px;
-    margin: 0 auto;
-    box-sizing: border-box;
+.budget {
+    grid-column: 1 / -1;
+}
+
+.budget label {
+    display: flex;
+    justify-content: flex-start;
+    gap: 8px;
+}
+
+input[type="range"] {
+    margin-top: 10px;
+    width: 90%;
+    accent-color: var(--caribbean-green);
+}
+
+input[type="submit"] {
+    grid-column: 1 / -1;
+    margin-top: 15px;
+
+    background-color: var(--caribbean-green);
+    color: #032c25;
+    font-weight: bold;
+    text-transform: uppercase;
+
+    border: none;
+    border-radius: 8px;
+    padding: 14px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    filter: brightness(1.1);
 }

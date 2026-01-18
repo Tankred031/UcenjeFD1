@@ -6,6 +6,7 @@
     <title>Kontakt</title>
     <link rel="stylesheet" href="../main.css">
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
 <div class="container">
@@ -46,42 +47,40 @@
         
             <fieldset class="grid">
 
-            <div class="field"></div>
-                <label for="ime i prezime">Ime i prezime</label>
-                <input type="text" placeholder="Vaše ime...">
-            </div>
+                <div class="field">
+                    <label>Ime i prezime</label>
+                    <input type="text" placeholder="Vaše ime...">
+                </div>
 
-            <div class="field"></div>
-                <label for="email">Email adresa</label>
-                <input type="email" placeholder="email@primjer.com">
-            </div>    
+                <div class="field">
+                    <label>Email adresa</label>
+                    <input type="email" placeholder="email@primjer.com">
+                </div>
 
-            <div class="field">
-                <label for="usluga">Zanima me usluga:</label>
-                    <select name="usluga" id="usluga">
-                    <option value="1">Frontend Razvoj</option>
-                    <option value="2">Backend Razvoj</option>
-                </select>
-            </div>
+                <div class="field">
+                    <label>Zanima me usluga:</label>
+                    <select>
+                    <option>Frontend Razvoj</option>
+                    <option>Backend Razvoj</option>
+                    </select>
+                </div>
 
-            <div class="field">
-                <label for="rok">Željeni rok završetka:</label>
-                <input type="datetime-local">
-            </div>
+                <div class="field">
+                    <label>Željeni rok završetka:</label>
+                    <input type="date">
+                </div>
 
+                <div class="budget">
+                    <label>Planirani budžet: <span id="budgetValue">1500 €</span></label>
+                    <input type="range" min="500" max="5000" value="1500" id="budgetRange">
+                </div>
 
-            <div class="budget">
-                <label for="budget">Planirani budget: <span>1500 €</span></label>
-                <input type="range" min="500" max="5000" value="1500">
-            </div>
+                <div class="field full">
+                    <label>Opis projekta</label>
+                    <textarea placeholder="Recite nam nešto više o vašim idejama..."></textarea>
+                </div>
 
-            <div class="field full">
-                <label for="">Opis projekta</label>
-                <textarea name="opis projekta" id=""></textarea>
-            </div>
-
-                <input type="submit" value="Pošalji upit">
-
+                <input type="submit" value="POŠALJI UPIT">
 
             </fieldset>
 
@@ -90,11 +89,13 @@
 
 
     </form>
-
+    
 
 </div>  
         <footer class="pozadina">
             <p>&copy; 2024 Edunova, sva prava pridržana</p>
         </footer>
+        
+
 </body>
 </html>
