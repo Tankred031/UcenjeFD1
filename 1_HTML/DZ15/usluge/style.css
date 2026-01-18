@@ -1,3 +1,27 @@
-body {
+@import url(../main.css);
+
+.pozadina {
+    background-color: var(--bangladesh-green);
+}
+
+header {
+    text-align: center;
+    padding: 15px;
+}
+
+h2 {
+    color: var(--caribbean-green);
+}
+
+h4 {
+    font-size: smaller;
+    color: silver;
+}
+
+h5 {
+    color: silver;
+}
+
+table {
     
 }
