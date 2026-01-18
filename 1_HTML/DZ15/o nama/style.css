@@ -38,7 +38,7 @@ h4 {
     display: flex;
     
     gap: 0.5rem;
-    margin: 0 auto;
+    margin: 40px auto 0;
     justify-content: center;
     align-items: center;
 }
@@ -52,6 +52,7 @@ h4 {
     border-radius: 50%;
     object-fit: cover;
 
+    margin-top: 10px;
     object-position: center 10%;
 }
 
@@ -59,13 +60,27 @@ h4 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: center;
+    justify-content: flex-start;
 
-    padding: 16px;
+     padding: 24px 16px 16px;
+    box-sizing: border-box;
     
+    width: 220px;
+    height: 220px;
+
+    background-color: var(--anti-flash-white);
+    border-radius: 12px;
 }
 
+.karta h4,
+.karta p {
+    text-align: center;
+    color: var(--rich-black);
+}
 
+.karta h4 {
+    margin: 14px 0 4px;
+}
 
 .naziv {
     font-size: small;
