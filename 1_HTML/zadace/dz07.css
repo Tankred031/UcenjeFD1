@@ -202,8 +202,10 @@ caption{
     color: orange;
 }
 .linija{
-    color: grey;
-    /* width: 50%; */
+    border: none;
+    height: 1px;
+    background-color: #C0C0C0;
+    width: 80%;
     
 }
 .copywrite{
