@@ -1,7 +1,7 @@
-body{
+body {
     background-color: aliceblue;    
 }
-.container{
+.container {
     width: 90%;
     max-width: 900px;
     min-width: 300px;
@@ -21,7 +21,7 @@ body{
     outline-offset: 10px;
 
 }
-.section{
+.section {
     border: 1px solid;
     border-radius: 4dvh;
     margin: 10px;
@@ -29,13 +29,13 @@ body{
     
 
 }
-h1{
+h1 {
     text-align: center;
     font-family: sans-serif;
     font-weight: 200;
     font-weight: bold;
 }
-h4{
+h4 {
     text-decoration: underline orange;
     text-decoration-thickness: 3px;
     text-underline-offset: 6px;
@@ -60,42 +60,48 @@ span.veliko {
 
 }
 
-.linija img{
+.linija img {
     display: block;
 }
 
-span.dio1{
+span.dio1 {
     text-decoration: dotted;
     font-style: normal;
     text-decoration-line: underline;
 }
-span.dio2{
+span.dio2 {
     background-color: bisque;
     padding: 2px 2px;
     border-radius: 4px;
 }
-p{
+
+p {
     text-align: justify;
     padding-left: 15px;
     padding-right: 15px;
     font-family: sans-serif;
 }
-h3{
+
+h3 {
     margin: 10px;
 }
-h5{
+
+h5 {
     text-align: center;
     
 }
-span.word1{
+
+span.word1 {
     font-family: sans-serif;
     font-weight: bolder;
     color: coral;
 }
-span.word2{
-    color: #3483b8;}
 
-.citat{
+span.word2 {
+    color: #3483b8;
+}
+
+.citat {
     background-color: #be65655b;
     border-left: 5px solid #e73c3cd2;
     margin: 0;
@@ -104,7 +110,7 @@ span.word2{
     padding-bottom: 5px;
 }
 
-.box1{
+.box1 {
     background-color: rgba(128, 128, 128, 0.356);
     padding: 10px;
 }
@@ -116,7 +122,7 @@ span.word2{
     font-size: large;
 }
 
-.box2{
+.box2 {
     background-color: none;
     padding: 10px;
     line-height: 1.5;
@@ -126,7 +132,7 @@ span.word2{
 
 }
 
-li{
+li {
     list-style: none;
     padding: 15px;
     margin: 0;
