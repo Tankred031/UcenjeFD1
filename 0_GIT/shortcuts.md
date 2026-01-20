@@ -31,4 +31,4 @@ Ctrl+Space --- ponovo upali emmet, ako smo ga izgubili
 .md umjesto .txt za github
 
 u dos - tree /f
-
+scalable vector graphics -- pixelizacija
