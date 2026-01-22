@@ -19,8 +19,8 @@ Win+Shift+S ---> screenshot
 lorem text -- razni tekst
 lorem image -- razna slika
 
-Ctrl+K+C stavlja u comment
-Ctrl+K+U miče
+Ctrl+K,C stavlja u comment
+Ctrl+K,U miče
 
 Ctrl+Space --- ponovo upali emmet, ako smo ga izgubili
 
