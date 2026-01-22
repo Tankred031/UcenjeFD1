@@ -24,8 +24,9 @@ Ctrl+K+U miče
 
 Ctrl+Space --- ponovo upali emmet, ako smo ga izgubili
 
-&lt; i &gt; ----- su < i >
 
+&Oslash ----- znak fi
+&lt; i &gt; ----- su < i >
 &bull; ---- točka u sredini
 
 .md umjesto .txt za github
