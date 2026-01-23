@@ -10,6 +10,15 @@
     <link rel="stylesheet" href="css/app.css">
   </head>
 <body>
+
+    <!-- MOBILE HAMBURGER MENU -->
+<div class="title-bar hide-for-medium" data-responsive-toggle="desktop-menu">
+  <button class="menu-icon" type="button" data-toggle></button>
+  <div class="title-bar-title">
+    <img src="img/drone-school.webp" alt="" style="height:30px;">
+  </div>
+</div>
+
    
 
     <div class="grid-container">
@@ -22,7 +31,8 @@
             </div>
             <div class="cell hide-for-small-only large-10">
                 <div class="callout">
-                    <div class="top-bar">
+                    <div class="top-bar" id="desktop-menu">
+
                             <!-- IZBORNIK -->
                         <div class="top-bar-left">
                             <ul class="dropdown menu align-right" data-dropdown-menu>
@@ -45,15 +55,34 @@
             <div class="cell">
                 <div class="callout">
                     
-                <div class="orbit" role="region" aria-label="Favorite Space Pictures" data-orbit>
+                <div class="orbit" role="region" aria-label="Galerija dronova"
+     data-orbit data-use-m-u-i="false">
 
-<ul class="orbit-container">
-  <li class="orbit-slide is-active">
-    <figure class="orbit-figure">
-      <img class="orbit-image" src="assets/img/orbit/01.jpg" alt="Space">
-      <figcaption class="orbit-caption">Space, the final frontier.</figcaption>
-    </figure>
-  </li>
+  <div class="orbit-wrapper">
+
+    <div class="orbit-controls">
+      <button class="orbit-previous">&#9664;</button>
+      <button class="orbit-next">&#9654;</button>
+    </div>
+
+    <ul class="orbit-container">
+      <li class="is-active orbit-slide">
+        <img src="img/dusting.webp" alt="Slika 1">
+      </li>
+      <li class="orbit-slide">
+        <img src="img/monitoring.jpeg" alt="Slika 2">
+      </li>
+      <li class="orbit-slide">
+        <img src="img/firefightnin.png" alt="Slika 3">
+      </li>
+      <li class="orbit-slide">
+        <img src="img/scouting.jpg" alt="Slika 4">
+      </li>
+    </ul>
+
+  </div>
+</div>
+
   <!-- More slides... -->
 </ul>
                 </div>

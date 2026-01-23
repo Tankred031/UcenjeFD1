@@ -10,6 +10,15 @@
     <link rel="stylesheet" href="css/app.css">
   </head>
 <body>
+
+    <!-- MOBILE HAMBURGER MENU -->
+<div class="title-bar hide-for-medium" data-responsive-toggle="desktop-menu">
+  <button class="menu-icon" type="button" data-toggle></button>
+  <div class="title-bar-title">
+    <img src="img/drone-school.webp" alt="" style="height:30px;">
+  </div>
+</div>
+
     
     <div class="grid-container">
         <div class="grid-x grid-padding-x">
@@ -21,7 +30,8 @@
             </div>
             <div class="cell hide-for-small-only large-10">
                 <div class="callout">
-                    <div class="top-bar">
+                    <div class="top-bar" id="desktop-menu">
+
                             <!-- IZBORNIK -->
                         <div class="top-bar-left">
                             <ul class="dropdown menu align-right" data-dropdown-menu>
