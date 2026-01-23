@@ -30,3 +30,31 @@ h5 {
   height: 100%;
   object-fit: cover;      /* KLJUČ */
 }
+
+.hero-banner {
+  background-image: url("../img/drone-training-course_2.jpg");
+
+  
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  /* fiksna visina bannera */
+  height: 60vh;
+
+  /* nema pomicanja layouta */
+  position: relative;
+  overflow: hidden;
+
+  display: flex;
+  align-items: center;
+  padding-left: 3rem;
+}
+
+.hero-content {
+  background: rgba(0,0,0,0.55);
+  color: white;
+  padding: 2rem;
+  max-width: 600px;
+}
+
