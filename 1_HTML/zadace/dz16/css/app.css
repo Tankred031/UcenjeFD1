@@ -1,3 +1,14 @@
 .menu-text {
     text-align: right;
 }
+
+body {
+    background: #D8E001;
+    background: -moz-linear-gradient(-45deg, #D8E001 0%, #E54E78 50%, #75e7a1 100%);
+    background: -webkit-linear-gradient(-45deg, #D8E001 0%, #E54E78 50%, #75e7a1 100%);
+    background: linear-gradient(135deg, #D8E001 0%, #E54E78 50%, #75e7a1 100%);
+}
+
+h5 {
+    font-weight: bold;
+}
