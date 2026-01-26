@@ -58,3 +58,29 @@ h5 {
   max-width: 600px;
 }
 
+.hero,
+.hero-banner,
+.hero-overlay {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+
+/* MOBILE */
+@media screen and (max-width: 639px) {
+  #desktop-menu {
+    display: none;
+  }
+
+  #desktop-menu.is-open {
+    display: block;
+  }
+}
+
+/* TABLET + DESKTOP */
+@media screen and (min-width: 640px) {
+  #desktop-menu {
+    display: block !important;
+  }
+}
