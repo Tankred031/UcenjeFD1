@@ -33,3 +33,5 @@ Ctrl+Space --- ponovo upali emmet, ako smo ga izgubili
 
 u dos - tree /f
 scalable vector graphics -- pixelizacija
+
+Ctrl+Shift+P u consoli (F12) otvara tools
