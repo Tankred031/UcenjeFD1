@@ -17,6 +17,24 @@
 </head>
 <body>
 
+    <p id="ispis">
+
+    </p>
+
+    <button onclick="alert('Hello World 7')">
+        Klikni me
+    </button>
+
+
+    <div onmouseover="this.style.backgroundColor='#f0f'" onmouseleave="this.style.backgroundColor='white'">
+        Dođi mišem iznad, pa se makni
+    </div>
+
+
+    <input type="text" name="" id="" 
+    style="font-size: 3rem;"
+    onkeyup="this.value = this.value.toUpperCase()">
+
 
     <noscript>
         <div class="nojs">
@@ -33,7 +51,11 @@
 
         console.log('Hello World 2');
 
-        //alert('Hello World 3')
+        //alert('Hello World 3');
+
+        document.getElementById('ispis').innerText='Hello World 4';
+        document.getElementById('ispis').style.color='red'
     </script>
+    <script src="skripta.js"></script>
 </body>
 </html>
