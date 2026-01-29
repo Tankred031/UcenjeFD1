@@ -5,15 +5,19 @@ Tipke:
 Ctrl+ ---> povecava font na ekranu (zoom in)
 
 AltGr+W ---> pipe |
-AltGr+7
-AltGr+Q
-AltGr+B ---> vitičasta zagrada 
+AltGr+7 ---> backtick `
+AltGr+Q ---> \
+AltGr+B ---> vitičasta zagrada {}
+AltGr+F ---> je uglata zagrada []
+
+
+
 Alt+Z --> word wrap (vidimo cijeli red)
 
 Ctrl+ F5 ---> očitava stranicu sa servera
 F5 ----> očitava stranicu iz cache-a 
 
-AltGr+F ---> je uglata zagrada
+
 
 Win+Shift+S ---> screenshot
 &copy; ----> copyright znak

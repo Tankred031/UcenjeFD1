@@ -117,5 +117,87 @@ console.log(i1 || i2)    // true
 console.log(!i1)    // false 
 
 
+// ternarni operator --> koristiti ćemo ga u if naredbi
+// ? :
+const poruka = godine >=18 ? 'Punoljetan' : 'Maloljetan';
+console.log(poruka) 
 
 
+// spajanje stringova (concatenation) +
+const skola = 'Edunova'
+console.log('Najbolja škola je ' + skola)   // ovo se ne preporuča, već se preporuča korištenje backtick `
+console.log(`Najbolja škola je ${skola}`)
+const razred = 5
+console.log('Idem u ' + razred + '. razred.')
+console.log(`Idem u ${razred}. razred.`)
+
+
+// spread operator (...)
+// koristi se na nizovima i objektima
+
+
+const niz = [2,2,3,3]       // varijablu niz ne smijem mijenjati
+console.log(niz)
+const noviNiz = [1, ...niz, 4]
+console.log(noviNiz)
+
+
+// na objektu
+const osoba = {
+    ime:'Pero',
+    prezime: 'Perić'
+}
+
+console.log(osoba)
+// želim proširiti pojam osobe na polaznika
+
+const polaznik = {
+    ...osoba,
+    edukacija: 'Frontend'
+}
+console.log(polaznik)
+console.table(polaznik)
+
+
+// destructuring -> suprotno od spread
+// niz
+const [prvi, drugi] = [1,2]     // s desne strane se nalazi niz s dva elemenata, on je napravio dvije varijable koje imaju vrijednosti iz niza
+console.log(prvi)
+console.log(drugi)
+
+// object destructuring
+const {prezime, ...objektBezPrezimena} = polaznik
+console.log(objektBezPrezimena)
+console.log(prezime)               // ovo mi je škart koji postoji ali ne moram ga koristiti
+
+
+// nullish coalescing operator (??)
+let sifra = null
+console.log(sifra ?? 'Šifra nije postavljena')  // ako je šifra postavljena ispisuje se njezina vrijednost, inače ispisuje se 'Šifra...'
+
+
+// optional chaining (?.)
+// malo kompleksniji JSON
+
+
+const korisnik = {
+    adresa:{
+        grad: 'Osijek'
+    }
+}
+console.log(korisnik.adresa.grad)     // ispisuje Osijek
+console.log(korisnik.adresa.ulica)    // undefined, kod korištenja greška
+
+console.log(korisnik?.adresa?.ulica)  // undefined, bez greške
+
+
+// typeof, instanceof
+console.log([3,4,5] instanceof Array)   // true
+
+
+// in operator
+console.log('prezime' in osoba)               // true 
+console.log('prezime' in objektBezPrezimena)  // false
+
+
+// NEĆEMO KORISTITI - operatori nad bitovima bitwise (& i |) - tko želi neka samostalno prouči
