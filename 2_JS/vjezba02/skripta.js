@@ -13,7 +13,7 @@ console.log(`Dobar dan ${ime}!`);
 console.log(typeof ime, ime);
 
 // unos godina je string
-const unosGodina=prompt('Unesi godinu')
+const unosGodina = '2026' //prompt('Unesi godinu')
 
 // konverzija u broj
 const godina = Number(unosGodina);
