@@ -4,6 +4,9 @@ Tipke:
 
 Ctrl+ ---> povecava font na ekranu (zoom in)
 
+AltGr+W ---> pipe |
+AltGr+7
+AltGr+Q
 AltGr+B ---> vitičasta zagrada 
 Alt+Z --> word wrap (vidimo cijeli red)
 
