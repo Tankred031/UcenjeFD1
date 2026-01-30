@@ -45,7 +45,7 @@ console.log(rez)   // 7
 rez++             //  -> ALI NI OVO SE NE RADI 
 console.log(rez)  // 8
 // u isto vrijeme možeš koristiti i uvećavati/umanjivati vrijednost varijable
-console.log(rez++)  // 8 prvo sam ispisao trenutnu vrijednost od rez i nakon toga u ju uvećao
+console.log(rez++)  // 8 prvo sam ispisao trenutnu vrijednost od rez i nakon toga ju uvećao
 console.log(++rez)  // 10 (9 je bilo nakon ispisa u preth. liniji) pa prvo uvećanje tek onda ispis
 
 console.log(--rez) // 9
@@ -73,7 +73,7 @@ console.log(4 != 3)   // true
 console.log('4' != 4) // false
 
 // veće od >
-// veće jednako od >=
+// veće ili jednako od >=
 let godine = 18
 console.log(godine > 18)  // false
 console.log(godine >= 18) // true
