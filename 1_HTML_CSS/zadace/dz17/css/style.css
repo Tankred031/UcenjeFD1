@@ -1,0 +1,16 @@
+.container {
+    background: #2799E5;
+    background: -moz-linear-gradient(top, #2799E5 0%, #36D3DD 50%, #F7E141 100%);
+    background: -webkit-linear-gradient(top, #2799E5 0%, #36D3DD 50%, #F7E141 100%);
+    background: linear-gradient(to bottom, #2799E5 0%, #36D3DD 50%, #F7E141 100%);
+}
+
+.nav {
+    background-color: gold;
+    font-weight: bold;
+}
+
+h5, h2{
+    color: crimson;
+    font-style: italic;
+}
