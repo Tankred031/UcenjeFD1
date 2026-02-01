@@ -8,42 +8,101 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div class="container">
-        <div class="row gx-2 gy-2 text-center">
-            <div class="col-12 col-md-12 col-lg-12 d-none d-sm-block">
+    <div class="container page-bg">
+        
                 <div class="card">
-                    <!-- NAV-BAR -->
+                    <!-- HAMBURGER -->
 
-                <ul class="nav justify-content-center">
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">Pocetna</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="program.html">O programu</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="kontakt.html">Kontakt</a>
-                    </li>
-                </ul>
+                    <nav class="navbar navbar-expand-lg navbar-custom">
+                    <div class="container">
+
+                        <a class="navbar-brand" href="#">FPV Akademija</a>
+
+                        <button class="navbar-toggler" type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#mainNav">
+                        <span class="navbar-toggler-icon"></span>
+                        </button>
+
+                        <div class="collapse navbar-collapse" id="mainNav">
+                        <ul class="navbar-nav mx-auto">
+                            <li class="nav-item">
+                            <a class="nav-link" href="index.html">Početna</a>
+                            </li>
+                            <li class="nav-item">
+                            <a class="nav-link" href="program.html">Program</a>
+                            </li>
+                            <li class="nav-item">
+                            <a class="nav-link" href="kontakt.html">Kontakt</a>
+                            </li>
+                        </ul>
+                        </div>
+
+                    </div>
+                    </nav>
+
+                    
+                 
+
                 </div>
+                <div class="row gx-2 gy-2 text-center">
+            <div class="col-12 col-md-12 col-lg-12 d-none d-sm-block">
             </div>
             
-            <div class="col-12 col-md-12 col-lg-12 d-none d-sm-block">
-                <div class="card">B</div>
-            </div>
-            <div class="col-12">
-                <div class="card">C</div>
+
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card">
+                    
+                    <div class="form-floating">
+                    <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                    <label for="floatingInput">Email address</label>
+                    </div>
+
+                    
+                </div>
             </div>
             <div class="col-12 col-md-6 col-lg-4">
-                <div class="card">D</div>
+                <div class="card">
+                    
+                    <div class="form-floating">
+                    <input type="text" class="form-control" id="floatingName" placeholder="Ime i prezime">
+                    <label for="floatingName">Ime i prezime</label>
+                    </div>
+
+                
+
+                </div>
             </div>
             <div class="col-12 col-md-6 col-lg-4">
-                <div class="card">E</div>
+                <div class="card p-3">
+
+                <div class="form-floating">
+                <select class="form-select" id="floatingSelect" aria-label="Floating label select example mb-3">
+                    <option selected></option>
+                    <option value="1">Početnik</option>
+                    <option value="2">Napredni</option>
+                    
+                </select>
+                <label for="floatingSelect">Odaberi razinu znanja</label>
+                </div>
+
+                </div>
             </div>
-            <div class="col-12 col-lg-4">
-                <div class="card">F</div>
+
+            <div class="col-12 col-md-6 col-lg-4">
+            <div class="card">
+
+                <form action="#" method="post">
+                <div class="form-check form-switch">
+                <input class="form-check-input" type="checkbox" role="switch" id="switchCheckDefault" required>
+                <label class="form-check-label" for="switchCheckDefault">Prihvaćam uvjete prijave</label>
             </div>
+                
+                <button type="submit" class="btn btn-warning w-100">Prijava!</button>
+            </form>
         </div>
+        <br>
+        <br>
     </div>
 
 
