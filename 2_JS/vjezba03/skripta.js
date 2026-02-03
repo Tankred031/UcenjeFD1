@@ -176,6 +176,7 @@ let sifra = null
 console.log(sifra ?? 'Šifra nije postavljena')  // ako je šifra postavljena ispisuje se njezina vrijednost, inače ispisuje se 'Šifra...'
 
 
+
 // optional chaining (?.)
 // malo kompleksniji JSON
 
