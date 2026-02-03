@@ -16,23 +16,23 @@ document.getElementById('izvedi').addEventListener('click', () => {
   const x = Number(a);  // mogu dobiti NaN
   if(!x){
     rezultat.innerHTML='A nije broj';
-    return
+    return;
   }
 
   const y = Number(b)
   if(!y){
     rezultat.innerHTML='B nije broj'
-    return
+    return;
   }
 
   // ovdje sam siguran kako imam brojeve u varijablama x i y
 
   if(x>y){
     rezultat.innerHTML=x
-  }else if(y<x) {
+  }else if(y>x) {
     rezultat.innerHTML=y
   }else{
-    rezultat.innerHTML='A i B su isti'
+    rezultat.innerHTML='A i B su isti';
   }
     
   // ovo smo imali prije x i y 
@@ -48,8 +48,7 @@ document.getElementById('izvedi').addEventListener('click', () => {
   }
   
   // ovo će se ispisati ako u HTML dodatke option za zadatak a ovdje ga ne obradite
-  rezultat.innerHTML = `Nepoznati zadatak ${zadatak}`;
-  });
+  
 
 
   
@@ -78,11 +77,12 @@ document.getElementById('izvedi').addEventListener('click', () => {
     rezultat.innerHTML=z
   }
   return
+  
   }
 
 
     
-  if (zadatak === '3'){
+  if(zadatak === '3'){
     const x = Number(a)
     const y = Number(b)
     const z = Number(c)
@@ -112,8 +112,23 @@ document.getElementById('izvedi').addEventListener('click', () => {
   }
   
 
-if(zadatak==='4'){
-    // ovdje rješavati 4. zadatak
+  if(zadatak==='4'){
+    const godinaRodenja=Number(a)
+    const y=2026
+
+    if(isNaN(godinaRodenja)) {
+      rezultat.innerHTML='A nije broj'
+      return
+    }
+
+    if(y-godinaRodenja >=18){
+      rezultat.innerHTML='Osoba je punoljetna'
+    }else{
+      rezultat.innerHTML='Osoba nije punoljetna'
+    }
+    return
+  }
+
 
   //  Provjera punoljetnosti: 
   //  Korisnik unosi godinu rođenja u polje A. 
@@ -123,16 +138,45 @@ if(zadatak==='4'){
   /*
   [ZADATAK 5]
  Pozitivan, negativan ili nula: 
- Za uneseni broj u polju A ispiši poruku je li on pozitivan, negativan ili je nula.
+ Za uneseni broj u polju A ispiši poruku je li on pozitivan, negativan ili je nula.*/
 
- ----------------------------------------------------------------
+if(zadatak==='5'){
+
+  const x=Number(a)
+  if(isNaN(x)) {
+      rezultat.innerHTML='A nije broj'
+      return
+    }
+  if(x>0){
+    rezultat.innerHTML='Broj je pozitivan'
+  }else if(x<0){
+    rezultat.innerHTML='Broj je negativan'
+  }else{
+    rezultat.innerHTML='Broj je nula'
+  }
+  return
+}
+
  
- [ZADATAK 6]
+ /*[ZADATAK 6]
  Parnost broja: 
- Provjeri je li uneseni broj u polju A paran ili neparan koristeći modulo operator (%).
+ Provjeri je li uneseni broj u polju A paran ili neparan koristeći modulo operator (%). */
 
- ----------------------------------------------------------------
- 
+if(zadatak==='6'){
+
+  let x=Number(a)
+  if(isNaN(x)) {
+    rezultat.innerHTML='A nije broj'
+    return
+  }
+
+    rezultat.innerHTML=(x%2===0) ? 'Broj je paran' : 'Broj je neparan'
+    return
+}
+
+
+
+/* 
  [ZADATAK 7]
  Ocjenjivanje: 
  Na temelju unesenog broja bodova (0-100) u polje A, ispiši ocjenu:
@@ -145,3 +189,6 @@ if(zadatak==='4'){
  Provjeri je li broj u polju A djeljiv s brojem u polju B bez ostatka. 
  Ispiši "Djeljiv je" ili "Nije djeljiv".  
   */
+
+ rezultat.innerHTML = `Nepoznati zadatak ${zadatak}`;
+  });
