@@ -44,3 +44,6 @@ scalable vector graphics -- pixelizacija
 Ctrl+Shift+P u consoli (F12) otvara tools
 
 class, style, title, id - 4 elementa
+
+
+Shift+Alt+F --> minimizira/normalizira kod
