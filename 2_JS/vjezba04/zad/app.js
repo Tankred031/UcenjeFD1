@@ -113,8 +113,10 @@ document.getElementById('izvedi').addEventListener('click', () => {
   
 
   if(zadatak==='4'){
-    const godinaRodenja=Number(a)
-    const y=2026
+    const godinaRodenja=Number(a)       //const trenutnaGodina = new Date().getFullYear();
+    const y=2026                        //const dob = trenutnaGodina - godinaRodenja;
+
+
 
     if(isNaN(godinaRodenja)) {
       rezultat.innerHTML='A nije broj'
@@ -123,10 +125,10 @@ document.getElementById('izvedi').addEventListener('click', () => {
 
     if(y-godinaRodenja >=18){
       rezultat.innerHTML='Osoba je punoljetna'
-    }else{
+    } else{
       rezultat.innerHTML='Osoba nije punoljetna'
     }
-    return
+      return
   }
 
 
@@ -208,6 +210,7 @@ if(zadatak==='7'){
   }
 
 
+  
 
 
 
