@@ -181,14 +181,65 @@ if(zadatak==='6'){
  Ocjenjivanje: 
  Na temelju unesenog broja bodova (0-100) u polje A, ispiši ocjenu:
  90-100: Odličan, 80-89: Vrlo dobar, 70-79: Dobar, 60-69: Dovoljan, <60: Nedovoljan.
-
- ----------------------------------------------------------------
+*/
  
+if(zadatak==='7'){
+  let x=Number(a)
+  if(isNaN(x)){
+    rezultat.innerHTML='A nije broj'
+  return
+}
+  if(x<0 || x>100) {
+    rezultat.innerHTML='Unesi broj od 0 do 100'
+    return
+  }
+  
+  if(x>=90&&x<=100){
+    rezultat.innerHTML='Ocjena: odličan'
+  }else if(x>=80&&x<=89){
+      rezultat.innerHTML='Ocjena: vrlo dobar'
+    }else if(x>=70&&x<=79) {
+      rezultat.innerHTML='Ocjena: dobar'
+    }else if(x>=60&&x<=69) {
+      rezultat.innerHTML='Ocjena: dovoljan'
+    }else {
+      rezultat.innerHTML='Ocjena: nedovoljan'
+    }return
+  }
+
+
+
+
+
+/*
  [ZADATAK 8]
  Djeljivost: 
  Provjeri je li broj u polju A djeljiv s brojem u polju B bez ostatka. 
  Ispiši "Djeljiv je" ili "Nije djeljiv".  
   */
+
+ if(zadatak==='8'){
+
+  let x=Number(a)
+  let y=Number(b)
+  if(isNaN(x)) {
+    rezultat.innerHTML='A nije broj'
+    return
+  }
+
+  if(isNaN(y)) {
+    rezultat.innerHTML='B nije broj'
+    return
+  }  
+ 
+  if(y===0){
+    rezultat.innerHTML='S nulom ne možemo dijeliti'
+    return
+  }
+  
+  rezultat.innerHTML=(x%y===0) ? 'Djeljiv je' : 'Nije djeljiv'
+  return
+ }
 
  rezultat.innerHTML = `Nepoznati zadatak ${zadatak}`;
   });
