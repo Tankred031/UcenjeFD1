@@ -343,14 +343,10 @@ if(!y || y===0){
   rezultat.innerHTML='Greška'
 }
 
-/*if(isNaN(x)||(y)){
-  rezultat.innerHTML='a ili d je nije broj'
-*/
-
 rezultat.innerHTML=x*y
 return
 }
-}
+
 
 rezultat.innerHTML = `Nepoznati zadatak ${zadatak}`;
 
