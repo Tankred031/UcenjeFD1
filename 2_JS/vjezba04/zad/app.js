@@ -244,5 +244,114 @@ if(zadatak==='7'){
   return
  }
 
- rezultat.innerHTML = `Nepoznati zadatak ${zadatak}`;
-  });
+ //Zadatak 9 revisited
+ //Zbroj većih brojeva (a i b)+(c i d)
+
+ if(zadatak==='9'){
+  console.log('Riješavam zadatak 9')
+  
+  
+}
+else if(zadatak==='9'){
+  const x = Number(a)
+  const y = Number(b)
+  const z = Number(c)
+  const q = Number(d)
+
+  if(!x || !y || !z || !q){
+    rezultat.innerHTML='Jedno od unosnih polja nije broj'
+    return
+  }
+  if (x === 0 && y === 0 && z === 0 && q === 0) {
+    rezultat.innerHTML = 'Rezultat je nula'
+    return
+  }
+  if(x > y && z > q){
+    rezultat.innerHTML= x + z
+  }else if(x < y && z < q){
+    rezultat.innerHTML= y + q
+  }else if(x > y && z < q){
+    rezultat.innerHTML= x + q
+  }else if(x < y && z < q){
+    rezultat.innerHTML= y + q
+  }
+  return
+}
+
+// Zadatak 10
+//  Za upisani broj u polju D ispiši 10x veći broj
+
+if(zadatak === '10'){
+
+
+const x = Number(d)
+if(!x || x===0){
+  rezultat.innerHTML='Vrijednost u polju d nije broj ili je 0'
+  return
+}
+  rezultat.innerHTML= x*10 
+  return
+}
+  
+
+// Zadatak 11
+// Za uneseno ime grada u polju B ispiši je li sjedište Edunova ili ne
+
+if(zadatak==='11'){
+
+  
+ if(!b){
+  rezultat.innerHTML='Obavezan unos grada u polje b'
+  return
+ } 
+
+ //.toLowerCase()  ignorira velika mala slova
+
+ if(b.toLowerCase() === 'osijek'){
+  rezultat.innerHTML= `${b} je sjedište Edunova`
+ }
+ else {
+  rezultat.innerHTML= `${b} nije sjedište Edunova`
+ }
+
+  return  
+}
+
+// Zadatak 12
+// Za upisane pojmove u polju a i b ispiši ih jedno pokraj drugog
+
+if(zadatak==='12'){
+
+rezultat.innerHTML= `${a} ${b}`
+return
+
+}
+
+// Zadatak 13
+// Ispiši umnožak broja a i d
+
+if(zadatak==='13'){
+
+const x=Number(a)
+const y=Number(d)
+
+if(!x || x===0){
+  rezultat.innerHTML='Greška'
+}
+
+if(!y || y===0){
+  rezultat.innerHTML='Greška'
+}
+
+/*if(isNaN(x)||(y)){
+  rezultat.innerHTML='a ili d je nije broj'
+*/
+
+rezultat.innerHTML=x*y
+return
+}
+}
+
+rezultat.innerHTML = `Nepoznati zadatak ${zadatak}`;
+
+});
