@@ -42,8 +42,10 @@ u dos - tree /f
 scalable vector graphics -- pixelizacija
 
 Ctrl+Shift+P u consoli (F12) otvara tools
+    capture full screenshot u opcijama
 
 class, style, title, id - 4 elementa
 
 
 Shift+Alt+F --> minimizira/normalizira kod
+
