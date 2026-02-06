@@ -149,10 +149,14 @@ document.getElementById('izvedi').addEventListener('click', () => {
       default:
         rezultat.innerHTML='nisam siguran da li je voće'
   }
+    break
 
-  case '':
+}  
 
-  rezultat.innerHTML=a.length
+  case '7': {
+
+      rezultat.innerHTML=a.length
+    
 
   break
   }
