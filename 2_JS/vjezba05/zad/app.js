@@ -7,22 +7,22 @@ document.getElementById('izvedi').addEventListener('click', () => {
 
   switch (zadatak) {
 
-    case '1':
+    case '1': {
       // rješavanje 1. zadatak
       const command = "start"
 
       switch(command){
       case "start":
         rezultat.innerHTML="Pokretanje programa"
-        break
+        break;
 
       case "stop":
         rezultat.innerHTML="Zaustavljanje"
-        break
+        break;
       
       case "pause":
         rezultat.innerHTML="Pauza programa"
-        break  
+        break;  
            
         default:
         rezultat.innerHTML="Nepoznata naredba"
@@ -30,46 +30,44 @@ document.getElementById('izvedi').addEventListener('click', () => {
         // kraj rješavanje 1. zadatak
       }
     break;
-      
+    }    
     
 
 
 
-    case '2':
+    case '2': {
       // rješavanje 2. zadatak
 
-      const
-      const
-
-      switch (){
+      const ocjena = a.toUpperCase();
+      
+      switch (ocjena) {
 
       case "A" :
       case "B" :
       case "C" :  
         rezultat.innerHTML="Položio"
-        break
+        break;
       
       case "D" :
       case "F" :
         rezultat.innerHTML="Nije položio"
-        break
+        break;
       
-
       default:
         rezultat.innerHTML="Nije dobar unos"
-      
+      }  
 
       // kraj rješavanje 2. zadatak
       break;
-      }    
-    break
+    }    
+    
 
 
       
-    case '3':
+    case '3': {
       // rješavanje 3. zadatak
       
-    const x=Number(a)
+    const x=Number(a);
 
     switch(true){
 
@@ -90,9 +88,9 @@ document.getElementById('izvedi').addEventListener('click', () => {
   case x>=60 :
     rezultat.innerHTML='Dovoljan'
     break
-  case x<=60 :
+  default:
     rezultat.innerHTML='Nedovoljan'
-    
+    }  
   
   
 
@@ -100,11 +98,71 @@ document.getElementById('izvedi').addEventListener('click', () => {
     break;
   }
 
+  // Za uneseni decimalni broj ispiši samo decimalni dio
+  // ulaz 3.14 izlaz 14
+
+  case '4': {
+
+  const x = parseFloat(a)
+  if(!x){
+    rezultat.innerHTML='Niste unijeli dobru vrijednost'
+    return
+  }
+  const cijeliBroj = parseInt(a)
+  rezultat.innerHTML = parseInt((x-cijeliBroj)*100)  
+
+    
+   break;
+  }
+
+//Za uneseni broj ispiši da li je paran ili nije
+
+  case '5': {
+  
+    const x=Number(a)
+    if(!x){                              
+    rezultat.innerHTML='Niste unijeli broj'
+    return
+  }
+
+    if(x%2===0){
+      rezultat.innerHTML= 'Broj je paran'
+    }
+    else {
+      rezultat.innerHTML='Broj je neparan'
+    }
+    break
+
+  }
+
+  case '6': {
+  // Za uneseno ime namirnice ispiši da li je voće
+
+  switch(a.toLowerCase()){
+      case 'jabuka':
+      case 'kruška':
+      case 'banana':
+      case 'grožđe':
+        rezultat.innerHTML='voće je'
+      break
+
+      default:
+        rezultat.innerHTML='nisam siguran da li je voće'
+  }
+
+  case '':
+
+  rezultat.innerHTML=a.length
+
+  break
+  }
+
     default:
       rezultat.innerHTML = `Nepoznati zadatak ${zadatak}`;
-  
-
+  }
 });
+
+
 
 
 // Zadaci
@@ -127,6 +185,3 @@ document.getElementById('izvedi').addEventListener('click', () => {
 // 80–89 → "Vrlo dobar"
 // 90–100 → "Odličan"
 // Napomena: koristi switch(true).
-
-
-  
