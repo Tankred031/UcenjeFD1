@@ -8,14 +8,57 @@ document.getElementById('izvedi').addEventListener('click', () => {
   switch (zadatak) {
     case '1':
       // rješavanje 1. zadatak
+      const command = "start"
 
-      // kraj rješavanje 1. zadatak
+      switch(command){
+      case "start":
+        rezultat.innerHTML="Pokretanje programa"
+      }
+        break
+
+      case "stop":
+        rezultat.innerHTML="Zaustavljanje"
+        break
+      
+      case "pauza":
+        rezultat.innerHTML="Pauza programa"
+        
+           
+        default:
+        rezultat.innerHTML="Nepoznata naredba"
+      }  
+        // kraj rješavanje 1. zadatak
     break;
+  
+  
     case '2':
       // rješavanje 2. zadatak
 
+      
+
+      switch (letter){
+
+      case "A" :
+      case "B" :
+      case "C" :  
+        rezultat.innerHTML="Položio"
+        break
+      
+      case "D" :
+      case "F" :
+        rezultat.innerHTML="Nije položio"
+        break
+      
+
+      default:
+        rezultat.innerHTML="Nije dobar unos"
+      }
+
+
       // kraj rješavanje 2. zadatak
     break;
+
+
     case '3':
       // rješavanje 3. zadatak
 
