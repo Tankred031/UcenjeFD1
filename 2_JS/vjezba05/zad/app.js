@@ -6,6 +6,7 @@ document.getElementById('izvedi').addEventListener('click', () => {
   const zadatak = document.getElementById('zadatak').value;
 
   switch (zadatak) {
+
     case '1':
       // rješavanje 1. zadatak
       const command = "start"
@@ -13,30 +14,34 @@ document.getElementById('izvedi').addEventListener('click', () => {
       switch(command){
       case "start":
         rezultat.innerHTML="Pokretanje programa"
-      }
         break
 
       case "stop":
         rezultat.innerHTML="Zaustavljanje"
         break
       
-      case "pauza":
+      case "pause":
         rezultat.innerHTML="Pauza programa"
-        
+        break  
            
         default:
         rezultat.innerHTML="Nepoznata naredba"
-      }  
+        
         // kraj rješavanje 1. zadatak
+      }
     break;
-  
-  
+      
+    
+
+
+
     case '2':
       // rješavanje 2. zadatak
 
-      
+      const
+      const
 
-      switch (letter){
+      switch (){
 
       case "A" :
       case "B" :
@@ -52,23 +57,52 @@ document.getElementById('izvedi').addEventListener('click', () => {
 
       default:
         rezultat.innerHTML="Nije dobar unos"
-      }
-
+      
 
       // kraj rješavanje 2. zadatak
-    break;
+      break;
+      }    
+    break
 
 
+      
     case '3':
       // rješavanje 3. zadatak
+      
+    const x=Number(a)
+
+    switch(true){
+
+  case x<0 || x>100 :
+    rezultat.innerHTML='Unesi broj od 0 do 100'
+    break
+  
+  
+  case x>=90 && x<=100 :
+    rezultat.innerHTML='Izvrstan'
+    break
+  case x>=80 :
+    rezultat.innerHTML='Vrlo dobar'
+    break
+  case x>=70 :
+    rezultat.innerHTML='Dobar'
+    break
+  case x>=60 :
+    rezultat.innerHTML='Dovoljan'
+    break
+  case x<=60 :
+    rezultat.innerHTML='Nedovoljan'
+    
+  
+  
 
       // kraj rješavanje 3. zadatak
     break;
-
+  }
 
     default:
       rezultat.innerHTML = `Nepoznati zadatak ${zadatak}`;
-  }
+  
 
 });
 
@@ -94,3 +128,5 @@ document.getElementById('izvedi').addEventListener('click', () => {
 // 90–100 → "Odličan"
 // Napomena: koristi switch(true).
 
+
+  
