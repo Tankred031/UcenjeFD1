@@ -6,8 +6,21 @@ document.getElementById('trigger').addEventListener('click', () => {
   const zadatak = document.getElementById('zadatak').value;
 
 
-  if (zadatak === '1') {
+    if (zadatak === '1') {
 
+
+
+
+
+
+
+
+
+
+
+    if (zadatak === '3') {
+        const niz[]
+        
    
 
 
