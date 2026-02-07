@@ -156,9 +156,7 @@ document.getElementById('izvedi').addEventListener('click', () => {
   case '7': {
 
       rezultat.innerHTML=a.length
-    
-
-  break
+      break
   }
 
     default:
