@@ -6,4 +6,11 @@ document.getElementById('trigger').addEventListener('click', () => {
   const zadatak = document.getElementById('zadatak').value;
 
 
-  if (zadatak === '1')
+  if (zadatak === '1') {
+
+   
+
+
+  rezultat.innerHTML = `Nepoznati zadatak ${zadatak}`;
+
+});
