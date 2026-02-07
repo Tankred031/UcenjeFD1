@@ -9,6 +9,10 @@ document.getElementById('trigger').addEventListener('click', () => {
     if (zadatak === '1') {
 
 
+        return
+    }
+
+
 
 
 
@@ -19,10 +23,25 @@ document.getElementById('trigger').addEventListener('click', () => {
 
 
     if (zadatak === '3') {
-        const niz[]
         
+        rezultat.innerHTML = `${b}, ${a}`;
+        return
+    }
    
 
+    if (zadatak === '5') {
+        
+        const broj = Number(a)
+        
+        if(!isNaN(broj)) {
+        rezultat.innerHTML = 'A je broj';
+        } 
+        else {
+            rezultat.innerHTML='A je string'
+        }
+        return
+        
+    }
 
   rezultat.innerHTML = `Nepoznati zadatak ${zadatak}`;
 
