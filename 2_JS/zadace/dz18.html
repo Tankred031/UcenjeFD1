@@ -9,37 +9,48 @@
 
 <body>
     <div class="container">
-        <h1>Računalo zadataka</h1>
+        <h1>&lt;Računalo zadataka&gt;</h1>
 
-        <div>
-        <h1>Rezultat</h1>
-    
+        
+        <h2 id="trigger">Rezultat</h2>
+
+        <div class="ekran">
+                        
+            <div id="rezultat" class="rezultat"></div>
+            
 
         </div>
         
         
-        
-        
-        
-        
-        
-        
-        <div>
-        <label>Odaberi zadatak
-            <select id="zadatak">
-                <option value="1">1. Prvi i zadnji element</option>
-                <option value="2">2. Siguran pristup elementu</option>
-                <option value="3">3. Zamjena prva dva elementa</option>
-                <option value="4">4. Dodavanje elementa po duljini</option>
-            </select>
-        </label>    
-        
-        A 
-        <input type="text">
-        B
-        <input type="text">
-        <hr>
-        <button type="submit">Izračunaj</button>
+        <div class="odabir">
+            <label style="display:block; text-align: center;"><span>Odaberi zadatak</span>
+                <select id="zadatak">
+                    <option value="1">1. Prvi i zadnji element</option>
+                    <option value="2">2. Siguran pristup elementu</option>
+                    <option value="3">3. Zamjena prva dva elementa</option>
+                    <option value="4">4. Dodavanje elementa po duljini</option>
+                    <option value="5">5. Provjera tipa prvog elementa</option>
+                    <option value="6">6. Ukloni zadnji element bez pop()</option>
+                    <option value="7">7. Spoji dva niza bez concat()</option>
+                    <option value="8">8. Provjera rupe u nizu</option>
+                    <option value="9">9. Razdvajanje prvog i ostatka </option>
+                    <option value="10">10. Switch prema duljini niza</option>
+                </select>
+            </label>    
+        </div>
+        <br>
+
+        <div class="unos">
+            <div class="card">
+                <label class="field" for="">A</label> 
+                <input type="text">
+            </div>    
+
+            <div class="card"> 
+                <label class="field" for="">B</label>
+                <input type="text">
+            </div>     
+            
 
         </div>
 

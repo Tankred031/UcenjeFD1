@@ -3,7 +3,7 @@ body {
 }
 
 .container { 
-    max-width: 1200px;
+    max-width: 900px;
     min-height: 100vh;
     margin: 0 auto;
     padding: 20px;
@@ -16,4 +16,101 @@ body {
 h1 {
     text-align: center;
     color: crimson;
+    padding-top: 40px;
+    text-decoration: underline crimson;
+    text-underline-offset: 15px;
+    
 }
+
+h2 {
+    text-align: center;
+    color: blue;
+    padding-top: 40px;
+    font-family: sans-serif;
+}
+
+hr {
+    width: 100%;
+    border: 1px solid crimson;
+}
+
+.ekran {
+    background-color: lightblue;
+    width: 35%;
+    border-radius: 600px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+
+    margin: 0 auto 20px;
+}
+
+#trigger {
+    text-align: center;
+    cursor: pointer;
+    color: crimson;
+    margin-bottom: 20px;
+}
+
+#trigger:hover {
+    color: tomato;
+}
+
+
+.rezultat {
+    font-size: 36px;
+    padding-top: 60px;
+}
+
+.odabir {
+    background-color: white;
+    color: crimson;
+    font-family: sans-serif;
+    border-radius: 16px;
+}
+
+select {
+    width: 95%;
+    padding: 15px 10px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+span {
+    font-size: large;
+    font-weight: bold;
+    letter-spacing: 0.4rem;
+    word-spacing: 1rem;
+    
+}
+
+.unos {
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    border-radius: 16px;
+    padding: 20px;    
+    gap: 40px;  
+}
+
+.card {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0 auto;
+    font-weight: bold;
+    gap: 1rem;
+}
+
+input {
+    width: 100%;
+    height: 40px;
+    border: 1px solid black;
+    margin-bottom: 10px;
+}
+
+
+
