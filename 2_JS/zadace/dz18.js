@@ -8,8 +8,8 @@ document.getElementById('trigger').addEventListener('click', () => {
 
     if (zadatak === '1') {
 
-
-        return
+        rezultat.innerHTML = [a, '🤤', '🍕', b];
+        return;
     }
 
 
@@ -25,9 +25,20 @@ document.getElementById('trigger').addEventListener('click', () => {
     if (zadatak === '3') {
         
         rezultat.innerHTML = `${b}, ${a}`;
-        return
+        return;
     }
    
+    if (zadatak === '4') {
+
+        if(a.length <= 3){
+            rezultat.innerHTML= a + 'X' + b;
+        } else {
+            rezultat.innerHTML= 'Y' + a + b;
+            
+        }
+        return;
+    }
+
 
     if (zadatak === '5') {
         
@@ -37,11 +48,55 @@ document.getElementById('trigger').addEventListener('click', () => {
         rezultat.innerHTML = 'A je broj';
         } 
         else {
-            rezultat.innerHTML='A je string'
+            rezultat.innerHTML='A je string';
         }
-        return
+        return;
         
     }
+
+
+
+
+
+
+
+
+    if (zadatak === '7') {
+
+        let x = [a, 2];
+        let y = [b, 4];
+
+        rezultat.innerHTML = [...x, ...y];
+        return;
+    }
+        
+
+    
+
+
+
+
+
+
+
+
+    if (zadatak === '9') {
+
+        const [prvi, drugi, ostalo] = [a, b, 7, 6, 5];
+        /*rezultat.innerHTML = (prvi);
+        rezultat.innerHTML = (drugi);
+        rezultat.innerHTML = (ostalo);
+        return;*/
+        console.log(prvi);
+        console.log(drugi);
+        console.log(ostalo);
+        
+
+    }
+    return
+
+    
+
 
   rezultat.innerHTML = `Nepoznati zadatak ${zadatak}`;
 
