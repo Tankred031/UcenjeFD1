@@ -93,7 +93,7 @@ document.getElementById('trigger').addEventListener('click', () => {
 
     
 
-
+}
   rezultat.innerHTML = `Nepoznati zadatak ${zadatak}`;
 
 });
