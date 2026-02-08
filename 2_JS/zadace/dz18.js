@@ -82,16 +82,12 @@ document.getElementById('trigger').addEventListener('click', () => {
 
     if (zadatak === '9') {
 
-        const [prvi, drugi, ostalo] = [a, b, 7, 6, 5];
-        /*rezultat.innerHTML = (prvi);
-        rezultat.innerHTML = (drugi);
-        rezultat.innerHTML = (ostalo);
-        return;*/
-        console.log(prvi);
+        const [prvi, drugi, ...ostalo] = [a, b, 7, 6, 5];
+        console.log(prvi);         
         console.log(drugi);
-        console.log(ostalo);
+        console.log(...ostalo);
+        return;
         
-
     }
     return
 
