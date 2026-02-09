@@ -9,7 +9,7 @@ body {
     padding: 20px;
     border-radius: 12px;
 
-    background-color: azure;
+    background-color: aliceblue;
 }
 
 
@@ -35,7 +35,7 @@ hr {
 }
 
 .ekran {
-    background-color: lightblue;
+    background-color: cyan;
     width: 35%;
     border-radius: 600px;
 
@@ -55,7 +55,7 @@ hr {
 }
 
 #trigger:hover {
-    color: tomato;
+    color: limegreen;
 }
 
 
@@ -69,6 +69,7 @@ hr {
     color: crimson;
     font-family: sans-serif;
     border-radius: 16px;
+    padding: 10px 0 20px;
 }
 
 select {
@@ -114,4 +115,25 @@ input {
 }
 
 
+#zadatak option:first-child,
+#zadatak option:nth-child(3),
+#zadatak option:nth-child(4),
+#zadatak option:nth-child(5),
+#zadatak option:nth-child(7),
+#zadatak option:nth-child(9) {
+    color: limegreen;
+}
 
+/*
+.rijeseno {
+    color: limegreen;
+    font-weight: bold;
+}
+*/
+
+h5 {
+    margin-top: 60px;
+    text-align: center;
+    font-style: italic;
+    color: grey;
+}

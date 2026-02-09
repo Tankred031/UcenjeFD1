@@ -5,10 +5,22 @@ document.getElementById('trigger').addEventListener('click', () => {
   const b = document.getElementById('b').value;
   const zadatak = document.getElementById('zadatak').value;
 
+/*
+function oznaciRijeseno(zadatakValue) {
+    const opcija = document.querySelector(
+    `#zadatak option[value="${zadatakValue}"]`
+    );
+    
+    if (opcija) {
+        opcija.classList.add('rijeseno');
+    }
+}
+*/ 
 
     if (zadatak === '1') {
 
         rezultat.innerHTML = [a, '🤤', '🍕', b];
+        //oznaciRijeseno('1');
         return;
     }
 
@@ -25,6 +37,7 @@ document.getElementById('trigger').addEventListener('click', () => {
     if (zadatak === '3') {
         
         rezultat.innerHTML = `${b}, ${a}`;
+        //oznaciRijeseno('3');
         return;
     }
    
@@ -34,8 +47,7 @@ document.getElementById('trigger').addEventListener('click', () => {
             rezultat.innerHTML= a + 'X' + b;
         } else {
             rezultat.innerHTML= 'Y' + a + b;
-            
-        }
+        }   //oznaciRijeseno('4');
         return;
     }
 
@@ -49,7 +61,7 @@ document.getElementById('trigger').addEventListener('click', () => {
         } 
         else {
             rezultat.innerHTML='A je string';
-        }
+        }   //oznaciRijeseno('5');
         return;
         
     }
@@ -67,6 +79,7 @@ document.getElementById('trigger').addEventListener('click', () => {
         let y = [b, 4];
 
         rezultat.innerHTML = [...x, ...y];
+        //oznaciRijeseno('7');
         return;
     }
         
@@ -86,14 +99,15 @@ document.getElementById('trigger').addEventListener('click', () => {
         console.log(prvi);         
         console.log(drugi);
         console.log(...ostalo);
+        //oznaciRijeseno('9');
         return;
         
     }
-    return
+    
 
     
 
-}
+
   rezultat.innerHTML = `Nepoznati zadatak ${zadatak}`;
 
 });
