@@ -98,6 +98,7 @@ console.log('===============================');
     
 console.log('===============================');
 
+
 // string je niz (neformalno ali jest)
 
 const ime = 'Marko';    // string
@@ -107,3 +108,14 @@ for(let i=0; i<ime.length; i++){
 }
 
 console.log('===============================');
+
+
+// beskonačna petlja  - zadatak dolje radi beskonačno
+let broj=0;
+for(;;){
+    console.log(broj++);
+    //if(broj>50){
+     break;    
+    }
+
+    

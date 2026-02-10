@@ -159,10 +159,7 @@ document.getElementById('izvedi').addEventListener('click', () => {
       break
   }
 
-    default:
-      rezultat.innerHTML = `Nepoznati zadatak ${zadatak}`;
-  }
-});
+    
 
 
 
@@ -187,3 +184,31 @@ document.getElementById('izvedi').addEventListener('click', () => {
 // 80–89 → "Vrlo dobar"
 // 90–100 → "Odličan"
 // Napomena: koristi switch(true).
+
+
+
+case '8': {
+
+      const doBroja = Number(a);
+      if(!a){
+        rezultat.innerHTML='Unesite broj';
+        return
+      }
+      let s='';
+      for(let i=1; i<=doBroja; i++){
+        console.log(i + ',');
+        if(i===doBroja){
+          s += i;
+        } else {
+        s += i + ', ';
+      }   
+    }   
+        rezultat.innerHTML = s;
+      
+        break;
+    
+  }
+    default:
+      rezultat.innerHTML = `Nepoznati zadatak ${zadatak}`;
+  }
+});
