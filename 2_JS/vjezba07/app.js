@@ -21,8 +21,14 @@
  console.log(tekst);
  console.log(tekst);
  console.log(tekst);
+
+ console.log("Edunova\n".repeat(10));  // ili:
+ console.log("Edunova\n".repeat(9) + "Edunova");
+
+
  
 console.log('===============================');
+
 
 for(let i=0;i<10;i++){
     console.log('Edunova');
