@@ -49,3 +49,6 @@ class, style, title, id - 4 elementa
 
 Shift+Alt+F --> minimizira/normalizira kod
 
+F12 consola u hmtl
+F11 je step naprijed u consoli (kod debugger-a)
+Esc pali scource u consoli i gasi
