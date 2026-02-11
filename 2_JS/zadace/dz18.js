@@ -24,13 +24,29 @@ function oznaciRijeseno(zadatakValue) {
         return;
     }
 
+    if(zadatak === '2') {
+        if(!a || !b) {
+            console.log('Neispravan unos');
+            return;
+        }
 
+        const niz2 = ["a", a, "c"];
+        let index;
 
+        if(!isNaN(b)) {
+            index = Number(b);
+        } else {
+            index = b.length;
+        }
 
+        if(index >= niz2.length || index < 0) {
+            console.log("Indeks prevelik");
+            return;
+        }
 
-
-
-
+        console.log(niz2[index]);
+        return;
+    }
 
 
 
@@ -66,10 +82,20 @@ function oznaciRijeseno(zadatakValue) {
         
     }
 
+    if(zadatak === '6'){
+        if(!a || !b) {
+            console.log('Neispravan unos');
+            return;
+        }
+        const niz5 = [a, b, "KRAJ"];
+        console.log(niz5);
+        
+        niz5.length = niz5.length - 1;
 
-
-
-
+        console.log(niz5);
+        
+        return;
+    }
 
 
 
@@ -82,14 +108,22 @@ function oznaciRijeseno(zadatakValue) {
         //oznaciRijeseno('7');
         return;
     }
-        
-
+       
     
 
-
-
-
-
+    if(zadatak === '8'){
+        if(!a || !b) {
+            console.log('Neispravan unos');
+            return;
+        }
+        const niz8 = [];
+        niz8[0] = a;
+        niz8[2] = b;
+        console.log(niz8);
+        console.log(1 in niz8);
+        return;
+    }
+    
 
 
 
@@ -105,6 +139,34 @@ function oznaciRijeseno(zadatakValue) {
     }
     
 
+    if(zadatak === '10'){
+        let x = Number(a);
+        if (isNaN(x)){ 
+            x = a;
+        }
+        let y = Number(b);
+        if (isNaN(y)){
+            y = b;
+        }
+        let niz10 = [];
+
+        switch(true){
+            case a === '' || b === '':
+                niz10 = [];
+                break;
+            case x === y:
+                niz10 = [x];
+                break;
+            case typeof y === 'number' && y === 2:
+                niz10 = [x, y];
+                break;
+            default:
+                niz10 = [x, y, "x"];
+        }
+
+        console.log(niz10);
+        return;
+    }
     
 
 
