@@ -38,7 +38,7 @@ document.getElementById('izvedi').addEventListener('click', () => {
 
       let prim = true;
       let brojac = 1;
-    //  let cjelobrojDjeljiv = 0
+    //let cjelobrojDjeljiv = 0
       for (let i=2; i<a1; i++) {
         if(brojac++ % 1000 === 0){ // svaki tisućiti ispiši
         console.log(brojac, a1, '%',  i, '=',  a1 % i); 
@@ -67,6 +67,74 @@ document.getElementById('izvedi').addEventListener('click', () => {
 
     case '2':
       // rješavanje 2. zadatak
+
+      // 6 je savršen broj ZAŠTO?
+      // 6 % 1 = 0, stoga UVIJEK uzimam 1 , svaki broj je djeljiv sa 1
+      // 6 % 2 = 0, uzimam 2
+      // 6 % 3 = 0, uzimam 3
+      // 6 % 4 = 2, NE uzimam 4
+      // 6 % 5 = 1, NE uzimam 5
+
+      // Zbrojim sve one koje uzimam (1+2+3) = 6
+      // ako je ulaz (6) jednako zbroj (6) radi se o savršenom broju
+
+      // 7 nije savršeni broj
+      //       1
+      // (7%2)=1
+      // (7%3)=1
+      // (7%4)=3
+      // (7%5)=2
+      // (7%6)=6
+      // ima samo 1  1!== 7 i stoga nije savršeni broj
+
+      // 28
+      // 1          +1
+      // 28%2=0     +2
+      // 28%3=0     +3 
+      // 28%4=0     +4
+      // 28%5=3
+      // 28%6=4
+      // 28%7=0     +7
+      // 28%8=4
+      // 28%9=1
+      // 28%10=8
+      // 28%11=6
+      // 28%12=4
+      // 28%13=2
+      // 28%14=0    +14
+      // 28%15=13   _____
+      // 28%16=12   =28
+      // ... itd
+ 
+      // 1+2+4+7+14 = 28, 28 = 28, 28 je savršeni broj
+      
+
+      const b1 = Number(b);   
+
+      if (!b) {
+      rezultat.innerHTML = ('Uneseni podatak nije broj')
+      return;
+      }
+      
+      if (b1<2 || b1>1000) {
+      rezultat.innerHTML = ('Uneseni broj mora biti između 2 i 1.000')
+        return
+      }
+
+      // ovo je srž, gore su idiotske kontrole...
+      let suma = 0;
+      for (i=1; i<b1; i++){
+        if(b1%i === 0){
+          suma += i;          
+        }
+
+      }
+      if (suma === b1){
+        rezultat.innerHTML = `${b1} je savršeni broj`
+      } else {
+        rezultat.innerHTML = `${b1} nije savršeni broj`
+      }
+
 
       // kraj rješavanje 2. zadatak
     break;
