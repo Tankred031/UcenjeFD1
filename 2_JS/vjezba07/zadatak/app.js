@@ -255,21 +255,16 @@ document.getElementById('izvedi').addEventListener('click', () => {
       let brojSuglasnika = 0;
 
       for (let i = 0; i < unos.length; i++) {
-        unos [i] === samoglasnik;
-      }
-
-      unos = brojSamoglasnika 
-      rezultat.innerHTML = ("Broj samoglasnika: " + unos);
-
-      if (samoglasnik === true) {
+        if(samoglasnik.includes (unos[i])) {
+          brojSamoglasnika++
+        } else if (unos [i] >= "a" && unos[i] <= "z") {
+          brojSuglasnika++
+        }
+      }  
         rezultat.innerHTML =
-      } else {
-        rezultat.innerHTML = 
-      }
-
-
-
-
+        "Broj samoglasnika: " + brojSamoglasnika +
+        "<br>Broj suglasnika: " + brojSuglasnika
+      
 
 
 
@@ -279,6 +274,25 @@ document.getElementById('izvedi').addEventListener('click', () => {
     break;
     case '7':
       // rješavanje 7. zadatak
+
+
+
+
+
+      for (let i = nešto; i < nešto; i++)
+
+
+
+
+
+
+
+
+
+
+
+
+
 
       // kraj rješavanje 7. zadatak
     break;
