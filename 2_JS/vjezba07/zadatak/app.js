@@ -141,20 +141,139 @@ document.getElementById('izvedi').addEventListener('click', () => {
     case '3':
       // rješavanje 3. zadatak
 
+
+      const q = Number(b);
+
+      if (isNaN(q)) {
+        rezultat.innerHTML = ('Uneseni podatak nije broj');
+        return
+      }
+
+      if (q<2 || q>1000) {
+        rezultat.innerHTML = ('Uneseni broj mora biti između 2 i 1000');
+        return
+      }
+
+      let zbroj = 0;
+      const duzina = b.length;
+
+      for (let i=0; i<duzina; i++) {
+        zbroj += Number(b[i]) ** duzina;
+      }
+
+      if (zbroj === q) {
+        rezultat.innerHTML = ("Ovo JE armstrongov broj 🙃");
+      } else {
+        rezultat.innerHTML = ("Ovo nije armstrongov broj");
+      }
+
+
+
+
       // kraj rješavanje 3. zadatak
     break;
     case '4':
       // rješavanje 4. zadatak
 
+      const palindrom = a;
+      const obrnuto = a.split("").reverse().join("");
+
+      if (obrnuto === palindrom) {
+        rezultat.innerHTML = ("Riječ je palindrom"); 
+      } else {
+        rezultat.innerHTML = ("Riječ nije palindrom")
+      }
+
+
+      
       // kraj rješavanje 4. zadatak
     break;
     case '5':
       // rješavanje 5. zadatak
 
+
+    const rijec = b;
+    const stopRijeci = [
+    'a', 'ako', 'ali', 'bi', 'bih', 'bila', 'bili', 'bilo', 'bio', 'bismo', 
+    'biste', 'biti', 'bumo', 'da', 'do', 'duž', 'ga', 'hoće', 'hoćemo', 'hoćete', 
+    'hoćeš', 'hoću', 'i', 'iako', 'idemo', 'ideš', 'ide', 'iz', 'iza', 'iznad', 
+    'ja', 'jako', 'jer', 'jesmo', 'jeste', 'jesu', 'je', 'kad', 'kada', 'kao', 
+    'kroz', 'li', 'me', 'mene', 'meni', 'mi', 'mimo', 'mene', 'moj', 'moja', 
+    'moje', 'mu', 'na', 'nad', 'nakon', 'nam', 'nama', 'nas', 'naš', 'naša', 
+    'naše', 'našu', 'ne', 'nego', 'neka', 'neki', 'nekog', 'neko', 'nema', 'netko', 
+    'neće', 'nećemo', 'nećete', 'nećeš', 'neću', 'ni', 'nije', 'nijedan', 'nikad', 
+    'nismo', 'niste', 'nisu', 'njega', 'njegov', 'njegova', 'njegovo', 'njemu', 'njen', 
+    'njena', 'njeno', 'njih', 'njihov', 'njihova', 'njihovo', 'njim', 'njima', 'njoj', 
+    'nju', 'o', 'od', 'odmah', 'on', 'ona', 'onaj', 'onam', 'onamo', 'one', 
+    'oni', 'ono', 'onolika', 'onoliko', 'onoliki', 'onoliku', 'ova', 'ovaj', 'ovdje', 
+    'ove', 'ovi', 'ovo', 'ovuda', 'pa', 'pak', 'po', 'pod', 'pored', 'poslije', 
+    'povrh', 'preko', 'pri', 'pred', 'prema', 'sa', 'sam', 'samo', 'se', 'sebe', 
+    'sebi', 'si', 'smo', 'ste', 'su', 'sve', 'svi', 'svog', 'svoj', 'svoja', 
+    'svoje', 'ta', 'taj', 'tako', 'tamo', 'te', 'tebe', 'tebi', 'ti', 'to', 
+    'točno', 'u', 'uz', 'vam', 'vama', 'vas', 'vaš', 'vaša', 'vaše', 'već', 
+    'vi', 'vrlo', 'za', 'zar', 'će', 'ćemo', 'ćete', 'ćeš', 'ću', 'što', 'the', 
+    'and', 'is', 'are', 'was', 'were', 'be', 'been', 'being', 'have', 'has', 
+    'had', 'do', 'does', 'did', 'but', 'if', 'or', 'because', 'as', 'until', 
+    'while', 'of', 'at', 'by', 'for', 'with', 'about', 'against', 'between', 
+    'into', 'through', 'during', 'before', 'after', 'above', 'below', 'to', 
+    'from', 'up', 'down', 'in', 'out', 'on', 'off', 'over', 'under', 'again', 
+    'further', 'then', 'once'
+    ];
+
+    let pronadenaRijec = false;
+
+    for (let i = 0; i < stopRijeci.length; i++ ) {
+      if (rijec === stopRijeci[i]) {
+        pronadenaRijec = true;
+        break;
+      }
+    }
+
+      if (pronadenaRijec) {
+        rezultat.innerHTML = ("Upisana riječ postoji u nizu 👍🏻");
+      } else {
+        rezultat.innerHTML = ("Riječ ne postoji u nizu 👎🏻");
+      }
+    
+    
+
       // kraj rješavanje 5. zadatak
     break;
     case '6':
       // rješavanje 6. zadatak
+
+
+      const unos = a.toLowerCase();
+      const samoglasnik = ["a", "e", "i", "o", "u"];
+
+      if (unos === "") {
+      rezultat.innerHTML = "Unesi riječ";
+      return;
+      }
+
+      let brojSamoglasnika = 0;
+      let brojSuglasnika = 0;
+
+      for (let i = 0; i < unos.length; i++) {
+        unos [i] === samoglasnik;
+      }
+
+      unos = brojSamoglasnika 
+      rezultat.innerHTML = ("Broj samoglasnika: " + unos);
+
+      if (samoglasnik === true) {
+        rezultat.innerHTML =
+      } else {
+        rezultat.innerHTML = 
+      }
+
+
+
+
+
+
+
+
 
       // kraj rješavanje 6. zadatak
     break;
@@ -204,29 +323,3 @@ document.getElementById('zadatak').addEventListener('change', (event) => {
 
 
 
-const stopRijeci = [
-  'a', 'ako', 'ali', 'bi', 'bih', 'bila', 'bili', 'bilo', 'bio', 'bismo', 
-  'biste', 'biti', 'bumo', 'da', 'do', 'duž', 'ga', 'hoće', 'hoćemo', 'hoćete', 
-  'hoćeš', 'hoću', 'i', 'iako', 'idemo', 'ideš', 'ide', 'iz', 'iza', 'iznad', 
-  'ja', 'jako', 'jer', 'jesmo', 'jeste', 'jesu', 'je', 'kad', 'kada', 'kao', 
-  'kroz', 'li', 'me', 'mene', 'meni', 'mi', 'mimo', 'mene', 'moj', 'moja', 
-  'moje', 'mu', 'na', 'nad', 'nakon', 'nam', 'nama', 'nas', 'naš', 'naša', 
-  'naše', 'našu', 'ne', 'nego', 'neka', 'neki', 'nekog', 'neko', 'nema', 'netko', 
-  'neće', 'nećemo', 'nećete', 'nećeš', 'neću', 'ni', 'nije', 'nijedan', 'nikad', 
-  'nismo', 'niste', 'nisu', 'njega', 'njegov', 'njegova', 'njegovo', 'njemu', 'njen', 
-  'njena', 'njeno', 'njih', 'njihov', 'njihova', 'njihovo', 'njim', 'njima', 'njoj', 
-  'nju', 'o', 'od', 'odmah', 'on', 'ona', 'onaj', 'onam', 'onamo', 'one', 
-  'oni', 'ono', 'onolika', 'onoliko', 'onoliki', 'onoliku', 'ova', 'ovaj', 'ovdje', 
-  'ove', 'ovi', 'ovo', 'ovuda', 'pa', 'pak', 'po', 'pod', 'pored', 'poslije', 
-  'povrh', 'preko', 'pri', 'pred', 'prema', 'sa', 'sam', 'samo', 'se', 'sebe', 
-  'sebi', 'si', 'smo', 'ste', 'su', 'sve', 'svi', 'svog', 'svoj', 'svoja', 
-  'svoje', 'ta', 'taj', 'tako', 'tamo', 'te', 'tebe', 'tebi', 'ti', 'to', 
-  'točno', 'u', 'uz', 'vam', 'vama', 'vas', 'vaš', 'vaša', 'vaše', 'već', 
-  'vi', 'vrlo', 'za', 'zar', 'će', 'ćemo', 'ćete', 'ćeš', 'ću', 'što', 'the', 
-  'and', 'is', 'are', 'was', 'were', 'be', 'been', 'being', 'have', 'has', 
-  'had', 'do', 'does', 'did', 'but', 'if', 'or', 'because', 'as', 'until', 
-  'while', 'of', 'at', 'by', 'for', 'with', 'about', 'against', 'between', 
-  'into', 'through', 'during', 'before', 'after', 'above', 'below', 'to', 
-  'from', 'up', 'down', 'in', 'out', 'on', 'off', 'over', 'under', 'again', 
-  'further', 'then', 'once'
-];
