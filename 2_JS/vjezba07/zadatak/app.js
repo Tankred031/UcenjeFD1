@@ -287,17 +287,15 @@ document.getElementById('izvedi').addEventListener('click', () => {
         return
       }
 
-        
-
     if (p < r) {
       for (let i = p; i < r; i++) {
         ispis += i + "\t";
       }                 
-      } else if (p > r) {
+    } else if (p > r) {
         for (let i = p; i > r; i--) {
         ispis += i + "\t";
       }
-      } else if (p === r) {
+    } else if (p === r) {
         rezultat.innerHTML = "a i b su jednaki"
         return;
       }
@@ -315,10 +313,10 @@ document.getElementById('izvedi').addEventListener('click', () => {
       rezultat.innerHTML = `Nepoznati zadatak ${zadatak}`;
   }
 
-  
- 
-  
+    
 });
+
+
 const poveznica = document.getElementById('poveznica');
 poveznica.href='https://enciklopedija.hr/clanak/primbrojevi';
 document.getElementById('zadatak').addEventListener('change', (event) => {
