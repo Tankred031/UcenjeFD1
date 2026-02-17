@@ -175,6 +175,7 @@ document.getElementById('izvedi').addEventListener('click', () => {
     case '4':
       // rješavanje 4. zadatak
 
+      
       const palindrom = a;
       const obrnuto = a.split("").reverse().join("");
 
@@ -183,6 +184,35 @@ document.getElementById('izvedi').addEventListener('click', () => {
       } else {
         rezultat.innerHTML = ("Riječ nije palindrom")
       }
+      
+      /*
+      // palindrom --> ružanedoodenažur
+      
+
+      let s = '';
+    //debugger;
+      for(let i=0; i<a.length; i++){
+        if(a[i] != ' '){
+          s += a[i].toLowerCase();
+        }
+      }
+      console.log('s= ', s);
+      let w = true;
+      let dužina = s.length;
+
+      for (let i = 0; i < dužina / 2; i++) {
+        if (s[i] !== s[dužina - 1 - i]) {
+        w = false;  // čim nađe razliku, nije palindrom
+        break;
+        }
+      }
+        if(w){
+          rezultat.innerHTML = 'Izraz je palindrom'
+        } else {
+          rezultat.innerHTML = 'Izraz nije palindrom'
+        }
+
+        */
 
 
       
