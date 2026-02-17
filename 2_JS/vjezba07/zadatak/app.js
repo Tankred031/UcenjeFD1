@@ -239,6 +239,7 @@ document.getElementById('izvedi').addEventListener('click', () => {
 
       // kraj rješavanje 5. zadatak
     break;
+    
     case '6':
       // rješavanje 6. zadatak
 
@@ -265,31 +266,44 @@ document.getElementById('izvedi').addEventListener('click', () => {
         "Broj samoglasnika: " + brojSamoglasnika +
         "<br>Broj suglasnika: " + brojSuglasnika
       
-
+    
 
 
 
 
       // kraj rješavanje 6. zadatak
     break;
+
+  
     case '7':
       // rješavanje 7. zadatak
 
 
+    const p = Number(a);
+    const r = Number(b);
 
+    if (isNaN(p) || isNaN(r)) {
+        rezultat.innerHTML = ('Uneseni podatak nije broj');
+        return
+      }
 
+        
 
-      for (let i = nešto; i < nešto; i++)
+    if (p < r) {
+      for (let i = p; i < r; i++) {
+        ispis += i + "\t";
+      }                 
+      } else if (p > r) {
+        for (let i = p; i > r; i--) {
+        ispis += i + "\t";
+      }
+      } else if (p === r) {
+        rezultat.innerHTML = "a i b su jednaki"
+        return;
+      }
 
-
-
-
-
-
-
-
-
-
+        rezultat.innerHTML= (ispis); 
+      
 
 
 
