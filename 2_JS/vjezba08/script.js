@@ -40,6 +40,25 @@ console.timeEnd('ZB2');
 // big o notacija
 // smanjiti kompleksnost je riješenje optimizacije
 
+/**
+ * ==============================================================================
+ * BIG O NOTATION CHEAT SHEET
+ * ==============================================================================
+ * Complexity  |    Name         |  Performance |  Example
+ * -------------|-----------------|--------------|-------------------------------
+ * O(1)        |  Constant       |  Excellent   | Accessing array index
+ * O(log n)    |  Logarithmic    |  Good        | Binary Search
+ * O(n)        |  Linear         |  Fair        | Single loop (for/forEach)
+ * O(n log n)  |  Linearithmic   |  Acceptable  | Efficient sorting (MergeSort)
+ * O(n^2)      |  Quadratic      |  Slow        | Nested loops
+ * O(2^n)      |  Exponential    |  Very Slow   | Recursive Fibonacci
+ * O(n!)       |  Factorial      |  Horrible    | Traveling Salesman Problem
+ * ------------------------------------------------------------------------------
+ * n = broj elemenata (input size)
+ * ==============================================================================
+ */
+
+
 // ČINJENICA: niti u for, niti u while se ne mora ući
 
 let br = -5; // ova vrijednost je ostalo od koda prije
