@@ -1,0 +1,33 @@
+body {
+    background-color: goldenrod;
+}
+
+h1, h3 {
+    background-color: springgreen;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.button {
+    padding: 30px 10px;
+    background-color: crimson;
+    border-radius: 70%;
+    font-weight: bold;   
+}
+
+div {
+    border-radius: 12px;
+}
+
+.rounded {
+  border-radius: 20px;
+}
+
+.rezultat {
+    padding: 40px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
