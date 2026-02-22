@@ -6,6 +6,52 @@
     <title>Document</title>
 </head>
 <body>
-    
+
+<style>
+html, body {
+  margin: 0;
+  height: 100%;
+}
+
+body {
+  display: flex;
+  height: 100vh;
+  font-family: cursive;
+}
+
+.left, .right {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.left {
+  background: #212842;
+  color: #f0e7d5;
+  font-size: 32px;
+}
+
+.right {
+  background: #f0e7d5;
+  color: #212842;
+  font-size: 60px;
+  font-weight: bold;
+}
+</style>
+
+<div class="left">
+  <div id="ime1Prikaz"></div>
+  <div>+</div>
+  <div id="ime2Prikaz"></div>
+</div>
+
+<div class="right">
+  <div id="rezultat"></div>
+</div>
+
+<script src="dz20.js"></script>
+
 </body>
 </html>

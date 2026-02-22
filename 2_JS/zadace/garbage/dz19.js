@@ -63,7 +63,7 @@ document.getElementById('izvedi').addEventListener('click', function() {
 
             let prosjek = suma / brojOcjena;
 
-            alert("Prosjek ocjena je: " + prosjek);
+             rezultat.innerHTML = ("Prosjek ocjena je: " + prosjek);
 
 
     }
