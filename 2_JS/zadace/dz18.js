@@ -87,12 +87,12 @@ function oznaciRijeseno(zadatakValue) {
             console.log('Neispravan unos');
             return;
         }
-        const niz5 = [a, b, "KRAJ"];
-        console.log(niz5);
+        const niz = [a, b, "KRAJ"];
+        console.log(niz);
         
-        niz5.length = niz5.length - 1;
+        niz.length = niz.length - 1;
 
-        console.log(niz5);
+        console.log(niz.length);
         
         return;
     }
@@ -101,8 +101,8 @@ function oznaciRijeseno(zadatakValue) {
 
     if (zadatak === '7') {
 
-        let x = [a, 2];
-        let y = [b, 4];
+        let x = [a, -2];
+        let y = [b, -4];
 
         rezultat.innerHTML = [...x, ...y];
         //oznaciRijeseno('7');
