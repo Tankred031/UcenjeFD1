@@ -30,7 +30,7 @@ class Osoba {
 // Objekt je instanca (pojavnost) klase
 // o je objekt
 const o = new Osoba();     // new je poziv konstruktora
-o.ime = 'Pero'             // bez set u klasi - Uncaught RangeError: Maximum call stack size exceeded
+o.ime = 'Pero'     // bez set u klasi - Uncaught RangeError: Maximum call stack size exceeded
 o.setIme('Marija')
 console.log(o.ime);
 
@@ -45,7 +45,7 @@ console.log(student.ime);
 
 
 // OOP princip nasljeđivanje (inheritance)
-class Polaznik extends Osoba{
+class Polaznik extends Osoba {
 
     #odradioObaveze;
 
@@ -70,18 +70,18 @@ console.log(p.ime, p.odradioObaveze);
 
 class Predavac extends Osoba{
     #redoviti;
-    get redoviti(){return this.#redoviti;}
-    constructor(ime='', redoviti=false){
+    get redoviti() {return this.#redoviti; }
+    constructor(ime=' ', redoviti=false) {
         super(ime);
         this.#redoviti=redoviti;
     }
-    toString(){
+    toString() {
         return `Ime je ${super.ime}, redovita: ${this.#redoviti}`;
     }
 }
 
 const predavac = new Predavac ('Gordana', true);
-console.log(`${predavac}`);                            // predavac je instanca klase Predavac
+console.log(`${predavac}`);                       // predavac je instanca klase Predavac
 console.log(p);                                   // p je instanca klase Polaznika
 
 console.log(jucer);                               // pozvala se metoda toString()
@@ -91,19 +91,19 @@ console.log(jucer);                               // pozvala se metoda toString(
 // https://github.com/tjakopec/OOP_JAVA_PHP_PYTHON_SWIFT
 
 
-console.log(Math.random));
+console.log(Math.random());
 
 //Ideja objekta jest da bude kontejner za podatke i metode koji upravljaju tim podacima
 //Što s kodom koji nema potrebu pamtiti podatke već samo izvesti neku logiku
 
-//U OOP ako želimo samo logiku bez potrebe pamćenja podataka koristim statičku
+//U OOP ako želimo samo logiku bez potrebe pamćenja podataka koristim statične metode
 
 class Pomocno{
-    static slucajniBroj(min=0, max=0){
-        if(min===0 && max=== 0){
+    static slucajniBroj(min=0, max=0) {
+        if(min===0 && max=== 0) {
             return Math.random();
         }
-        return((Math.random()*(max-min)+min).toFixed(0));
+        return((Math.random() * (max-min) + min).toFixed(0));
     }
 }
 
