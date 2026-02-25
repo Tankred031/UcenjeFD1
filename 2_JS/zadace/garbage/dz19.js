@@ -101,17 +101,43 @@ document.getElementById('izvedi').addEventListener('click', function() {
 
         case "8":
 
-        let Celsius = Number(a);
-        let Fahrenheit = Number(b);
-
-        let CToF = ((Celsius * 9) /5) + 32; 
-        let FToC = ((Fahrenheit * 5) /9);
-
+        if(a !== "") {
+            let tempC = Number(a);
         
-       rezultat.innerHTML = "Temperatura iznosi: " +  + " °C";
-       rezultat.innerHTML = "Temperatura iznosi: " +  + " °F";
+        
+            if (isNaN(tempC)) {
+                rezultat.innerHTML = "Uneseni podatak nije broj";
+                return;
+            } 
+        
+            let rezultatC = (tempC * 9 / 5) + 32;
+            rezultat.innerHTML = "Temperatura iznosi: " + rezultatC + " °F";
+
+        } 
+        
+        else if(b !== "") {
+            let tempF = Number(b);
+        
+        
+            if(isNaN(tempF)) {
+                rezultat.innerHTML = "Uneseni podatak nije broj"
+                return;
+            }
+        
+            let rezultatF = (tempF - 32) * 5 / 9;
+            rezultat.innerHTML = "Temperatura iznosi: " + rezultatF + " °C";            
+        
+        } 
+        
+        else {
+            rezultat.innerHTML = "Nije uneseno ni jedno polje";              
+        }
+        
+        break;
+       
 
 
+        case "9": 
 
 
 

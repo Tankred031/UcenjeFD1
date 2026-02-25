@@ -54,3 +54,12 @@ F11 je step naprijed u consoli (kod debugger-a)
 Esc pali scource u consoli i gasi
 
 Ctrl+Shift+Esc = task manager
+
+
+
+
+1. Uzmi vrijednost (string)
+2. Ako je prazno → poruka
+3. Pretvori u broj
+4. Ako nije broj → poruka
+5. Izračun

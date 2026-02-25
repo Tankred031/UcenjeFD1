@@ -29,7 +29,7 @@ for (let i = 0; i < spojenoIme.length; i++) {
     rezultat += brojac;
 }
 
-
+//==================================================================
 //BROJANJE SLOVA IME 2
 /*
 for (let i = 0; i < ime2.length; i++) {
@@ -66,6 +66,7 @@ for (let i = 0; i < maxDuljina; i++) {
 }
 console.log("Prvi spojeni niz:", noviNiz);
 
+=======================================================================
 */
 
 //REKURZIJA
