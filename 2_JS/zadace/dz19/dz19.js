@@ -16,6 +16,10 @@ document.getElementById('izvedi').addEventListener('click', function() {
         break;
 
 
+
+
+
+
         case "2":
 
         if (b !== "") {
@@ -33,6 +37,9 @@ document.getElementById('izvedi').addEventListener('click', function() {
 
 
 
+
+
+
         case "3":
 
         let niz = a.split(",");
@@ -46,9 +53,10 @@ document.getElementById('izvedi').addEventListener('click', function() {
         
         rezultat.innerHTML = ("Zbroj niza brojeva je: " + zbroj)
 
-
-
         break;
+
+
+
 
 
         case "4":
@@ -68,6 +76,9 @@ document.getElementById('izvedi').addEventListener('click', function() {
         break;
 
 
+
+
+
         case "6":
             
         
@@ -75,10 +86,10 @@ document.getElementById('izvedi').addEventListener('click', function() {
 
         rijec = rijec.split("").reverse().join("");        
         rezultat.innerHTML = rijec;
-
-
-
+     
         break;
+
+
 
 
 
@@ -96,6 +107,8 @@ document.getElementById('izvedi').addEventListener('click', function() {
            rezultat.innerHTML = "Ima ukupno: " + brojac + " samoglasnika";
             
         break;
+
+
 
 
 
@@ -137,7 +150,38 @@ document.getElementById('izvedi').addEventListener('click', function() {
        
 
 
+
+
         case "9": 
+
+        let brojevi = []
+
+        for(let i=0; i<brojevi.length; i++) {
+            let j=0; j<brojevi.length; j++ -1 
+        } if(brojevi[j])<(j<brojevi[j-1]) {
+
+        } 
+
+
+
+
+        break;
+
+        
+        
+        
+        
+        
+        case "10":
+
+
+
+        break; 
+
+
+
+
+
 
 
 
