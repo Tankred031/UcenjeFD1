@@ -11,17 +11,24 @@ function* tijekUpoznavanja() {
         prikaziUnos: true 
     };
 
+    // NAKNADNO UMETNUTI KORAK - godine
+    const godine = yield {
+        naslov: 'Koliko imaš godina?',
+        opis: 'Reci koliko imaš godina da lakše prilagodimo ponudu.',
+        prikaziUnos: true
+    }
+
     // 2. KORAK: Tražimo grad (koristimo 'ime' dobiveno iz prethodnog koraka)
     const grad = yield { 
         naslov: `Drago nam je, ${ime}!`, 
         opis: 'Iz kojeg grada dolaziš?', 
         prikaziUnos: true 
     };
-
+    
     // 3. KORAK: Završna poruka
     return { 
         naslov: 'Sve je spremno!', 
-        opis: `Pozdrav za ${ime} iz grada ${grad}. Uspješno ste završili proces!`, 
+        opis: `Pozdrav za ${ime} koji ima ${godine} godina, iz grada ${grad}.  Uspješno ste završili proces!`, 
         prikaziUnos: false,
         gotovo: true 
     };
@@ -42,6 +49,9 @@ let zadnjiUnosKorisnika = '';
  * Poziva se na klik gumba i budi generator.
  */
 function izvrsiSljedeciKorak() {
+    setTimeout(() => {
+        poljeZaUnos.focus();                                         // ali smo unijeli tu dodatne komande
+    }, 500);
     // Spremi što je korisnik upisao prije nego što krenemo na sljedeći yield
     zadnjiUnosKorisnika = poljeZaUnos.value;
     poljeZaUnos.value = ''; // Očisti polje za sljedeći put
@@ -58,10 +68,11 @@ function izvrsiSljedeciKorak() {
         
         if (podaci.prikaziUnos) {
             kontejnerUnosa.classList.remove('skriveno');
+            //poljeZaUnos.focus();                                     
         } else {
             kontejnerUnosa.classList.add('skriveno');
         }
-
+        
         gumbDalje.innerText = 'Nastavi';
     } else {
         // Kraj - generator je vratio 'return'
@@ -72,6 +83,29 @@ function izvrsiSljedeciKorak() {
         gumbDalje.classList.add('skriveno');
         kontejnerUnosa.classList.add('skriveno');
     }
+    
 }
 
 gumbDalje.addEventListener('click', izvrsiSljedeciKorak);
+
+    // Omogući nastavak pritiskom na Enter
+    poljeZaUnos.addEventListener('keydown', function (event) {
+    if (event.key === 'Enter') {            // umjesto event, često se koristi i e
+        event.preventDefault();             // Spriječi eventualni default (npr. submit forme)
+        izvrsiSljedeciKorak();
+    }
+});
+
+    window.addEventListener('DOMContentLoaded', () => {
+    const prviKorak = tijek.next();
+
+    const podaci = prviKorak.value;
+
+    naslovElement.innerText = podaci.naslov;
+    opisElement.innerText = podaci.opis;
+
+    if (podaci.prikaziUnos) {
+        kontejnerUnosa.classList.remove('skriveno');
+        poljeZaUnos.focus();
+    }
+});
