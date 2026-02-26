@@ -116,8 +116,7 @@ document.getElementById('izvedi').addEventListener('click', function() {
 
         if(a !== "") {
             let tempC = Number(a);
-        
-        
+                
             if (isNaN(tempC)) {
                 rezultat.innerHTML = "Uneseni podatak nije broj";
                 return;
@@ -130,7 +129,6 @@ document.getElementById('izvedi').addEventListener('click', function() {
         
         else if(b !== "") {
             let tempF = Number(b);
-        
         
             if(isNaN(tempF)) {
                 rezultat.innerHTML = "Uneseni podatak nije broj"
@@ -154,13 +152,26 @@ document.getElementById('izvedi').addEventListener('click', function() {
 
         case "9": 
 
-        let brojevi = []
+        let nizBrojeva = a.split(",");
 
-        for(let i=0; i<brojevi.length; i++) {
-            let j=0; j<brojevi.length; j++ -1 
-        } if(brojevi[j])<(j<brojevi[j-1]) {
+        /*
+        if (isNaN(nizBrojeva)) {
+                rezultat.innerHTML = "Uneseni podatak nije broj";
+                return;
+        }
+        */
 
+        for(let i=0; i<nizBrojeva.length; i++) {
+            for(let j=0; j<nizBrojeva.length; j++) {
+                
+                if(nizBrojeva[j] < nizBrojeva[j-1]) {
+                    let temp = nizBrojeva[j];
+                nizBrojeva[j] = nizBrojeva[j-1]; 
+                    nizBrojeva[j-1] = temp;
+                }   
+            } 
         } 
+        rezultat.innerHTML = "Sortirani niz je: " + nizBrojeva;
 
 
 
@@ -168,24 +179,31 @@ document.getElementById('izvedi').addEventListener('click', function() {
         break;
 
         
-        
-        
-        
-        
+                
         case "10":
 
+        const kalk = document.getElementById('calc');
 
+        function calc () {
+            document.innerHTML = input
+        }
 
+        
+        if(operacija === "+") {
+            rezultat.innerHTML = a + b;
+        }
+        else if (operacija === "-") {
+            rezultat.innerHTML = a - b;
+        }
+        else if (operacija === "*") {
+            rezultat.innerHTML = a * b;
+        }
+        else {
+            rezultat.innerHTML = a / b;
+        }
+        
+        
         break; 
-
-
-
-
-
-
-
-
-
 
     }
 });
