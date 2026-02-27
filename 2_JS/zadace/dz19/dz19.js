@@ -234,29 +234,44 @@ document.getElementById('izvedi').addEventListener('click', function() {
                 
         case "10":
 
+        let brojA = Number(a);
+        let brojB = Number(b);
         
+        if (isNaN(brojA) || isNaN(brojB)) {
+        rezultat.innerHTML = "Unesi ispravne brojeve";
+        break;
+        }
         
-        const kalk = document.getElementById('calc');
+        let operacija = document.querySelector('input[name="operacija]:checked');
+        
 
-        function calc () {
-            document.innerHTML = input
+        if(!operacija) {
+            rezultat.innerHTML = "Odaberi operaciju";
+            break;
         }
+        
+        switch (operacija.value) {
+            case "+":
+                rezultat.innerHTML = brojA + brojB;
+                break;
 
-        
-        if(operacija === "+") {
-            rezultat.innerHTML = a + b;
-        }
-        else if (operacija === "-") {
-            rezultat.innerHTML = a - b;
-        }
-        else if (operacija === "*") {
-            rezultat.innerHTML = a * b;
-        }
-        else {
-            rezultat.innerHTML = a / b;
-        }
-        
-        
+            case "-":
+                rezultat.innerHTML = brojA - brojB;
+                break;
+
+            case "*":
+                rezultat.innerHTML = brojA * brojB;
+                break;
+
+            case "/":
+                if(brojB === 0) {
+                    rezultat.innerHTML = "Dijeljenje s 0 nije dozvoljeno";
+                } else {
+                rezultat.innerHTML = brojA / brojB;
+                }
+                break;
+            }
+            
         break; 
 
     }
