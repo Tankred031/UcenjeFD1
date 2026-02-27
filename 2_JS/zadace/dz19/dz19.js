@@ -1,3 +1,15 @@
+const select = document.getElementById("zadaci");
+const operacijeDiv = document.getElementById("operacije");
+
+select.addEventListener("change", function() {
+    if (select.value === "10") {
+        operacijeDiv.style.display = "block";
+    } else {
+        operacijeDiv.style.display = "none";
+    }
+});
+
+
 const rezultat = document.getElementById('rezultati');
 document.getElementById('izvedi').addEventListener('click', function() {
 
@@ -75,6 +87,41 @@ document.getElementById('izvedi').addEventListener('click', function() {
 
         break;
 
+
+
+
+
+        case "5":
+
+        
+
+        if (isNaN(a) || a === "") {
+            rezultat.innerHTML = "Unesi broj članova niza u polje A";
+            break;
+        }
+
+        let n = Number(a);
+
+        if (n <= 0) {
+            rezultat.innerHTML = "Broj mora biti veći od 0";
+            break;
+        }
+
+        let fib = [];
+
+        if (n >= 1) fib.push(0);
+        if (n >= 2) fib.push(1);
+
+        for (let i = 2; i < n; i++) {
+            fib.push(fib[i - 1] + fib[i - 2]);
+        }
+
+        rezultat.innerHTML = "Fibonaccijev niz: " + fib.join(", ");
+
+        break;
+
+
+        
 
 
 
@@ -182,6 +229,8 @@ document.getElementById('izvedi').addEventListener('click', function() {
                 
         case "10":
 
+        
+        
         const kalk = document.getElementById('calc');
 
         function calc () {
