@@ -63,3 +63,5 @@ Ctrl+Shift+Esc = task manager
 3. Pretvori u broj
 4. Ako nije broj → poruka
 5. Izračun
+
+kao da stroj kuca slova
