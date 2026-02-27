@@ -6,6 +6,11 @@ select.addEventListener("change", function() {
         operacijeDiv.style.display = "block";
     } else {
         operacijeDiv.style.display = "none";
+
+        const radioButtons = document.querySelectorAll('input[name="operacija"]');
+        radioButtons.forEach(radio => {
+            radio.checked = false;
+        });
     }
 });
 
