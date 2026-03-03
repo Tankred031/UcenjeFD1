@@ -34,7 +34,7 @@ const polaznici = [
         "ime": "Hrvoje",
         "prezime": "Mitrić",
         "url": "https://github.com/hrki1971",
-        "slika": "img/1000012564.png"
+        "slika": "img/slika_20260302173701.png"
     },
     {
         "ime": "Roberto",
@@ -46,7 +46,7 @@ const polaznici = [
         "ime": "Maja",
         "prezime": "Šnalcer",
         "url": "https://github.com/snalcermaja",
-        "slika": ""
+        "slika": "img/1000012564.png"
     },
     {
         "ime": "Alen",
