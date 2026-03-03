@@ -242,7 +242,7 @@ document.getElementById('izvedi').addEventListener('click', function() {
         break;
         }
         
-        let operacija = document.querySelector('input[name="operacija]:checked');
+        let operacija = document.querySelector('input[name="operacija"]:checked');
         
 
         if(!operacija) {

@@ -23,7 +23,7 @@
             <option value="8">8. Pretvorba temperature - (polje A - Celsius) : (polje B - Fahrenheit)</option>
             <option value="9">9. Sortiranje niza (unesi niz brojeva - sortirat će se uzlazno)</option>
             <option selected value="10">10. Kalkulator (unesi broj u A i B i odaberi operaciju)</option>
-            <option disabled value="11.">11. Generator lozinke</option>
+            <option value="11.">11. Generator lozinke</option>
         </select>
     </div>
 
@@ -50,6 +50,23 @@
         <input id="b" type="text">
     </div>
 
+    <div id="passwordOptions" style="display:none; flex-direction:column; gap:10px; margin:20px;">
+
+        <label>Dužina lozinke:</label>
+        <input type="number" id="pwLength" min="1" value="12">
+
+        <label>Broj lozinki:</label>
+        <input type="number" id="pwCount" min="1" value="1">
+
+        <label><input type="checkbox" id="pwUpper" checked> Velika slova</label>
+        <label><input type="checkbox" id="pwLower" checked> Mala slova</label>
+        <label><input type="checkbox" id="pwNumber" checked> Brojevi</label>
+        <label><input type="checkbox" id="pwSymbol"> Interpunkcijski znakovi</label>
+
+        <label><input type="checkbox" id="pwNoRepeat"> Bez ponavljanja znakova</label>
+
+    </div>
+
         <section class="resultCard">
         <h2>Rezultat:</h2>
         <div id="rezultati" class="result">—</div>
@@ -58,5 +75,6 @@
 
     </div>
     <script src="dz19.js"></script>
+    <script src="dz19GL.js"></script>
 </body>
 </html>
