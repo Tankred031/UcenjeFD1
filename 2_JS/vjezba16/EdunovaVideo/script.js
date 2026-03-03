@@ -1,17 +1,17 @@
 document.addEventListener('DOMContentLoaded', () => {
 
     const polaznici = [
-        { ime: "Rudolf", prezime: "Gergelj", githubUrl: "https://github.com/BetonOS4633", videoSrc: "/video/video_20260302183401.webm" },
-        { ime: "Luka", prezime: "Hlavati", githubUrl: "https://github.com/lhlavati", videoSrc: "/video/video_20260302182925.webm" },
-        { ime: "Tankred", prezime: "Kralj", githubUrl: "https://github.com/Tankred031", videoSrc: "/video/video_20260302183102.webm" },
+        { ime: "Rudolf", prezime: "Gergelj", githubUrl: "https://github.com/BetonOS4633", videoSrc: "video/video_20260302183401.webm" },
+        { ime: "Luka", prezime: "Hlavati", githubUrl: "https://github.com/lhlavati", videoSrc: "video/video_20260302182925.webm" },
+        { ime: "Tankred", prezime: "Kralj", githubUrl: "https://github.com/Tankred031", videoSrc: "video/video_20260302183102.webm" },
         { ime: "Fran", prezime: "Liović", githubUrl: "https://github.com/Liovic031", videoSrc: "" },
-        { ime: "Robert", prezime: "Marković", githubUrl: "https://github.com/RobertMarkovic710", videoSrc: "/video/video_20260302183005.webm" },
-        { ime: "Hrvoje", prezime: "Mitrić", githubUrl: "https://github.com/hrki1971", videoSrc: "/video/video_20260302190249.webm" },
+        { ime: "Robert", prezime: "Marković", githubUrl: "https://github.com/RobertMarkovic710", videoSrc: "video/video_20260302183005.webm" },
+        { ime: "Hrvoje", prezime: "Mitrić", githubUrl: "https://github.com/hrki1971", videoSrc: "video/video_20260302190249.webm" },
         { ime: "Roberto", prezime: "Perković", githubUrl: "https://github.com/rperkovi", videoSrc: "" },
-        { ime: "Maja", prezime: "Šnalcer", githubUrl: "https://github.com/snalcermaja", videoSrc: "/video/video_20260302183017.webm" },
+        { ime: "Maja", prezime: "Šnalcer", githubUrl: "https://github.com/snalcermaja", videoSrc: "video/video_20260302183017.webm" },
         { ime: "Alen", prezime: "Tandara", githubUrl: "https://github.com/alentandara", videoSrc: "" },
         { ime: "Vincent Edward", prezime: "Tilhof", githubUrl: "https://github.com/EdwardTilhof", videoSrc: "" },
-        { ime: "Tomislav", prezime: "Jakopec", githubUrl: "https://github.com/tjakopec/EdunovaFD1", videoSrc: "/video/video_20260302182840.webm" }
+        { ime: "Tomislav", prezime: "Jakopec", githubUrl: "https://github.com/tjakopec/EdunovaFD1", videoSrc: "video/video_20260302182840.webm" }
     ];
 
     const gallery = document.getElementById('video-gallery');
