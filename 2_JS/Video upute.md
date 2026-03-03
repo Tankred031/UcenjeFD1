@@ -18,3 +18,5 @@ Tilhof	Vincent Edward	https://github.com/EdwardTilhof
 Jakopec	Tomislav	https://github.com/tjakopec/EdunovaFD1	
 
 Na ime i prezime na stranici i na modalu napravi kada se klikne da se u novoj kartici otvori github URL 
+
+možeš ostaviti prazno za video pa ću ja ručno dodati fileove

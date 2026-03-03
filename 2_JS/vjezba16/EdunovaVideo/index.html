@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edunova Frontend Developeri - Video Galerija</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Edunova</h1>
+        <h2>Frontend Developeri - Video Predstavljanje</h2>
+    </header>
+
+    <main>
+        <div id="video-gallery" class="gallery-container">
+            <!-- Video kartice će se dinamički generirati ovdje -->
+        </div>
+    </main>
+
+    <!-- Modal za prikaz videa -->
+    <div id="video-modal" class="modal">
+        <span class="close-button">&times;</span>
+        <div class="modal-content">
+            <video id="modal-video" controls></video>
+            <div id="modal-caption"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
