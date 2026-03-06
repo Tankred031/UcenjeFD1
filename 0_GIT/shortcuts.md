@@ -65,3 +65,6 @@ Ctrl+Shift+Esc = task manager
 5. Izračun
 
 kao da stroj kuca slova
+
+
+alpine smo morali preko servera doći to linka za instalaciju
