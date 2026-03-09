@@ -68,3 +68,5 @@ kao da stroj kuca slova
 
 
 alpine smo morali preko servera doći to linka za instalaciju
+
+Ctrl+C zaustavlja server u Reactu
