@@ -1,11 +1,12 @@
 import 'bootstrap/dist/css/bootstrap.min.css'
-import Container from 'react-bootstrap/Container'
-import Button from 'react-bootstrap/Button'
-import Card from 'react-bootstrap/Card'
+//import Container from 'react-bootstrap/Container'
+//import Button from 'react-bootstrap/Button'
+//import Card from 'react-bootstrap/Card'
 import react from './assets/react.svg'
-import Accordion from 'react-bootstrap/Accordion'
-import Table from 'react-bootstrap/Table'
+//import Accordion from 'react-bootstrap/Accordion'
+//import Table from 'react-bootstrap/Table'
 import './App.css'
+import { Accordion, Button, Card, Container, Table } from 'react-bootstrap'
 
 function App() {
  
@@ -13,6 +14,10 @@ function App() {
   return (
     <>
       <Container>
+
+      <a href="moduli/index.html">Moduli</a>
+      <hr />
+      
         <Card style={{ width: '18rem' }}>
       <Card.Img variant="top" src={react} />
       <Card.Body>
@@ -24,7 +29,7 @@ function App() {
         <Button variant="primary">Go somewhere</Button>
       </Card.Body>
       </Card>
-
+    
       <Accordion defaultActiveKey="0">
       <Accordion.Item eventKey="0">
         <Accordion.Header>Accordion Item #1</Accordion.Header>
