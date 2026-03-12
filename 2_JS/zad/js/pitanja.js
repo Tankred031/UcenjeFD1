@@ -255,29 +255,49 @@ function kreirajPitanja() {
         odgovori: ['upravljanje bazama podataka', 'stiliziranje web stranica', 'kompajliranje JavaStripta', 'kreiranje backend servera i API-a']
     },
     {
-        pitanje: 'Koja komanda se koristi za instaliranje Expresa u Node projektu',==============
-        tocno: 'npm ',
+        pitanje: 'Koja komanda se koristi za instaliranje Expresa u Node projektu',
+        tocno: 'npm install express',
         odgovori: ['npm start express', 'install express', 'node install express', 'npm install express']
     },
     {
         pitanje: 'Koja metoda se koristi za kreiranje GET route u Expressu',
-        tocno: 'app ',
+        tocno: 'app.get()',
         odgovori: ['app.post()', 'app.get()', 'app.listen()', 'app.route()']
     },
     {
         pitanje: 'Što čini res.json() u Expressu?',
-        tocno: 'dnosti',
+        tocno: 'šalje JSON odgovor',
         odgovori: ['šalje HTML odgovor', 'šalje datoteku', 'šalje JSON odgovor', 'pokreće server']
     },
     {
-        pitanje: 'Što useRef() vraća?',
-        tocno: 'objekt s trenutnim svojstvima',
-        odgovori: ['string vrijednost', 'niz', 'funkciju', 'objekt s trenutnim svojstvima']
+        pitanje: '?',
+        tocno: '',
+        odgovori: ['', '', '', '']
     },
     {
-        pitanje: 'Zašto vraća funkciju unutar useEffect-a?',
-        tocno: 'da očisti nuspojave (poput timera ili listenera)',
-        odgovori: ['da zaustavi renderiranje komponenti', 'da upravlja stiliziranjem komponenti', 'da automatski update-a state', 'da očisti nuspojave (poput timera ili listenera)']
+        pitanje: '?',
+        tocno: '',
+        odgovori: ['', '', '', '']
+    },
+     {
+        pitanje: '?',
+        tocno: '',
+        odgovori: ['', '', '', '']
+    },
+    {
+        pitanje: '?',
+        tocno: '',
+        odgovori: ['', '', '', '']
+    },
+     {
+        pitanje: '?',
+        tocno: '',
+        odgovori: ['', '', '', '']
+    },
+    {
+        pitanje: '?',
+        tocno: '',
+        odgovori: ['', '', '', '']
     }
 ];
 }
