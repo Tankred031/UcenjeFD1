@@ -1,0 +1,5 @@
+U terminalu nako što ste zaustavili aplikaciju (Crtl + C) izvesti:
+
+nmp install react-bootstrap bootstrap
+(importamo ga u app.jsx)
+
