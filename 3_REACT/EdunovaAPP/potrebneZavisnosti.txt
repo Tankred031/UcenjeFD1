@@ -4,3 +4,5 @@ nmp install react-bootstrap bootstrap
 (importamo ga u app.jsx)
 npm install react-router-dom
 (instalacija routera)
+
+npm run build 
