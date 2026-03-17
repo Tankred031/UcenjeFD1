@@ -8,17 +8,17 @@ import SmjerPregled from './pages/smjerovi/SmjerPregled'
 import { RouteNames } from './constants'
 
 function App() {
-  
+
 
   return (
     <Container>
-        <Izbornik />
-        <Routes>
-          <Route path={RouteNames.HOME} element={<Home />} />
-          <Route path={RouteNames.SMJEROVI} element={<SmjerPregled />} />
-        </Routes>
-        <hr />
-        &copy; Edunova
+      <Izbornik />
+      <Routes>
+        <Route path={RouteNames.HOME} element={<Home />} />
+        <Route path={RouteNames.SMJEROVI} element={<SmjerPregled />} />
+      </Routes>
+      <hr />
+      &copy; Edunova
     </Container>
   )
 }

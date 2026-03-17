@@ -1,7 +1,7 @@
-export default function SmjerPregled(){
-    return(
+export default function SmjerPregled() {
+    return (
         <>
-        Ovdje će se vidjeti smjerovi
+            Ovdje će se vidjeti smjerovi
         </>
     )
 }
