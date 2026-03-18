@@ -4,7 +4,7 @@ export const smjerovi = [
         naziv: 'Web programiranje',
         trajanje: 130,
         cijena: 1250.99,
-        datumPokretanje: '2024-02-24T17:00:00',
+        datumPokretanja: '2024-02-24T17:00:00',
         aktivan: true
     },
     {
@@ -12,7 +12,7 @@ export const smjerovi = [
         naziv: 'Java programiranje',
         trajanje: 130,
         cijena: 1500,
-        datumPokretanje: '2019-02-21T17:00:00',
+        datumPokretanja: '2019-02-21T17:00:00',
         aktivan: false
     }
 ]
