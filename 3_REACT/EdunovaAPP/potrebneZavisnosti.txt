@@ -1,7 +1,8 @@
-U terminalu nako što ste zaustavili aplikaciju (Crtl + C) izvesti:
+U terminalu nakon što ste zaustavili aplikaciju (Crtl + C) izvesti:
 
-nmp install react-bootstrap bootstrap
+npm install react-bootstrap bootstrap
 (importamo ga u app.jsx)
+
 npm install react-router-dom
 (instalacija routera)
 
@@ -10,3 +11,6 @@ npm run build
 (zavisnost za oblik brojeva)
 npm install react-number-format 
 npm install react-icons
+
+
+kod promjene računala - prvo pokrenuti npm install
