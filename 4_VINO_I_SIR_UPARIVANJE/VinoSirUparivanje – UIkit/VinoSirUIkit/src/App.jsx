@@ -3,15 +3,17 @@ import './App.css'
 
 
 function App() {
-  const [count, setCount] = useState(0)
-
+  
+  
   return (
     <>
       <Container>
         <Izbornik />
         <Routes>
-          
-
+          <Route path={RouteNames.HOME} element={<Home />} />
+          <Route path={RouteNames.VINA_PREGLED} element={<VinaPregled />} />
+          <Route path={RouteNames.SIREVI_PREGLED} element={<SireviPregled />} />
+          <Route path={RouteNames.UPARIVANJE} element={<Uparivanje />} />
         </Routes>
         <hr />
         &copy; Verzija 2
