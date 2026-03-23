@@ -1,4 +1,4 @@
-export const IME_APLIKACIJE = 'Vino i Sir Aplikacija Uparivanja'
+export const IME_APLIKACIJE ='Vino i Sir Aplikacija Uparivanja'
 
 export const RouteNames = {
     HOME: '/',

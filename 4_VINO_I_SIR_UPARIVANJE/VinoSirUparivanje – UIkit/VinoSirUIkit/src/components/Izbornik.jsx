@@ -1,6 +1,8 @@
 import { useNavigate } from "react-router-dom";
+import { IME_APLIKACIJE, RouteNames } from "../constants"
 
 export default function Izbornik () {
+
     const navigate = useNavigate()
 
 
@@ -26,12 +28,6 @@ export default function Izbornik () {
 
     </div>
 </nav>
-
-
-
-
-
-
 
 
     )

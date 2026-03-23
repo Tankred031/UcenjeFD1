@@ -1,5 +1,10 @@
-import { useState } from 'react'
+import 'uikit/dist/css/uikit.min.css'
 import './App.css'
+//import { Container } from 'react-bootstrap'
+import Izbornik from './components/Izbornik'
+import { Route, Routes } from 'react-router-dom'
+import { RouteNames } from './constants'
+import Home from './pages/Home'
 
 
 function App() {
