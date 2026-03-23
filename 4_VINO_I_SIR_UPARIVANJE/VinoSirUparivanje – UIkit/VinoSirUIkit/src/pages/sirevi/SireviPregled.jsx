@@ -8,45 +8,52 @@ export default function SireviPregled() {
 
     useEffect(() => {
         ucitajSirevi()
-    },[])
+    }, [])
 
     async function ucitajSirevi() {
         await SireviService.get().then((odgovor) => {
             setSirevi(odgovor.data)
         })
     }
-}
 
-return (
-    <>
-        <table class="uk-table">
-    <caption>Table Caption</caption>
-    <thead>
-        <tr>
-            <th>Table Heading</th>
-            <th>Table Heading</th>
-            <th>Table Heading</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>Table Data</td>
-            <td>Table Data</td>
-            <td>Table Data</td>
-        </tr>
-        <tr>
-            <td>Table Data</td>
-            <td>Table Data</td>
-            <td>Table Data</td>
-        </tr>
-    </tbody>
-    <tfoot>
-        <tr>
-            <td>Table Footer</td>
-            <td>Table Footer</td>
-            <td>Table Footer</td>
-        </tr>
-    </tfoot>
-</table>
-    </>
-)
+
+    return (
+        <>
+            <table className="uk-table uk-table-divider">
+                <caption>Pregled sireva</caption>
+                <thead>
+                    <tr>
+                        <th>Naziv</th>
+                        <th>Tip</th>
+                        <th>Vrsta</th>
+                        <th>Zrenje</th>
+                        <th>Država</th>
+                        <th>Regija</th>
+                        <th>Intezitet</th>
+                        <th>Masnoće</th>
+                        <th>Tekstura</th>
+                        <th>Okus</th>
+                        <th>Akcija</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {sirevi && sirevi.map((sirevi) => (
+                        <tr>
+                            <td>{sirevi.naziv}</td>
+                            <td>{sirevi.tip}</td>
+                            <td>{sirevi.vrsta}</td>
+                            <td>{sirevi.zrenje}</td>
+                            <td>{sirevi.drzava}</td>
+                            <td>{sirevi.regija}</td>
+                            <td>{sirevi.intezitet}</td>
+                            <td>{sirevi.masnoce}</td>
+                            <td>{sirevi.tekstura}</td>
+                            <td>{sirevi.okus}</td>
+                            <td></td>
+                        </tr>
+                    ))}
+                </tbody>
+            </table>
+        </>
+    )
+}

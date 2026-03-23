@@ -1,9 +1,8 @@
 import { vina } from "./VinaPopis";
 
 
-async function get() {
-    return { data: vina }
-
+async function get(VinaPopis) {
+    return pravilaUparivanja[VinaPopis] || [] 
 }
 
 

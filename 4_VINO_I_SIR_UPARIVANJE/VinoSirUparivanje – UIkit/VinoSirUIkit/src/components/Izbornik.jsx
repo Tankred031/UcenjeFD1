@@ -1,35 +1,50 @@
-import { useNavigate } from "react-router-dom";
-import { IME_APLIKACIJE, RouteNames } from "../constants"
+import { useRef } from "react"
+import { useNavigate } from "react-router-dom"
+import UIkit from "uikit"
 
-export default function Izbornik () {
+export default function Izbornik() {
+  const navbarRef = useRef(null)
+  const navigate = useNavigate()
 
-    const navigate = useNavigate()
+  return (
+    <nav ref={navbarRef} className="uk-navbar-container" uk-navbar="true">
+      <div className="uk-navbar-left">
+        <ul className="uk-navbar-nav">
+          {/* Početna */}
+          <li className="uk-active">
+            <a onClick={() => navigate("/")}>Početna</a>
+          </li>
 
+          {/* Vina Dropdown */}
+          <li>
+            <a href="#">🍷 Vina</a>
+            <div className="uk-navbar-dropdown">
+              <ul className="uk-nav uk-navbar-dropdown-nav">
+                <li>
+                  <a onClick={() => navigate("/vina")}>Pregled vina</a>
+                </li>
+              </ul>
+            </div>
+          </li>
 
-    return (
+          {/* Sirevi Dropdown */}
+          <li>
+            <a href="#">🧀 Sirevi</a>
+            <div className="uk-navbar-dropdown">
+              <ul className="uk-nav uk-navbar-dropdown-nav">
+                <li>
+                  <a onClick={() => navigate("/sirevi")}>Pregled sireva</a>
+                </li>
+              </ul>
+            </div>
+          </li>
 
-<nav class="uk-navbar-container" uk-navbar>
-    <div class="uk-navbar-left">
-
-        <ul class="uk-navbar-nav">
-            <li class="uk-active"><a href="#">Početna</a></li>
-            <li>
-                <a href="#">Pregled vina</a>
-                <div class="uk-navbar-dropdown">
-                    <ul class="uk-nav uk-navbar-dropdown-nav">
-                        <li class="uk-active"><a href="#">Active</a></li>
-                        <li><a href="#">Item</a></li>
-                        <li><a href="#">Item</a></li>
-                    </ul>
-                </div>
-            </li>
-            <li><a href="#">Item</a></li>
+          {/* Uparivanje */}
+          <li>
+            <a onClick={() => navigate("/uparivanje")}>🍷🧀 Uparivanje</a>
+          </li>
         </ul>
-
-    </div>
-</nav>
-
-
-    )
-
+      </div>
+    </nav>
+  )
 }

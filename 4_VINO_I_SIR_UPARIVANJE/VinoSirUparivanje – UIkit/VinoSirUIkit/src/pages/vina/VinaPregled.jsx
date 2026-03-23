@@ -2,13 +2,12 @@ import { useEffect, useState } from "react";
 import VinaService from "../../services/vina/VinaService"
 
 export default function VinaPregled() {
-
     const [vina, setVina] = useState([])
 
     useEffect(() => {
         ucitajVina()
-    },[])
-}
+    }, [])
+
 
 async function ucitajVina() {
     await VinaService.get().then((odgovor) => {
@@ -17,41 +16,43 @@ async function ucitajVina() {
 }
 
 
-return (
-    <>
-    <table class="uk-table">
-    <caption>Table Caption</caption>
-    <thead>
-        <tr>
-            <th>Table Heading</th>
-            <th>Table Heading</th>
-            <th>Table Heading</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>Table Data</td>
-            <td>Table Data</td>
-            <td>Table Data</td>
-        </tr>
-        <tr>
-            <td>Table Data</td>
-            <td>Table Data</td>
-            <td>Table Data</td>
-        </tr>
-    </tbody>
-    <tfoot>
-        <tr>
-            <td>Table Footer</td>
-            <td>Table Footer</td>
-            <td>Table Footer</td>
-        </tr>
-    </tfoot>
-</table>
-    
-    
-    
-    
-    
-    </>
-)
+    return (
+        <>
+            <table className="uk-table uk-table-divider">
+                <caption>Pregled vina</caption>
+                <thead>
+                    <tr>
+                        <th>Naziv</th>
+                        <th>Tip</th>
+                        <th>Država</th>
+                        <th>Regija</th>
+                        <th>Jačina</th>
+                        <th>Temperatura</th>
+                        <th>Slatkoća</th>
+                        <th>Arome</th>
+                        <th>Tijelo</th>
+                        <th>Alkohol</th>
+                        <th>Akcija</th>
+                    </tr>
+                </thead>
+                <tbody>
+                        {vina && vina.map((vina)=>(   
+                        <tr>
+                            <td>{vina.naziv}</td>
+                            <td>{vina.tip}</td>                            
+                            <td>{vina.drzava}</td>
+                            <td>{vina.regija}</td>
+                            <td>{vina.jacina}</td>
+                            <td>{vina.temperatura}</td>
+                            <td>{vina.slatkoca}</td>
+                            <td>{vina.arome}</td>
+                            <td>{vina.tijelo}</td>
+                            <td>{vina.alkohol}</td>
+                            <td></td>
+                        </tr>
+                    ))}
+                </tbody>            
+            </table>
+        </>
+    )
+}
