@@ -1,8 +1,8 @@
-import { pairingRules } from "./UparivanjePopis";
+import { uparivanje } from "./UparivanjePopis";
   
   
 async function get() {  
-    return pairingRules[wineName] || [];
+    return { data: uparivanje};
 }
 
 

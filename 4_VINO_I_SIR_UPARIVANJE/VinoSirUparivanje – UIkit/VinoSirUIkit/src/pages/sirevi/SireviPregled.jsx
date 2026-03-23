@@ -1,25 +1,21 @@
-import { useEffect, useState } from "react";
-import SireviService from "../../services/sirevi/SireviService"
-
+import { useState, useEffect } from 'react'
+import SireviService from '../services/SireviService.jsx'
 
 export default function SireviPregled() {
-
     const [sirevi, setSirevi] = useState([])
 
     useEffect(() => {
-        ucitajSirevi()
-    }, [])
-
-    async function ucitajSirevi() {
-        await SireviService.get().then((odgovor) => {
+        async function ucitajSireve() {
+            const odgovor = await SireviService.get()
             setSirevi(odgovor.data)
-        })
-    }
+        }
+        ucitajSireve()
+    }, [])
 
 
     return (
         <>
-            <table className="uk-table uk-table-divider">
+            <table className="uk-table uk-table-divider uk-margin-top">
                 <caption>Pregled sireva</caption>
                 <thead>
                     <tr>
@@ -37,8 +33,8 @@ export default function SireviPregled() {
                     </tr>
                 </thead>
                 <tbody>
-                    {sirevi && sirevi.map((sirevi) => (
-                        <tr>
+                    {sirevi.map((sirevi, idx) => (
+                        <tr key={idx}>
                             <td>{sirevi.naziv}</td>
                             <td>{sirevi.tip}</td>
                             <td>{sirevi.vrsta}</td>

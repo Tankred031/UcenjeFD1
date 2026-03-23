@@ -1,8 +1,8 @@
-import { vina } from "./VinaPopis";
+import { vina } from './VinaPopis'
 
 
-async function get(VinaPopis) {
-    return pravilaUparivanja[VinaPopis] || [] 
+async function get() {
+    return { data: vina } 
 }
 
 
