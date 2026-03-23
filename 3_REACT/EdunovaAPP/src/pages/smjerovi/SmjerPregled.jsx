@@ -4,23 +4,28 @@ import { Table } from "react-bootstrap"
 import { NumericFormat } from "react-number-format"
 import { GrValidate } from "react-icons/gr"
 import FormatDatuma from "../../components/FormatDatuma"
+import { Link } from "react-router-dom"
+import { RouteNames } from "../../constants"
 
 export default function SmjerPregled() {
 
     const [smjerovi, setSmjerovi] = useState([])
 
-    useEffect(()=> {
+    useEffect(() => {
         ucitajSmjerove()
-    },[])
+    }, [])
 
     async function ucitajSmjerove() {
-        await SmjerService.get().then((odgovor)=>{
+        await SmjerService.get().then((odgovor) => {
             setSmjerovi(odgovor.data)
         })
     }
 
     return (
         <>
+            <Link to={RouteNames.SMJEROVI_NOVI} className="btn btn-success w-100 mb-3 mt-3">
+                Dodavanje novog smjera
+            </Link>
             <Table>
                 <thead>
                     <tr>
@@ -33,19 +38,19 @@ export default function SmjerPregled() {
                     </tr>
                 </thead>
                 <tbody>
-                    {smjerovi && smjerovi.map((smjer)=>(
+                    {smjerovi && smjerovi.map((smjer) => (
                         <tr>
                             <td>{smjer.naziv} </td>
                             <td>{smjer.trajanje}</td>
                             <td>
                                 <NumericFormat
-                                value={smjer.cijena}
-                                displayType={'text'}
-                                thousandSeparator='.'
-                                decimalSeparator=','
-                                suffix={' €'}
-                                decimalScale={2}
-                                fixedDecimalScale
+                                    value={smjer.cijena}
+                                    displayType={'text'}
+                                    thousandSeparator='.'
+                                    decimalSeparator=','
+                                    suffix={' €'}
+                                    decimalScale={2}
+                                    fixedDecimalScale
                                 />
                             </td>
                             <td>
@@ -53,11 +58,11 @@ export default function SmjerPregled() {
                             </td>
                             <td>
                                 <GrValidate
-                                size={25}
-                                color={smjer.aktivan ? 'green' : 'red'}
+                                    size={25}
+                                    color={smjer.aktivan ? 'green' : 'red'}
                                 />
                             </td>
-                            <td>{}</td>
+                            <td>{ }</td>
                         </tr>
                     ))}
                 </tbody>
