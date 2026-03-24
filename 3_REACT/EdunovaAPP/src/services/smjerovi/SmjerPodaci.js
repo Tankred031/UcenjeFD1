@@ -16,5 +16,3 @@ export const smjerovi = [
         aktivan: false
     }
 ]
-
-
