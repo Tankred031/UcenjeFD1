@@ -23,6 +23,16 @@ export default function SmjerPregled() {
         })
     }
 
+    async function obrisi(id) {
+        if(!confirm('Sigurno obrisati')){
+            return
+        }
+        await SmjerService.obrisi(id)
+        ucitajSmjerove()
+        
+        
+    }
+
     return (
         <>
             <Link to={RouteNames.SMJEROVI_NOVI} className="btn btn-success w-100 mb-3 mt-3">
@@ -67,6 +77,10 @@ export default function SmjerPregled() {
                             <td>
                                 <Button onClick={()=>{navigate(`/smjerovi/${smjer.sifra}`)}}>
                                     Promjena
+                                </Button>
+                                &nbsp;&nbsp;
+                                <Button onClick={()=>{obrisi(smjer.sifra)}} variant="danger">
+                                    Obriši
                                 </Button>
                             </td>
                         </tr>
