@@ -67,7 +67,8 @@ export default function SmjerPregled() {
                             <td>
                                 <Button onClick={()=>{navigate(`/smjerovi/${smjer.sifra}`)}}>
                                     Promjena
-                                </Button></td>
+                                </Button>
+                            </td>
                         </tr>
                     ))}
                 </tbody>
