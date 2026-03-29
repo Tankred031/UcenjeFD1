@@ -23,11 +23,11 @@ export default function SmjerPregled() {
         })
     }
 
-    async function obrisi(id) {
+    async function obrisi(sifra) {
         if(!confirm('Sigurno obrisati')){
             return
         }
-        await SmjerService.obrisi(id)
+        await SmjerService.obrisi(sifra)
         ucitajSmjerove()
         
         

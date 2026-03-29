@@ -61,7 +61,7 @@ export default function SmjerNovi() {
                 <Row>
                     <Col>
                         <Link to={RouteNames.SMJEROVI} className="btn btn-danger w-100">
-                        Odustani
+                            Odustani
                         </Link>
                     </Col>
                     <Col>

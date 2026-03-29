@@ -32,8 +32,8 @@ function nadiIndex(sifra){
 }
 
 // 4/4 Delete od CRUD
-async function obrisi(id) {
-    const index = nadiIndex(id)
+async function obrisi(sifra) {
+    const index = nadiIndex(sifra)
     smjerovi.splice(index,1)    
 }
 
