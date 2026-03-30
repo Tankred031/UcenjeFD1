@@ -1,21 +1,27 @@
+1-Preuzeti s neta i instalirati node.js
+
+2-Zatim u terminalu instalirati: npm create vite@latest
+
 U terminalu nakon što ste zaustavili aplikaciju (Crtl + C) izvesti:
 
-npm install react-bootstrap bootstrap
+3-npm install react-bootstrap bootstrap
 (importamo ga u app.jsx)
 
-npm install react-router-dom
+u slučaju da imamo 
+
+4-npm install react-router-dom
 (instalacija routera)
 
 npm run build 
 
-(zavisnost za oblik brojeva)
+(zavisnost za oblik brojeva):
 npm install react-number-format 
 npm install react-icons
 
 
 kod promjene računala - prvo pokrenuti npm install
 
-// lottie animacija
+lottie animacija:
 npm install @lottiefiles/dotlottie-react
 a ima i rive(konkurent)
 
@@ -28,4 +34,8 @@ export const Simple = () => (
     src="https://cdn.rive.app/animations/vehicles.riv"
     stateMachines="bumpy"
   />
-);
+)
+
+kad je MVP gotov:
+npm run build prije stavljanja na server
+zatim branch
