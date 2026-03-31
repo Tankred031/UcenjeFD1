@@ -1,46 +1,38 @@
-import { smjerovi } from "./SmjerPodaci";
+import SmjerServiceLocalStorage from "./SmjerServiceLocalStorage";
+import SmjerServiceMemorija from "./SmjerServiceMemorija";
+import { DATA_SOURCE } from "../../constants";
 
-// 1/4 Read od CRUD
-async function get() {
-    return {data: [...smjerovi]}   // [...smjerovi] je kopija smjerova
-}
-
-async function getBySifra(sifra) {
-    return {data: smjerovi.find(s => s.sifra === parseInt(sifra))}
-}
+let Servis = null;
 
 
-// 2/4 Create od CRUD
-async function dodaj(smjer) {
-    if(smjerovi.length>0){
-        smjer.sifra = smjerovi[smjerovi.length-1].sifra+1
-    }else{
-        smjer.sifra = 1
-    }   
-    smjerovi.push(smjer)
+switch (DATA_SOURCE) {
+    case 'memorija':
+        Servis = SmjerServiceMemorija;
+        break;
+    case 'localStorage':
+        Servis = SmjerServiceLocalStorage;
+        break;
+    default: 
+        Servis = null;
 }
 
 
-// 3/4 Update od CRUD
-async function promjeni(sifra, smjer) {
-    const index = nadiIndex(sifra)
-    smjerovi[index] = {...smjerovi[index], ...smjer}
-}
+const PrazanServis = {
+    get: async () =>({ success: false, data: []}),
+    getBySifra: async (sifra) => ({ success: false, data: {} }),
+    dodaj: async (smjer) => {console.error("Servis nije učitan"); },
+    promjeni: async (sifra, smjer) => { console.error("Servise nije učitan"); },
+    obrisi: async (sifra, smjer) => { console.error("Servis nije učitan"); }
+};
 
-function nadiIndex(sifra){
-    return smjerovi.findIndex(s => s.sifra === parseInt(sifra))
-}
+// 3. Jedan jedini export na kraju
+// Ako Servis postoji, koristi njega, inače koristi PrazanServis
+const AktivniServis = Servis || PrazanServis;
 
-// 4/4 Delete od CRUD
-async function obrisi(sifra) {
-    const index = nadiIndex(sifra)
-    smjerovi.splice(index,1)    
-}
-
-export default{
-    get,
-    dodaj, 
-    getBySifra,
-    promjeni,
-    obrisi
-}
+export default {
+    get: () => AktivniServis.get(),
+    getBySifra: (sifra) => AktivniServis.getBySifra(sifra),
+    dodaj: (smjer) => AktivniServis.dodaj(smjer),
+    promjeni: (sifra, smjer) => AktivniServis.promjeni(sifra, smjer),
+    obrisi: (sifra, smjer) => AktivniServis.obrisi(sifra)
+};

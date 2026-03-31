@@ -14,6 +14,11 @@ export default function SmjerPromjena() {
     async function ucitajSmjer() {
         await SmjerService.getBySifra(params.sifra).then((odgovor)=>{
 
+            if(!odgovor.success){
+                alert('Nije implementiran servis')
+                return
+            }
+
             const s = odgovor.data
             // po potrebi prilagođavam podatke
             s.datumPokretanja = s.datumPokretanja.substring(0,10)

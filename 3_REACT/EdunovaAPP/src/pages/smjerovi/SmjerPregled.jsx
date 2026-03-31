@@ -18,7 +18,11 @@ export default function SmjerPregled() {
 
     async function ucitajSmjerove() {
         await SmjerService.get().then((odgovor) => {
-            //console.table(odgovor.data)          // u dev modu (na računalu) ispisati će ovo 2x, što je u redu
+            
+            if(!odgovor.success){
+                alert('Nije implementiran servis')
+                return
+            }
             setSmjerovi(odgovor.data)
         })
     }

@@ -13,14 +13,16 @@ function App() {
 
 
   return (
-    <Container>
+    <Container style={ {backgroundColor: window.localStorage === 'localhost' ? 'salmon' : 'none'}}>
       <Izbornik />
+      <Container className='app'>
       <Routes>
         <Route path={RouteNames.HOME} element={<Home />} />
         <Route path={RouteNames.SMJEROVI} element={<SmjerPregled />} />
         <Route path={RouteNames.SMJEROVI_NOVI} element={<SmjerNovi />} />
         <Route path={RouteNames.SMJEROVI_PROMJENA} element={<SmjerPromjena />} />
       </Routes>
+      </Container>
       <hr />
       &copy; Edunova
     </Container>
