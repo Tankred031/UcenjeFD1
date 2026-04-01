@@ -18,7 +18,6 @@ export const smjerovi = [
     },
     {
         sifra: 3,
-<<<<<<< Updated upstream
         naziv: "Python programiranje",
         trajanje: 320,
         cijena: 1100.50,
@@ -55,12 +54,6 @@ export const smjerovi = [
         trajanje: 260,
         cijena: 1600.00,
         datumPokretanja: "2024-02-27T10:00:00",
-=======
-        naziv: 'Python programiranje',
-        trajanje: 320,
-        cijena: 1100,
-        datumPokretanja: '2024-02-23T17:00:00',
->>>>>>> Stashed changes
         aktivan: false
     }
         
