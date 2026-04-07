@@ -11,7 +11,6 @@ import SmjerPromjena from './pages/smjerovi/SmjerPromjena'
 
 function App() {
 
-
   return (
     <Container style={ {backgroundColor: window.localStorage === 'localhost' ? 'salmon' : 'none'}}>
       <Izbornik />
