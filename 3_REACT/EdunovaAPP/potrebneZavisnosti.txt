@@ -1,41 +1,16 @@
-1-Preuzeti s neta i instalirati node.js
+U terminalu nakon što ste zaustavili aplikaciju (ctrl+c) izvesti:
 
-2-Zatim u terminalu instalirati: npm create vite@latest
+npm install react-bootstrap bootstrap
+npm install react-router-dom
 
-U terminalu nakon što ste zaustavili aplikaciju (Crtl + C) izvesti:
-
-3-npm install react-bootstrap bootstrap
-(importamo ga u app.jsx)
-
-u slučaju da imamo 
-
-4-npm install react-router-dom
-(instalacija routera)
-
-npm run build 
-
-(zavisnost za oblik brojeva):
-npm install react-number-format 
+npm install react-number-format
 npm install react-icons
 
-
-kod promjene računala - prvo pokrenuti npm install
-
-lottie animacija:
+// lottie animacija
 npm install @lottiefiles/dotlottie-react
-a ima i rive(konkurent)
 
-npm i --save @rive-app/react-webgl2
+// faker za generiranje podataka
+npm install @faker-js/faker
 
-import Rive from '@rive-app/react-webgl2';
-
-export const Simple = () => (
-  <Rive
-    src="https://cdn.rive.app/animations/vehicles.riv"
-    stateMachines="bumpy"
-  />
-)
-
-kad je MVP gotov:
-npm run build prije stavljanja na server
-zatim branch
+// PDF
+npm install jspdf jspdf-autotable
